@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lab222: UILabel!
     var juTest : NSString?{
         didSet
         {
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lab222.text = "1234567890sdfghjklxcvbnm"
         let lab1 = UILabel.init()
         lab1.backgroundColor = UIColor.red
         lab1.text = "第一个约束居中"
