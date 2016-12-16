@@ -8,24 +8,12 @@
 
 import UIKit
 
-public enum JuLayoutType : Int {
-    case lead       = 0 ///< 左约束
-    case trail      = 1 ///< 右约束
-    case centerX    = 2///< x中间约束
 
-    case top        = 3   ///< 顶端约束（包括baseLine）
-    case bottom     = 4  ///< 底端约束
-    case centerY    = 5 ///< y中间约束（包括baseLine）
-
-    case width      = 6   ///< 宽度约束
-    case height     = 7  ///< 高度约束
-    case aspectWH   = 8  ///< 宽度高度比例约束
-}
 
 
 class JuLayout: NSObject {
 
-    var isMinus :Bool?///< 只能为
+    var isMinus :Bool = false ///< 只能为
     var juView2 : UIView?
     var juView1 : UIView!
     var juMulti : CGFloat = 1.0
@@ -35,7 +23,7 @@ class JuLayout: NSObject {
 
     var juConstant : CGFloat?
     var juRelation : NSLayoutRelation?
-    var prioritys : UILayoutPriority?
+    var juPrioritys : UILayoutPriority = UILayoutPriorityRequired
     var juLayoutType :JuLayoutType?
 
 
@@ -44,29 +32,73 @@ class JuLayout: NSObject {
         return self;
     }
 
-    func toView(_ toItem:UIView) -> JuLayout {
-        
+    func toView(_ toItem:UIView?) -> JuLayout {
+        juView2 = toItem
         return self
     }
-    func priority(_ prioritys:float_t) -> JuLayout {
+    func priority(_ prioritys:Float) -> JuLayout {
+        juPrioritys = prioritys
         return self
     }
-    func equal(_ constion:float_t)  {
-       self.juAddConstraint().isEqual(124)
+    func equal(_ constion:CGFloat)  {
+        self.setJuConstion(constion)
+        juRelation = NSLayoutRelation.equal;
+        self.juAddConstraint()
     }
-    func greaterEqual(_ constion:float_t) {
-//         self.juAddConstraint().grea
+    func greaterEqual(_ constion:CGFloat) {
+        self.setJuConstion(constion)
+        juRelation = NSLayoutRelation.greaterThanOrEqual;
+        self.juAddConstraint()
     }
     func lessEqual(_ constion:CGFloat)  {
+         self.setJuConstion(constion)
+         juRelation = NSLayoutRelation.lessThanOrEqual;
          self.juAddConstraint()
     }
-    func juAddConstraint() -> NSLayoutConstraint {
-        if juView1.superview == nil {
-            return nil
+    func setJuConstion(_ constions:CGFloat) {
+        juConstant=constions*(isMinus ? -1 : 1)
+    }
+    func setJuLayoutType(_ juLayoutTypes :JuLayoutType)  {
+        juLayoutType = juLayoutTypes
+        if juLayoutType  == JuLayoutType.aspectWH {
+            juView2 = juView1
         }
-        var layoutConstraint = NSLayoutConstraint.init(item: juView1, attribute: juAttr1!, relatedBy:juRelation!, toItem: juView2, attribute: juAttr2!, multiplier:juMulti, constant: juConstant!)
+    }
+    func juAddConstraint()  {
+        if juView1.superview == nil {
+            return
+        }
+        juView1.translatesAutoresizingMaskIntoConstraints = false
+        var toItem = juView2
+        var ju_View :UIView! = juView1.superview
+        let constant = juConstant
+        if (juAttr1 == NSLayoutAttribute.width || juAttr1 == NSLayoutAttribute.height ) {
+            if toItem == nil {
+                if constant == 0 {
+                    toItem = juView1.superview
+                }else{
+                    ju_View = juView1
+                }
+            }
+            else if (toItem?.isEqual(juView1))!{
 
-        return layoutConstraint
+            }
+        }else{
+            if toItem == nil {
+                toItem = juView1.superview
+            }
+        }
+
+        let layoutConstraint = NSLayoutConstraint.init(item: juView1, attribute: juAttr1!, relatedBy:juRelation!, toItem: toItem, attribute: juAttr2!, multiplier:juMulti, constant: constant!)
+        layoutConstraint.priority = juPrioritys
+        ju_View.addConstraint(layoutConstraint);
+        layoutConstraint.juLayType=juLayoutType;
+        
+        juView1.juCompareSameCons(layoutConstraint)
+        if juView1.ju_Constraints == nil {
+            juView1.ju_Constraints = NSMutableArray.init()
+        }
+        juView1.ju_Constraints?.add(layoutConstraint)
 
     }
 

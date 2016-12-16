@@ -25,7 +25,7 @@ extension UIView{
         layout.juAttr1 = firstAtt
         layout.juAttr2 = secondAtt
         layout.juView1 = self
-        layout.juLayoutType = layoutType
+        layout.setJuLayoutType(layoutType)
         return layout
 
     }
