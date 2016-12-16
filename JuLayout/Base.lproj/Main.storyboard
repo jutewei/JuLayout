@@ -21,26 +21,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567898765432234567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xr0-sM-GXZ">
-                                <rect key="frame" x="10" y="93" width="233" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="twotwotwo11111" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf1-iV-L2r">
-                                <rect key="frame" x="253" y="93" width="121" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1234567898765432234567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znS-lo-8yO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" text="1234567898765432234567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znS-lo-8yO">
                                 <rect key="frame" x="10" y="174" width="221" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="gdsfgdssdafdsafdfdsaf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQo-Uk-jCC">
-                                <rect key="frame" x="253" y="174" width="177" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="gdsfgdssdafdsafdfdsaf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQo-Uk-jCC">
+                                <rect key="frame" x="253" y="174" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,19 +38,11 @@
                         <constraints>
                             <constraint firstItem="CQo-Uk-jCC" firstAttribute="leading" secondItem="znS-lo-8yO" secondAttribute="trailing" constant="22" id="6ad-OV-xdJ"/>
                             <constraint firstItem="znS-lo-8yO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="6k9-0M-Qpx"/>
-                            <constraint firstItem="xr0-sM-GXZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="7J8-ZH-MKw"/>
                             <constraint firstItem="CQo-Uk-jCC" firstAttribute="centerY" secondItem="znS-lo-8yO" secondAttribute="centerY" id="Csd-FE-bRi"/>
-                            <constraint firstItem="gf1-iV-L2r" firstAttribute="leading" secondItem="xr0-sM-GXZ" secondAttribute="trailing" constant="10" id="Eke-Mg-LI0"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gf1-iV-L2r" secondAttribute="trailing" priority="750" constant="12" id="HCr-4F-ycF"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CQo-Uk-jCC" secondAttribute="trailing" constant="20" symbolic="YES" id="LbH-5R-fxv"/>
-                            <constraint firstItem="znS-lo-8yO" firstAttribute="top" secondItem="xr0-sM-GXZ" secondAttribute="bottom" constant="59" id="YWx-0q-GKd"/>
-                            <constraint firstItem="gf1-iV-L2r" firstAttribute="centerY" secondItem="xr0-sM-GXZ" secondAttribute="centerY" id="dNu-Vq-Mwu"/>
-                            <constraint firstItem="xr0-sM-GXZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="eRX-O9-dhC"/>
+                            <constraint firstItem="znS-lo-8yO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="154" id="NnN-Fw-GFm"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="lab222" destination="gf1-iV-L2r" id="w3R-VS-CNc"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

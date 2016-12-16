@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         self.view.addSubview(lab1)
         lab1.juCenterY.equal(0)
         lab1.juCenterX.equal(0)
-
+//horizontalCompressionResistancePriority
         let lab2 = UILabel.init()
         lab2.text = "第二个约束"
         lab2.backgroundColor = UIColor.orange
