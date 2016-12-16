@@ -21,25 +21,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" text="1234567898765432234567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znS-lo-8yO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" text="1234567898765432234567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znS-lo-8yO">
                                 <rect key="frame" x="10" y="174" width="221" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="gdsfgdssdafdsafdfdsaf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQo-Uk-jCC">
-                                <rect key="frame" x="253" y="174" width="141" height="21"/>
+                                <rect key="frame" x="253" y="174" width="177" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqw-b6-4z3">
+                                <rect key="frame" x="150" y="253" width="164" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="onButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CQo-Uk-jCC" firstAttribute="leading" secondItem="znS-lo-8yO" secondAttribute="trailing" constant="22" id="6ad-OV-xdJ"/>
+                            <constraint firstItem="Rqw-b6-4z3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="6go-dD-5ym"/>
                             <constraint firstItem="znS-lo-8yO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="6k9-0M-Qpx"/>
+                            <constraint firstItem="Rqw-b6-4z3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="9Sa-Rw-sGy"/>
                             <constraint firstItem="CQo-Uk-jCC" firstAttribute="centerY" secondItem="znS-lo-8yO" secondAttribute="centerY" id="Csd-FE-bRi"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CQo-Uk-jCC" secondAttribute="trailing" constant="20" symbolic="YES" id="LbH-5R-fxv"/>
+                            <constraint firstAttribute="trailing" secondItem="Rqw-b6-4z3" secondAttribute="trailing" priority="750" constant="100" id="K9J-9C-Iab"/>
                             <constraint firstItem="znS-lo-8yO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="154" id="NnN-Fw-GFm"/>
                         </constraints>
                     </view>

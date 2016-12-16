@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lab222.text = "1234567890sdfghjklxcvbnm"
+//        lab222.text = "1234567890sdfghjklxcvbnm"
         let lab1 = UILabel.init()
         lab1.backgroundColor = UIColor.red
         lab1.text = "第一个约束居中"
@@ -34,8 +34,11 @@ class ViewController: UIViewController {
         self.view.addSubview(lab2)
         lab2.juLead.toView(lab1).equal(0)
         lab2.juTopSpace.toView(lab1).equal(10)
-
-
+        
+        ///< 新知识
+//        lab2.contentCompressionResistancePriority(for: UILayoutConstraintAxis.horizontal)
+//        lab2.contentHuggingPriority(for: UILayoutConstraintAxis.horizontal)
+        
         let lab3 = UILabel.init()
         lab3.text = "第三个约束"
         lab3.backgroundColor = UIColor.green
