@@ -12,27 +12,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let view1 = UILabel.init()
-        view1.backgroundColor = UIColor.red
-        view1.text = "fsafdsfdsfdf"
-        self.view.addSubview(view1)
-        view1.juLead.equal(0)
-        view1.juTop.equal(0)
-        view1.juWidth.equal(200)
-        view1.juHeight.equal(100)
-        view1.juLead.equal(20)
+        let lab1 = UILabel.init()
+        lab1.backgroundColor = UIColor.red
+        lab1.text = "第一个约束居中"
+        self.view.addSubview(lab1)
+        lab1.juCenterY.equal(0)
+        lab1.juCenterX.equal(0)
 
-        var arrar = ["123","234"]
-        if arrar.contains("123") {
-            NSLog("包含")
-        }
-        if arrar.contains("345") {
-            NSLog("不包含")
-        }
+        let lab2 = UILabel.init()
+        lab2.text = "第二个约束"
+        lab2.backgroundColor = UIColor.orange
+        self.view.addSubview(lab2)
+        lab2.juLead.toView(lab1).equal(0)
+        lab2.juTopSpace.toView(lab1).equal(10)
 
-        NSLog("%@", view1.ju_Constraints ?? "空数组")
-        NSLog("%@",  view1.ju_Bottom ?? "空属性")
-         NSLog("%@",  view1.ju_Lead ?? "空属性")
+
+        let lab3 = UILabel.init()
+        lab3.text = "第三个约束"
+        lab3.backgroundColor = UIColor.green
+        self.view.addSubview(lab3)
+        lab3.juTraSpace.toView(lab1).equal(10)
+        lab3.juCenterY.toView(lab1).equal(0)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

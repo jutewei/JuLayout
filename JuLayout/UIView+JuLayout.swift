@@ -12,7 +12,7 @@ extension UIView{
         return self.newJuLay(firstAtt, secondAtt: firstAtt, layoutType: layoutType)
     }
     func newJuLayMinus(_ firstAtt:NSLayoutAttribute,secondAtt:NSLayoutAttribute, layoutType:JuLayoutType) -> JuLayout {
-        let layout = self.newJuLay(firstAtt, secondAtt: firstAtt, layoutType: layoutType)
+        let layout = self.newJuLay(firstAtt, secondAtt: secondAtt, layoutType: layoutType)
         layout.isMinus = true
         return layout
     }
