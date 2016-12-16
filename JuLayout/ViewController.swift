@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var juTest : NSString?{
+        didSet
+        {
+            NSLog("已经改变的时候 %@", juTest!);
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let lab1 = UILabel.init()
@@ -33,6 +40,12 @@ class ViewController: UIViewController {
         self.view.addSubview(lab3)
         lab3.juTraSpace.toView(lab1).equal(10)
         lab3.juCenterY.toView(lab1).equal(0)
+        
+       
+
+        juTest = "12345"
+        NSLog("%@", self.juTest!)
+       
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -24,7 +24,13 @@ class JuLayout: NSObject {
     var juConstant : CGFloat?
     var juRelation : NSLayoutRelation?
     var juPrioritys : UILayoutPriority = UILayoutPriorityRequired
-    var juLayoutType :JuLayoutType?
+    var juLayoutType :JuLayoutType?{
+        didSet{
+            if juLayoutType  == JuLayoutType.aspectWH {
+                juView2 = juView1
+            }
+        }
+    }
 
 
     func multi(_ mulits:CGFloat) -> JuLayout {
@@ -41,33 +47,23 @@ class JuLayout: NSObject {
         return self
     }
     func equal(_ constion:CGFloat)  {
-        self.setJuConstion(constion)
         juRelation = NSLayoutRelation.equal;
-        self.juAddConstraint()
+        self.juAddConstraint(constion)
     }
     func greaterEqual(_ constion:CGFloat) {
-        self.setJuConstion(constion)
         juRelation = NSLayoutRelation.greaterThanOrEqual;
-        self.juAddConstraint()
+        self.juAddConstraint(constion)
     }
     func lessEqual(_ constion:CGFloat)  {
-         self.setJuConstion(constion)
          juRelation = NSLayoutRelation.lessThanOrEqual;
-         self.juAddConstraint()
+         self.juAddConstraint(constion)
     }
-    func setJuConstion(_ constions:CGFloat) {
-        juConstant=constions*(isMinus ? -1 : 1)
-    }
-    func setJuLayoutType(_ juLayoutTypes :JuLayoutType)  {
-        juLayoutType = juLayoutTypes
-        if juLayoutType  == JuLayoutType.aspectWH {
-            juView2 = juView1
-        }
-    }
-    func juAddConstraint()  {
+   
+    func juAddConstraint(_ constions:CGFloat)  {
         if juView1.superview == nil {
             return
         }
+         juConstant=constions*(isMinus ? -1 : 1)
         juView1.translatesAutoresizingMaskIntoConstraints = false
         var toItem = juView2
         var ju_View :UIView! = juView1.superview
