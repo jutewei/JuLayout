@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.juLead.equal(5.0)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

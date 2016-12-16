@@ -12,6 +12,11 @@
 		EB169EDA1E0390FE00687FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB169ED81E0390FE00687FE3 /* Main.storyboard */; };
 		EB169EDC1E0390FE00687FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB169EDB1E0390FE00687FE3 /* Assets.xcassets */; };
 		EB169EDF1E0390FE00687FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB169EDD1E0390FE00687FE3 /* LaunchScreen.storyboard */; };
+		EB169EE71E03911800687FE3 /* JuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169EE61E03911800687FE3 /* JuLayout.swift */; };
+		EB169EE91E03914E00687FE3 /* UIView+JuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169EE81E03914E00687FE3 /* UIView+JuLayout.swift */; };
+		EB169EEB1E03916700687FE3 /* UIView+JuLayGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169EEA1E03916700687FE3 /* UIView+JuLayGroup.swift */; };
+		EB169EED1E03917900687FE3 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169EEC1E03917900687FE3 /* UIView+Frame.swift */; };
+		EB169EEF1E03935F00687FE3 /* UIView+JuConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169EEE1E03935F00687FE3 /* UIView+JuConstraint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		EB169EDB1E0390FE00687FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB169EDE1E0390FE00687FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB169EE01E0390FE00687FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB169EE61E03911800687FE3 /* JuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuLayout.swift; sourceTree = "<group>"; };
+		EB169EE81E03914E00687FE3 /* UIView+JuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuLayout.swift"; sourceTree = "<group>"; };
+		EB169EEA1E03916700687FE3 /* UIView+JuLayGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuLayGroup.swift"; sourceTree = "<group>"; };
+		EB169EEC1E03917900687FE3 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		EB169EEE1E03935F00687FE3 /* UIView+JuConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuConstraint.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,11 @@
 			children = (
 				EB169ED41E0390FE00687FE3 /* AppDelegate.swift */,
 				EB169ED61E0390FE00687FE3 /* ViewController.swift */,
+				EB169EE61E03911800687FE3 /* JuLayout.swift */,
+				EB169EE81E03914E00687FE3 /* UIView+JuLayout.swift */,
+				EB169EEA1E03916700687FE3 /* UIView+JuLayGroup.swift */,
+				EB169EEE1E03935F00687FE3 /* UIView+JuConstraint.swift */,
+				EB169EEC1E03917900687FE3 /* UIView+Frame.swift */,
 				EB169ED81E0390FE00687FE3 /* Main.storyboard */,
 				EB169EDB1E0390FE00687FE3 /* Assets.xcassets */,
 				EB169EDD1E0390FE00687FE3 /* LaunchScreen.storyboard */,
@@ -138,7 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB169ED71E0390FE00687FE3 /* ViewController.swift in Sources */,
+				EB169EE91E03914E00687FE3 /* UIView+JuLayout.swift in Sources */,
+				EB169EED1E03917900687FE3 /* UIView+Frame.swift in Sources */,
+				EB169EE71E03911800687FE3 /* JuLayout.swift in Sources */,
 				EB169ED51E0390FE00687FE3 /* AppDelegate.swift in Sources */,
+				EB169EEB1E03916700687FE3 /* UIView+JuLayGroup.swift in Sources */,
+				EB169EEF1E03935F00687FE3 /* UIView+JuConstraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
