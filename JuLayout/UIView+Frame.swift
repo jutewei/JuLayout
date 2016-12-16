@@ -19,8 +19,8 @@ extension UIView{
         }
     }
     var originY :CGFloat?{
-         get{
-        return self.frame.origin.y
+        get{
+            return self.frame.origin.y
         }
         set{
             var frame = self.frame
@@ -36,7 +36,6 @@ extension UIView{
             var frame = self.frame
             frame.size.width = newValue!
             self.frame = frame;
-
         }
     }
     var sizeH :CGFloat?{
@@ -47,7 +46,6 @@ extension UIView{
             var frame = self.frame
             frame.size.height = newValue!
             self.frame = frame;
-
         }
     }
     func removeAllSubviews() {

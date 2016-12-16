@@ -21,9 +21,9 @@ class JuLayout: NSObject {
     var juAttr1 : NSLayoutAttribute?
     var juAttr2 : NSLayoutAttribute?
 
-    var juConstant : CGFloat?
-    var juRelation : NSLayoutRelation?
-    var juPrioritys : UILayoutPriority = UILayoutPriorityRequired
+    var juConstant : CGFloat = 1.0
+    var juRelation  = NSLayoutRelation.equal
+    var juPrioritys  = UILayoutPriorityRequired
     var juLayoutType :JuLayoutType?{
         didSet{
             if juLayoutType  == JuLayoutType.aspectWH {
@@ -63,7 +63,7 @@ class JuLayout: NSObject {
         if juView1.superview == nil {
             return
         }
-         juConstant=constions*(isMinus ? -1 : 1)
+        juConstant=constions*(isMinus ? -1 : 1)
         juView1.translatesAutoresizingMaskIntoConstraints = false
         var toItem = juView2
         var ju_View :UIView! = juView1.superview
@@ -85,7 +85,7 @@ class JuLayout: NSObject {
             }
         }
 
-        let layoutConstraint = NSLayoutConstraint.init(item: juView1, attribute: juAttr1!, relatedBy:juRelation!, toItem: toItem, attribute: juAttr2!, multiplier:juMulti, constant: constant!)
+        let layoutConstraint = NSLayoutConstraint.init(item: juView1, attribute: juAttr1!, relatedBy:juRelation, toItem: toItem, attribute: juAttr2!, multiplier:juMulti, constant: constant)
         layoutConstraint.priority = juPrioritys
         ju_View.addConstraint(layoutConstraint);
         layoutConstraint.juLayType=juLayoutType;
