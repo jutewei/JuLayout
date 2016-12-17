@@ -33,13 +33,13 @@ class ViewController: UIViewController {
         lab2.backgroundColor = UIColor.orange
         self.view.addSubview(lab2)
         lab2.jusLead.toView(lab1).equal(0)
-        lab2.jusTopSpace.toView(lab1).equal(10)
+        lab2.jusTSpace.toView(lab1).equal(10)
         
         let lab3 = UILabel.init()
         lab3.text = "第三个约束"
         lab3.backgroundColor = UIColor.green
         self.view.addSubview(lab3)
-        lab3.jusTraSpace.toView(lab1).equal(10)
+        lab3.jusRSpace.toView(lab1).equal(10)
         lab3.jusCenterY.toView(lab1).equal(0)
        
         let vc = ViewController()

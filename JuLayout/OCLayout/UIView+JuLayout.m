@@ -41,24 +41,24 @@
 -(JuLayout *)juBottom{
     return [self newJuLayMinus:NSLayoutAttributeBottom withType:JuLayoutBottom];
 }
--(JuLayout *)juLeaSpace{
+-(JuLayout *)juLSpace{
     return [self newJuLay:NSLayoutAttributeLeading secondAtt:NSLayoutAttributeTrailing withType:JuLayoutLead];
 }
--(JuLayout *)juTraSpace{
+-(JuLayout *)juRSpace{
     return [self newJuLayMinus:NSLayoutAttributeTrailing secondAtt:NSLayoutAttributeLeading withType:JuLayoutTrail];
 }
 
--(JuLayout *)juTopSpace{
+-(JuLayout *)juTSpace{
     return [self newJuLay:NSLayoutAttributeTop secondAtt:NSLayoutAttributeBottom withType:JuLayoutTop];
 }
--(JuLayout *)juBtmSpace{
+-(JuLayout *)juBSpace{
     return [self newJuLayMinus:NSLayoutAttributeBottom secondAtt:NSLayoutAttributeTop withType:JuLayoutBottom];
 }
 -(JuLayout *)juLastLine{
     return [self newJuLay:NSLayoutAttributeLastBaseline withType:JuLayoutBottom];
 }
 
--(JuLayout *)juFirLine{
+-(JuLayout *)juFirstLine{
     return  [self newJuLay:NSLayoutAttributeFirstBaseline withType:JuLayoutTop];
 }
 -(JuLayout *)juCenterX{

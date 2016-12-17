@@ -29,13 +29,13 @@
     lab2.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:lab2];
     lab2.juLead.toView(lab1).equal(0);
-    lab2.juTopSpace.toView(lab1).equal(10);
+    lab2.juTSpace.toView(lab1).equal(10);
     
     UILabel * lab3 =  [UILabel new];
     lab3.text = @"第三个约束";
     lab3.backgroundColor = [UIColor greenColor];
     [self.view addSubview:lab3];
-    lab3.juTraSpace.toView(lab1).equal(10);
+    lab3.juRSpace.toView(lab1).equal(10);
     lab3.juCenterY.toView(lab1).equal(0);
     
     

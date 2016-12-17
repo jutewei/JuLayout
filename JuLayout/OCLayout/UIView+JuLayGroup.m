@@ -138,7 +138,7 @@
         }
 
         if(view) {
-            self.juTopSpace.toView(view).equal(juFrame.top);
+            self.juTSpace.toView(view).equal(juFrame.top);
         }else{
             self.juTop.toView(view).equal(juFrame.top);
         }
@@ -169,7 +169,7 @@
         }
         
         if(view) {
-            self.juLeaSpace.toView(view).equal(juFrame.lead);
+            self.juLSpace.toView(view).equal(juFrame.lead);
         }else{
             self.juLead.toView(view).equal(juFrame.lead);
         }

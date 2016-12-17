@@ -42,22 +42,22 @@ extension UIView{
     var jusBottom: JusLayout {
         return self.newJuLayMinus(NSLayoutAttribute.bottom, layoutType: JuLayoutAttribute.bottom)
     }
-    var jusLeaSpace: JusLayout {
+    var jusLSpace: JusLayout {
         return self.newJuLay(NSLayoutAttribute.leading,secondAtt: NSLayoutAttribute.trailing, layoutType:JuLayoutAttribute.lead)
     }
-    var jusTraSpace: JusLayout {
+    var jusRSpace: JusLayout {
         return self.newJuLayMinus(NSLayoutAttribute.trailing,secondAtt: NSLayoutAttribute.leading, layoutType:JuLayoutAttribute.trail)
     }
-    var jusTopSpace: JusLayout {
+    var jusTSpace: JusLayout {
         return self.newJuLay(NSLayoutAttribute.top,secondAtt: NSLayoutAttribute.bottom, layoutType:JuLayoutAttribute.top)
     }
-    var jusBtmSpace: JusLayout {
+    var jusBSpace: JusLayout {
           return self.newJuLayMinus(NSLayoutAttribute.bottom,secondAtt: NSLayoutAttribute.top, layoutType:JuLayoutAttribute.bottom)
     }
     var jusLastLine: JusLayout {
         return self.newJuLay(NSLayoutAttribute.lastBaseline, layoutType: JuLayoutAttribute.bottom)
     }
-    var jusFirLine: JusLayout {
+    var jusFirstLine: JusLayout {
         return self.newJuLay(NSLayoutAttribute.firstBaseline, layoutType: JuLayoutAttribute.top)
     }
     var jusCenterX: JusLayout {
