@@ -7,19 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0DB5691E051A6000BA2996 /* JuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5631E051A6000BA2996 /* JuLayout.swift */; };
+		DC0DB56A1E051A6000BA2996 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5641E051A6000BA2996 /* UIView+Frame.swift */; };
+		DC0DB56B1E051A6000BA2996 /* UIView+JuConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5651E051A6000BA2996 /* UIView+JuConstraint.swift */; };
+		DC0DB56C1E051A6000BA2996 /* UIView+JuLayGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5661E051A6000BA2996 /* UIView+JuLayGroup.swift */; };
+		DC0DB56D1E051A6000BA2996 /* UIView+JuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5671E051A6000BA2996 /* UIView+JuLayout.swift */; };
+		DC0DB5771E051A7300BA2996 /* UIView+JuConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5701E051A7300BA2996 /* UIView+JuConstraint.m */; };
+		DC0DB5781E051A7300BA2996 /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5721E051A7300BA2996 /* UIView+JuLayout.m */; };
+		DC0DB5791E051A7300BA2996 /* UIView+JuLayGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5741E051A7300BA2996 /* UIView+JuLayGroup.m */; };
+		DC0DB57A1E051A7300BA2996 /* JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5761E051A7300BA2996 /* JuLayout.m */; };
 		EB169ED51E0390FE00687FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169ED41E0390FE00687FE3 /* AppDelegate.swift */; };
 		EB169ED71E0390FE00687FE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169ED61E0390FE00687FE3 /* ViewController.swift */; };
 		EB169EDA1E0390FE00687FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB169ED81E0390FE00687FE3 /* Main.storyboard */; };
 		EB169EDC1E0390FE00687FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB169EDB1E0390FE00687FE3 /* Assets.xcassets */; };
 		EB169EDF1E0390FE00687FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB169EDD1E0390FE00687FE3 /* LaunchScreen.storyboard */; };
-		EB169EE71E03911800687FE3 /* JuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169EE61E03911800687FE3 /* JuLayout.swift */; };
-		EB169EE91E03914E00687FE3 /* UIView+JuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169EE81E03914E00687FE3 /* UIView+JuLayout.swift */; };
-		EB169EEB1E03916700687FE3 /* UIView+JuLayGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169EEA1E03916700687FE3 /* UIView+JuLayGroup.swift */; };
-		EB169EED1E03917900687FE3 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169EEC1E03917900687FE3 /* UIView+Frame.swift */; };
-		EB169EEF1E03935F00687FE3 /* UIView+JuConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169EEE1E03935F00687FE3 /* UIView+JuConstraint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC0DB5631E051A6000BA2996 /* JuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuLayout.swift; sourceTree = "<group>"; };
+		DC0DB5641E051A6000BA2996 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		DC0DB5651E051A6000BA2996 /* UIView+JuConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuConstraint.swift"; sourceTree = "<group>"; };
+		DC0DB5661E051A6000BA2996 /* UIView+JuLayGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuLayGroup.swift"; sourceTree = "<group>"; };
+		DC0DB5671E051A6000BA2996 /* UIView+JuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuLayout.swift"; sourceTree = "<group>"; };
+		DC0DB56E1E051A7200BA2996 /* JuLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuLayout-Bridging-Header.h"; sourceTree = "<group>"; };
+		DC0DB56F1E051A7300BA2996 /* UIView+JuConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuConstraint.h"; sourceTree = "<group>"; };
+		DC0DB5701E051A7300BA2996 /* UIView+JuConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuConstraint.m"; sourceTree = "<group>"; };
+		DC0DB5711E051A7300BA2996 /* UIView+JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayout.h"; sourceTree = "<group>"; };
+		DC0DB5721E051A7300BA2996 /* UIView+JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayout.m"; sourceTree = "<group>"; };
+		DC0DB5731E051A7300BA2996 /* UIView+JuLayGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayGroup.h"; sourceTree = "<group>"; };
+		DC0DB5741E051A7300BA2996 /* UIView+JuLayGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayGroup.m"; sourceTree = "<group>"; };
+		DC0DB5751E051A7300BA2996 /* JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuLayout.h; sourceTree = "<group>"; };
+		DC0DB5761E051A7300BA2996 /* JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuLayout.m; sourceTree = "<group>"; };
 		EB169ED11E0390FE00687FE3 /* JuLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB169ED41E0390FE00687FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB169ED61E0390FE00687FE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,11 +45,6 @@
 		EB169EDB1E0390FE00687FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB169EDE1E0390FE00687FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB169EE01E0390FE00687FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB169EE61E03911800687FE3 /* JuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuLayout.swift; sourceTree = "<group>"; };
-		EB169EE81E03914E00687FE3 /* UIView+JuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuLayout.swift"; sourceTree = "<group>"; };
-		EB169EEA1E03916700687FE3 /* UIView+JuLayGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuLayGroup.swift"; sourceTree = "<group>"; };
-		EB169EEC1E03917900687FE3 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
-		EB169EEE1E03935F00687FE3 /* UIView+JuConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuConstraint.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC0DB5621E051A6000BA2996 /* SwiftLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DC0DB5631E051A6000BA2996 /* JuLayout.swift */,
+				DC0DB5641E051A6000BA2996 /* UIView+Frame.swift */,
+				DC0DB5651E051A6000BA2996 /* UIView+JuConstraint.swift */,
+				DC0DB5661E051A6000BA2996 /* UIView+JuLayGroup.swift */,
+				DC0DB5671E051A6000BA2996 /* UIView+JuLayout.swift */,
+			);
+			path = SwiftLayout;
+			sourceTree = "<group>";
+		};
+		DC0DB5681E051A6000BA2996 /* OCLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DC0DB56F1E051A7300BA2996 /* UIView+JuConstraint.h */,
+				DC0DB5701E051A7300BA2996 /* UIView+JuConstraint.m */,
+				DC0DB5711E051A7300BA2996 /* UIView+JuLayout.h */,
+				DC0DB5721E051A7300BA2996 /* UIView+JuLayout.m */,
+				DC0DB5731E051A7300BA2996 /* UIView+JuLayGroup.h */,
+				DC0DB5741E051A7300BA2996 /* UIView+JuLayGroup.m */,
+				DC0DB5751E051A7300BA2996 /* JuLayout.h */,
+				DC0DB5761E051A7300BA2996 /* JuLayout.m */,
+				DC0DB56E1E051A7200BA2996 /* JuLayout-Bridging-Header.h */,
+			);
+			path = OCLayout;
+			sourceTree = "<group>";
+		};
 		EB169EC81E0390FE00687FE3 = {
 			isa = PBXGroup;
 			children = (
@@ -64,13 +105,10 @@
 		EB169ED31E0390FE00687FE3 /* JuLayout */ = {
 			isa = PBXGroup;
 			children = (
+				DC0DB5621E051A6000BA2996 /* SwiftLayout */,
+				DC0DB5681E051A6000BA2996 /* OCLayout */,
 				EB169ED41E0390FE00687FE3 /* AppDelegate.swift */,
 				EB169ED61E0390FE00687FE3 /* ViewController.swift */,
-				EB169EE61E03911800687FE3 /* JuLayout.swift */,
-				EB169EE81E03914E00687FE3 /* UIView+JuLayout.swift */,
-				EB169EEA1E03916700687FE3 /* UIView+JuLayGroup.swift */,
-				EB169EEE1E03935F00687FE3 /* UIView+JuConstraint.swift */,
-				EB169EEC1E03917900687FE3 /* UIView+Frame.swift */,
 				EB169ED81E0390FE00687FE3 /* Main.storyboard */,
 				EB169EDB1E0390FE00687FE3 /* Assets.xcassets */,
 				EB169EDD1E0390FE00687FE3 /* LaunchScreen.storyboard */,
@@ -113,6 +151,7 @@
 					EB169ED01E0390FE00687FE3 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 3Y5SHRC9L9;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,13 +192,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0DB5791E051A7300BA2996 /* UIView+JuLayGroup.m in Sources */,
+				DC0DB5771E051A7300BA2996 /* UIView+JuConstraint.m in Sources */,
+				DC0DB56B1E051A6000BA2996 /* UIView+JuConstraint.swift in Sources */,
+				DC0DB56A1E051A6000BA2996 /* UIView+Frame.swift in Sources */,
 				EB169ED71E0390FE00687FE3 /* ViewController.swift in Sources */,
-				EB169EE91E03914E00687FE3 /* UIView+JuLayout.swift in Sources */,
-				EB169EED1E03917900687FE3 /* UIView+Frame.swift in Sources */,
-				EB169EE71E03911800687FE3 /* JuLayout.swift in Sources */,
+				DC0DB5691E051A6000BA2996 /* JuLayout.swift in Sources */,
+				DC0DB56C1E051A6000BA2996 /* UIView+JuLayGroup.swift in Sources */,
+				DC0DB57A1E051A7300BA2996 /* JuLayout.m in Sources */,
+				DC0DB5781E051A7300BA2996 /* UIView+JuLayout.m in Sources */,
 				EB169ED51E0390FE00687FE3 /* AppDelegate.swift in Sources */,
-				EB169EEB1E03916700687FE3 /* UIView+JuLayGroup.swift in Sources */,
-				EB169EEF1E03935F00687FE3 /* UIView+JuConstraint.swift in Sources */,
+				DC0DB56D1E051A6000BA2996 /* UIView+JuLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +325,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3Y5SHRC9L9;
 				INFOPLIST_FILE = JuLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.JuLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JuLayout/OCLayout/JuLayout-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -295,11 +341,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3Y5SHRC9L9;
 				INFOPLIST_FILE = JuLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.JuLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JuLayout/OCLayout/JuLayout-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
