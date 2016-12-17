@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIView+JuLayout.h"
 ///< 左右上高度
 typedef struct JuLayEdgeHeight {
     CGFloat lead, trail, top, height;

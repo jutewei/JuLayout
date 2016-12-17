@@ -7,7 +7,7 @@
 //
 
 #import "UIView+JuLayGroup.h"
-
+#import "UIView+JuLayout.h"
 @implementation UIView(JuLayGroup)
 -(void(^)(UIView *view))juOriginEqual{
     return ^(UIView *view){

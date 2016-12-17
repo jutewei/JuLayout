@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "JuLayout.h"
+#import "UIView+JuLayGroup.h"
 @interface UIView (JuLayout)
 //@property (nonatomic,strong)NSLayoutConstraint *layOr
 
