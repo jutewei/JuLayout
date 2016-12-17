@@ -76,6 +76,20 @@ extension UIView{
         return self.newJuLay(NSLayoutAttribute.width, secondAtt:NSLayoutAttribute.height, layoutType:JuLayoutType.aspectWH)
     }
 
+    
+    /// 设置内容优先级
+    func juHorConHugPri(_ priority: UILayoutPriority) {
+        self.setContentHuggingPriority(priority, for: UILayoutConstraintAxis.horizontal)
+    }
+    func juVerConHugPri(_ priority: UILayoutPriority) {
+        self.setContentHuggingPriority(priority, for: UILayoutConstraintAxis.vertical)
+    }
+    func juVerConComResPri(_ priority: UILayoutPriority) {
+        self.setContentCompressionResistancePriority(priority, for: UILayoutConstraintAxis.vertical)
+    }
+    func juHorConComResPri(_ priority: UILayoutPriority) {
+        self.setContentCompressionResistancePriority(priority, for: UILayoutConstraintAxis.horizontal)
+    }
 //    func juLead() -> UIView {
 //        return self
 //    }

@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         lab2.juTopSpace.toView(lab1).equal(10)
         
         ///< 新知识
-//        lab2.contentCompressionResistancePriority(for: UILayoutConstraintAxis.horizontal)
+        lab2.contentCompressionResistancePriority(for: UILayoutConstraintAxis.horizontal)
 //        lab2.contentHuggingPriority(for: UILayoutConstraintAxis.horizontal)
         
         let lab3 = UILabel.init()

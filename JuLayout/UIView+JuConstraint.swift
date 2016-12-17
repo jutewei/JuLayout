@@ -102,23 +102,39 @@ extension UIView{
     var ju_AspectWH :NSLayoutConstraint?{
         return self.juConstrain(JuLayoutType.aspectWH)
     }
-    var ju_PryHigh : UIView{
+    
+    /// 查找优先级（基本不用）
+    var ju_PriHigh : UIView{
         self.ju_Priority=UILayoutPriorityDefaultHigh;
         return self;
     }
-    var ju_PryLow : UIView{
+    var ju_PriLow : UIView{
         self.ju_Priority=UILayoutPriorityDefaultLow;
         return self;
     }
-    var ju_PryLevel : UIView{
+    var ju_PriLevel : UIView{
         self.ju_Priority=UILayoutPriorityFittingSizeLevel;
         return self;
     }
-    func ju_PryEqual(_ priority:Float) -> UIView {
+    func ju_PriEqual(_ priority:Float) -> UIView {
         self.ju_Priority=priority;
         return self;
     }
 
+    
+    /// 查找内容优先级
+    var ju_HorConHugPri :UILayoutPriority?{
+        return self.contentHuggingPriority(for: UILayoutConstraintAxis.horizontal)
+    }
+    var ju_VerConHugPri :UILayoutPriority?{
+        return self.contentHuggingPriority(for: UILayoutConstraintAxis.vertical)
+    }
+    var ju_VerConComResPri :UILayoutPriority?{
+        return self.contentCompressionResistancePriority(for: UILayoutConstraintAxis.vertical)
+    }
+    var ju_HorConComResPri :UILayoutPriority?{
+        return self.contentCompressionResistancePriority(for: UILayoutConstraintAxis.horizontal)
+    }
 //    var ju_Constraints :NSMutableArray?
 
 
