@@ -11,23 +11,15 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var lab222: UILabel!
-    var juTest : NSString?{
-        didSet
-        {
-            NSLog("已经改变的时候 %@", juTest!);
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        lab222.text = "1234567890sdfghjklxcvbnm"
         let lab1 = UILabel.init()
         lab1.backgroundColor = UIColor.red
         lab1.text = "第一个约束居中"
         self.view.addSubview(lab1)
         lab1.jusCenterY.equal(0)
         lab1.jusCenterX.equal(0)
-//horizontalCompressionResistancePriority
         let lab2 = UILabel.init()
         lab2.text = "第二个约束"
         lab2.backgroundColor = UIColor.orange
@@ -42,12 +34,6 @@ class ViewController: UIViewController {
         lab3.jusRSpace.toView(lab1).equal(10)
         lab3.jusCenterY.toView(lab1).equal(0)
        
-        let vc = ViewController()
-        
-        juTest = "12345"
-        NSLog("%@", self.juTest!)
-       
-
         // Do any additional setup after loading the view, typically from a nib.
     }
 

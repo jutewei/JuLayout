@@ -23,8 +23,6 @@
  *
  *  添加约束
  *
- *  @param juLayout 约束属性（对象）
- *
  *  @return 约束
  */
 -(NSLayoutConstraint *)juAddConstraint{
