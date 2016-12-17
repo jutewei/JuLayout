@@ -8,9 +8,6 @@
 
 import UIKit
 
-
-
-
 class JusLayout: NSObject {
 
     var isMinus : Bool = false ///< 只能为
