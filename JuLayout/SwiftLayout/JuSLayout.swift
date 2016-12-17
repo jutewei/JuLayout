@@ -87,7 +87,7 @@ class JuSLayout: NSObject {
         let layoutConstraint = NSLayoutConstraint.init(item: juView1, attribute: juAttr1!, relatedBy:juRelation, toItem: toItem, attribute: juAttr2!, multiplier:juMulti, constant: juConstant)
         layoutConstraint.priority = juPrioritys
         ju_View.addConstraint(layoutConstraint);
-        layoutConstraint.juLayType=jusLayoutType;
+        layoutConstraint.jusLayType=jusLayoutType;
         
         juView1.jusCompareSameCons(layoutConstraint)
         if juView1.jus_Constraints == nil {
