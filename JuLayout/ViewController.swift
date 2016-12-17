@@ -42,6 +42,8 @@ class ViewController: UIViewController {
         lab3.juTraSpace.toView(lab1).equal(10)
         lab3.juCenterY.toView(lab1).equal(0)
        
+        let vc = ViewController()
+        
         juTest = "12345"
         NSLog("%@", self.juTest!)
        

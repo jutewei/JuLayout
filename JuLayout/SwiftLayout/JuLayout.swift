@@ -14,8 +14,8 @@ import UIKit
 class JuLayout: NSObject {
 
     var isMinus : Bool = false ///< 只能为
-    var juView2 : UIView?
-    var juView1 : UIView!
+    weak var juView2 : UIView?
+    weak var juView1 : UIView!
     var juMulti : CGFloat = 1.0
 
     var juAttr1 : NSLayoutAttribute?
