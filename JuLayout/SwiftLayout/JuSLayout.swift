@@ -75,8 +75,8 @@ class JuSLayout: NSObject {
                     ju_View = juView1
                 }
             }
-            else if (toItem?.isEqual(juView1))!{
-
+            else if (toItem?.isEqual(juView1) == true){
+                ju_View = juView1
             }
         }else{
             if toItem == nil {
