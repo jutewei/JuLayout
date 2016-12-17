@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC0DB5691E051A6000BA2996 /* JusLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5631E051A6000BA2996 /* JusLayout.swift */; };
+		DC0DB5691E051A6000BA2996 /* JussLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5631E051A6000BA2996 /* JussLayout.swift */; };
 		DC0DB56A1E051A6000BA2996 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5641E051A6000BA2996 /* UIView+Frame.swift */; };
 		DC0DB56B1E051A6000BA2996 /* UIView+JuConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5651E051A6000BA2996 /* UIView+JuConstraint.swift */; };
 		DC0DB56C1E051A6000BA2996 /* UIView+JuLayGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5661E051A6000BA2996 /* UIView+JuLayGroup.swift */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC0DB5631E051A6000BA2996 /* JusLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JusLayout.swift; sourceTree = "<group>"; };
+		DC0DB5631E051A6000BA2996 /* JussLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JussLayout.swift; sourceTree = "<group>"; };
 		DC0DB5641E051A6000BA2996 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		DC0DB5651E051A6000BA2996 /* UIView+JuConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuConstraint.swift"; sourceTree = "<group>"; };
 		DC0DB5661E051A6000BA2996 /* UIView+JuLayGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuLayGroup.swift"; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		DC0DB5621E051A6000BA2996 /* SwiftLayout */ = {
 			isa = PBXGroup;
 			children = (
-				DC0DB5631E051A6000BA2996 /* JusLayout.swift */,
+				DC0DB5631E051A6000BA2996 /* JussLayout.swift */,
 				DC0DB5641E051A6000BA2996 /* UIView+Frame.swift */,
 				DC0DB5651E051A6000BA2996 /* UIView+JuConstraint.swift */,
 				DC0DB5661E051A6000BA2996 /* UIView+JuLayGroup.swift */,
@@ -202,7 +202,7 @@
 				DC0DB57D1E051E4B00BA2996 /* JuOCViewController.m in Sources */,
 				DC0DB56A1E051A6000BA2996 /* UIView+Frame.swift in Sources */,
 				EB169ED71E0390FE00687FE3 /* ViewController.swift in Sources */,
-				DC0DB5691E051A6000BA2996 /* JusLayout.swift in Sources */,
+				DC0DB5691E051A6000BA2996 /* JussLayout.swift in Sources */,
 				DC0DB5981E05399B00BA2996 /* UIView+JuLayGroup.m in Sources */,
 				DC0DB56C1E051A6000BA2996 /* UIView+JuLayGroup.swift in Sources */,
 				EB169ED51E0390FE00687FE3 /* AppDelegate.swift in Sources */,
