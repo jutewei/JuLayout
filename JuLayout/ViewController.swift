@@ -35,22 +35,17 @@ class ViewController: UIViewController {
         lab2.juLead.toView(lab1).equal(0)
         lab2.juTopSpace.toView(lab1).equal(10)
         
-        ///< 新知识
-        lab2.contentCompressionResistancePriority(for: UILayoutConstraintAxis.horizontal)
-//        lab2.contentHuggingPriority(for: UILayoutConstraintAxis.horizontal)
-        
         let lab3 = UILabel.init()
         lab3.text = "第三个约束"
         lab3.backgroundColor = UIColor.green
         self.view.addSubview(lab3)
         lab3.juTraSpace.toView(lab1).equal(10)
         lab3.juCenterY.toView(lab1).equal(0)
-        
        
-
         juTest = "12345"
         NSLog("%@", self.juTest!)
        
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -32,7 +32,6 @@ class JuLayout: NSObject {
         }
     }
 
-
     func multi(_ mulits:CGFloat) -> JuLayout {
         juMulti = mulits
         return self;
