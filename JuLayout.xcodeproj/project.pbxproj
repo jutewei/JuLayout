@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC0DB5691E051A6000BA2996 /* JuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5631E051A6000BA2996 /* JuLayout.swift */; };
+		DC0DB5691E051A6000BA2996 /* JuSLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5631E051A6000BA2996 /* JuSLayout.swift */; };
 		DC0DB56A1E051A6000BA2996 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5641E051A6000BA2996 /* UIView+Frame.swift */; };
 		DC0DB56B1E051A6000BA2996 /* UIView+JuConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5651E051A6000BA2996 /* UIView+JuConstraint.swift */; };
 		DC0DB56C1E051A6000BA2996 /* UIView+JuLayGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5661E051A6000BA2996 /* UIView+JuLayGroup.swift */; };
 		DC0DB56D1E051A6000BA2996 /* UIView+JuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5671E051A6000BA2996 /* UIView+JuLayout.swift */; };
-		DC0DB5771E051A7300BA2996 /* UIView+JuConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5701E051A7300BA2996 /* UIView+JuConstraint.m */; };
-		DC0DB5781E051A7300BA2996 /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5721E051A7300BA2996 /* UIView+JuLayout.m */; };
-		DC0DB5791E051A7300BA2996 /* UIView+JuLayGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5741E051A7300BA2996 /* UIView+JuLayGroup.m */; };
-		DC0DB57A1E051A7300BA2996 /* JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5761E051A7300BA2996 /* JuLayout.m */; };
 		DC0DB57D1E051E4B00BA2996 /* JuOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB57C1E051E4B00BA2996 /* JuOCViewController.m */; };
+		DC0DB5961E05399B00BA2996 /* JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB58F1E05399B00BA2996 /* JuLayout.m */; };
+		DC0DB5971E05399B00BA2996 /* UIView+JuConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5911E05399B00BA2996 /* UIView+JuConstraint.m */; };
+		DC0DB5981E05399B00BA2996 /* UIView+JuLayGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5931E05399B00BA2996 /* UIView+JuLayGroup.m */; };
+		DC0DB5991E05399B00BA2996 /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB5951E05399B00BA2996 /* UIView+JuLayout.m */; };
 		EB169ED51E0390FE00687FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169ED41E0390FE00687FE3 /* AppDelegate.swift */; };
 		EB169ED71E0390FE00687FE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169ED61E0390FE00687FE3 /* ViewController.swift */; };
 		EB169EDA1E0390FE00687FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB169ED81E0390FE00687FE3 /* Main.storyboard */; };
@@ -25,22 +25,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC0DB5631E051A6000BA2996 /* JuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuLayout.swift; sourceTree = "<group>"; };
+		DC0DB5631E051A6000BA2996 /* JuSLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuSLayout.swift; sourceTree = "<group>"; };
 		DC0DB5641E051A6000BA2996 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		DC0DB5651E051A6000BA2996 /* UIView+JuConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuConstraint.swift"; sourceTree = "<group>"; };
 		DC0DB5661E051A6000BA2996 /* UIView+JuLayGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuLayGroup.swift"; sourceTree = "<group>"; };
 		DC0DB5671E051A6000BA2996 /* UIView+JuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JuLayout.swift"; sourceTree = "<group>"; };
-		DC0DB56E1E051A7200BA2996 /* JuLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuLayout-Bridging-Header.h"; sourceTree = "<group>"; };
-		DC0DB56F1E051A7300BA2996 /* UIView+JuConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuConstraint.h"; sourceTree = "<group>"; };
-		DC0DB5701E051A7300BA2996 /* UIView+JuConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuConstraint.m"; sourceTree = "<group>"; };
-		DC0DB5711E051A7300BA2996 /* UIView+JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayout.h"; sourceTree = "<group>"; };
-		DC0DB5721E051A7300BA2996 /* UIView+JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayout.m"; sourceTree = "<group>"; };
-		DC0DB5731E051A7300BA2996 /* UIView+JuLayGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayGroup.h"; sourceTree = "<group>"; };
-		DC0DB5741E051A7300BA2996 /* UIView+JuLayGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayGroup.m"; sourceTree = "<group>"; };
-		DC0DB5751E051A7300BA2996 /* JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuLayout.h; sourceTree = "<group>"; };
-		DC0DB5761E051A7300BA2996 /* JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuLayout.m; sourceTree = "<group>"; };
 		DC0DB57B1E051E4B00BA2996 /* JuOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuOCViewController.h; sourceTree = "<group>"; };
 		DC0DB57C1E051E4B00BA2996 /* JuOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuOCViewController.m; sourceTree = "<group>"; };
+		DC0DB58D1E05399B00BA2996 /* JuLayout-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JuLayout-Bridging-Header.h"; sourceTree = "<group>"; };
+		DC0DB58E1E05399B00BA2996 /* JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuLayout.h; sourceTree = "<group>"; };
+		DC0DB58F1E05399B00BA2996 /* JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuLayout.m; sourceTree = "<group>"; };
+		DC0DB5901E05399B00BA2996 /* UIView+JuConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuConstraint.h"; sourceTree = "<group>"; };
+		DC0DB5911E05399B00BA2996 /* UIView+JuConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuConstraint.m"; sourceTree = "<group>"; };
+		DC0DB5921E05399B00BA2996 /* UIView+JuLayGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayGroup.h"; sourceTree = "<group>"; };
+		DC0DB5931E05399B00BA2996 /* UIView+JuLayGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayGroup.m"; sourceTree = "<group>"; };
+		DC0DB5941E05399B00BA2996 /* UIView+JuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JuLayout.h"; sourceTree = "<group>"; };
+		DC0DB5951E05399B00BA2996 /* UIView+JuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JuLayout.m"; sourceTree = "<group>"; };
 		EB169ED11E0390FE00687FE3 /* JuLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB169ED41E0390FE00687FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB169ED61E0390FE00687FE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		DC0DB5621E051A6000BA2996 /* SwiftLayout */ = {
 			isa = PBXGroup;
 			children = (
-				DC0DB5631E051A6000BA2996 /* JuLayout.swift */,
+				DC0DB5631E051A6000BA2996 /* JuSLayout.swift */,
 				DC0DB5641E051A6000BA2996 /* UIView+Frame.swift */,
 				DC0DB5651E051A6000BA2996 /* UIView+JuConstraint.swift */,
 				DC0DB5661E051A6000BA2996 /* UIView+JuLayGroup.swift */,
@@ -73,18 +73,18 @@
 			path = SwiftLayout;
 			sourceTree = "<group>";
 		};
-		DC0DB5681E051A6000BA2996 /* OCLayout */ = {
+		DC0DB58C1E05399B00BA2996 /* OCLayout */ = {
 			isa = PBXGroup;
 			children = (
-				DC0DB56F1E051A7300BA2996 /* UIView+JuConstraint.h */,
-				DC0DB5701E051A7300BA2996 /* UIView+JuConstraint.m */,
-				DC0DB5711E051A7300BA2996 /* UIView+JuLayout.h */,
-				DC0DB5721E051A7300BA2996 /* UIView+JuLayout.m */,
-				DC0DB5731E051A7300BA2996 /* UIView+JuLayGroup.h */,
-				DC0DB5741E051A7300BA2996 /* UIView+JuLayGroup.m */,
-				DC0DB5751E051A7300BA2996 /* JuLayout.h */,
-				DC0DB5761E051A7300BA2996 /* JuLayout.m */,
-				DC0DB56E1E051A7200BA2996 /* JuLayout-Bridging-Header.h */,
+				DC0DB58D1E05399B00BA2996 /* JuLayout-Bridging-Header.h */,
+				DC0DB58E1E05399B00BA2996 /* JuLayout.h */,
+				DC0DB58F1E05399B00BA2996 /* JuLayout.m */,
+				DC0DB5901E05399B00BA2996 /* UIView+JuConstraint.h */,
+				DC0DB5911E05399B00BA2996 /* UIView+JuConstraint.m */,
+				DC0DB5921E05399B00BA2996 /* UIView+JuLayGroup.h */,
+				DC0DB5931E05399B00BA2996 /* UIView+JuLayGroup.m */,
+				DC0DB5941E05399B00BA2996 /* UIView+JuLayout.h */,
+				DC0DB5951E05399B00BA2996 /* UIView+JuLayout.m */,
 			);
 			path = OCLayout;
 			sourceTree = "<group>";
@@ -108,8 +108,8 @@
 		EB169ED31E0390FE00687FE3 /* JuLayout */ = {
 			isa = PBXGroup;
 			children = (
+				DC0DB58C1E05399B00BA2996 /* OCLayout */,
 				DC0DB5621E051A6000BA2996 /* SwiftLayout */,
-				DC0DB5681E051A6000BA2996 /* OCLayout */,
 				EB169ED41E0390FE00687FE3 /* AppDelegate.swift */,
 				EB169ED61E0390FE00687FE3 /* ViewController.swift */,
 				DC0DB57B1E051E4B00BA2996 /* JuOCViewController.h */,
@@ -197,17 +197,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC0DB5791E051A7300BA2996 /* UIView+JuLayGroup.m in Sources */,
-				DC0DB5771E051A7300BA2996 /* UIView+JuConstraint.m in Sources */,
 				DC0DB56B1E051A6000BA2996 /* UIView+JuConstraint.swift in Sources */,
+				DC0DB5961E05399B00BA2996 /* JuLayout.m in Sources */,
 				DC0DB57D1E051E4B00BA2996 /* JuOCViewController.m in Sources */,
 				DC0DB56A1E051A6000BA2996 /* UIView+Frame.swift in Sources */,
 				EB169ED71E0390FE00687FE3 /* ViewController.swift in Sources */,
-				DC0DB5691E051A6000BA2996 /* JuLayout.swift in Sources */,
+				DC0DB5691E051A6000BA2996 /* JuSLayout.swift in Sources */,
+				DC0DB5981E05399B00BA2996 /* UIView+JuLayGroup.m in Sources */,
 				DC0DB56C1E051A6000BA2996 /* UIView+JuLayGroup.swift in Sources */,
-				DC0DB57A1E051A7300BA2996 /* JuLayout.m in Sources */,
-				DC0DB5781E051A7300BA2996 /* UIView+JuLayout.m in Sources */,
 				EB169ED51E0390FE00687FE3 /* AppDelegate.swift in Sources */,
+				DC0DB5991E05399B00BA2996 /* UIView+JuLayout.m in Sources */,
+				DC0DB5971E05399B00BA2996 /* UIView+JuConstraint.m in Sources */,
 				DC0DB56D1E051A6000BA2996 /* UIView+JuLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

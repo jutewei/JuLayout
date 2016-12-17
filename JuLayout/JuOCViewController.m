@@ -1,13 +1,13 @@
 //
 //  JuOCViewController.m
-//  JuLayout
+//  JuSLayout
 //
 //  Created by Juvid on 2016/12/17.
 //  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import "JuOCViewController.h"
-#import "UIView+JuLayGroup.h"
+//#import "UIView+JuLayGroup.h"
 @interface JuOCViewController ()
 
 @end

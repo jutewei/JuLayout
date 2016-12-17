@@ -1,6 +1,6 @@
 //
-//  UIView+JuLayout.swift
-//  JuLayout
+//  UIView+JuSLayout.swift
+//  JuSLayout
 //
 //  Created by Juvid on 2016/9/16.
 //  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
@@ -8,72 +8,72 @@
 
 import UIKit
 extension UIView{
-    func newJuLayMinus(_ firstAtt:NSLayoutAttribute, layoutType:JuLayoutType) -> JuLayout {
+    func newJuLayMinus(_ firstAtt:NSLayoutAttribute, layoutType:JuSLayoutType) -> JuSLayout {
         return self.newJuLay(firstAtt, secondAtt: firstAtt, layoutType: layoutType)
     }
-    func newJuLayMinus(_ firstAtt:NSLayoutAttribute,secondAtt:NSLayoutAttribute, layoutType:JuLayoutType) -> JuLayout {
+    func newJuLayMinus(_ firstAtt:NSLayoutAttribute,secondAtt:NSLayoutAttribute, layoutType:JuSLayoutType) -> JuSLayout {
         let layout = self.newJuLay(firstAtt, secondAtt: secondAtt, layoutType: layoutType)
         layout.isMinus = true
         return layout
     }
-    func newJuLay(_ firstAtt:NSLayoutAttribute, layoutType:JuLayoutType) -> JuLayout {
+    func newJuLay(_ firstAtt:NSLayoutAttribute, layoutType:JuSLayoutType) -> JuSLayout {
         return self.newJuLay(firstAtt, secondAtt: firstAtt, layoutType: layoutType)
     }
 
-    func newJuLay(_ firstAtt:NSLayoutAttribute,secondAtt:NSLayoutAttribute, layoutType:JuLayoutType) -> JuLayout {
-        let layout = JuLayout.init()
+    func newJuLay(_ firstAtt:NSLayoutAttribute,secondAtt:NSLayoutAttribute, layoutType:JuSLayoutType) -> JuSLayout {
+        let layout = JuSLayout.init()
         layout.juAttr1 = firstAtt
         layout.juAttr2 = secondAtt
         layout.juView1 = self
-        layout.juLayoutType=layoutType
+        layout.jusLayoutType=layoutType
         return layout
 
     }
 
-    var juLead: JuLayout {
-        return self.newJuLay(NSLayoutAttribute.leading, layoutType: JuLayoutType.lead)
+    var juLead: JuSLayout {
+        return self.newJuLay(NSLayoutAttribute.leading, layoutType: JuSLayoutType.lead)
     }
-    var juTrail: JuLayout {
-        return self.newJuLayMinus(NSLayoutAttribute.trailing, layoutType: JuLayoutType.trail)
+    var juTrail: JuSLayout {
+        return self.newJuLayMinus(NSLayoutAttribute.trailing, layoutType: JuSLayoutType.trail)
     }
-    var juTop: JuLayout {
-        return self.newJuLay(NSLayoutAttribute.top, layoutType: JuLayoutType.top)
+    var juTop: JuSLayout {
+        return self.newJuLay(NSLayoutAttribute.top, layoutType: JuSLayoutType.top)
     }
-    var juBottom: JuLayout {
-        return self.newJuLayMinus(NSLayoutAttribute.bottom, layoutType: JuLayoutType.bottom)
+    var juBottom: JuSLayout {
+        return self.newJuLayMinus(NSLayoutAttribute.bottom, layoutType: JuSLayoutType.bottom)
     }
-    var juLeaSpace: JuLayout {
-        return self.newJuLay(NSLayoutAttribute.leading,secondAtt: NSLayoutAttribute.trailing, layoutType:JuLayoutType.lead)
+    var juLeaSpace: JuSLayout {
+        return self.newJuLay(NSLayoutAttribute.leading,secondAtt: NSLayoutAttribute.trailing, layoutType:JuSLayoutType.lead)
     }
-    var juTraSpace: JuLayout {
-        return self.newJuLayMinus(NSLayoutAttribute.trailing,secondAtt: NSLayoutAttribute.leading, layoutType:JuLayoutType.trail)
+    var juTraSpace: JuSLayout {
+        return self.newJuLayMinus(NSLayoutAttribute.trailing,secondAtt: NSLayoutAttribute.leading, layoutType:JuSLayoutType.trail)
     }
-    var juTopSpace: JuLayout {
-        return self.newJuLay(NSLayoutAttribute.top,secondAtt: NSLayoutAttribute.bottom, layoutType:JuLayoutType.top)
+    var juTopSpace: JuSLayout {
+        return self.newJuLay(NSLayoutAttribute.top,secondAtt: NSLayoutAttribute.bottom, layoutType:JuSLayoutType.top)
     }
-    var juBtmSpace: JuLayout {
-          return self.newJuLayMinus(NSLayoutAttribute.bottom,secondAtt: NSLayoutAttribute.top, layoutType:JuLayoutType.bottom)
+    var juBtmSpace: JuSLayout {
+          return self.newJuLayMinus(NSLayoutAttribute.bottom,secondAtt: NSLayoutAttribute.top, layoutType:JuSLayoutType.bottom)
     }
-    var juLastLine: JuLayout {
-        return self.newJuLay(NSLayoutAttribute.lastBaseline, layoutType: JuLayoutType.bottom)
+    var juLastLine: JuSLayout {
+        return self.newJuLay(NSLayoutAttribute.lastBaseline, layoutType: JuSLayoutType.bottom)
     }
-    var juFirLine: JuLayout {
-        return self.newJuLay(NSLayoutAttribute.firstBaseline, layoutType: JuLayoutType.top)
+    var juFirLine: JuSLayout {
+        return self.newJuLay(NSLayoutAttribute.firstBaseline, layoutType: JuSLayoutType.top)
     }
-    var juCenterX: JuLayout {
-        return self.newJuLay(NSLayoutAttribute.centerX, layoutType: JuLayoutType.centerX)
+    var juCenterX: JuSLayout {
+        return self.newJuLay(NSLayoutAttribute.centerX, layoutType: JuSLayoutType.centerX)
     }
-    var juCenterY: JuLayout {
-        return self.newJuLay(NSLayoutAttribute.centerY, layoutType: JuLayoutType.centerY)
+    var juCenterY: JuSLayout {
+        return self.newJuLay(NSLayoutAttribute.centerY, layoutType: JuSLayoutType.centerY)
     }
-    var juWidth: JuLayout {
-        return self.newJuLay(NSLayoutAttribute.width, layoutType: JuLayoutType.width)
+    var juWidth: JuSLayout {
+        return self.newJuLay(NSLayoutAttribute.width, layoutType: JuSLayoutType.width)
     }
-    var juHeight: JuLayout {
-        return self.newJuLay(NSLayoutAttribute.height, layoutType: JuLayoutType.height)
+    var juHeight: JuSLayout {
+        return self.newJuLay(NSLayoutAttribute.height, layoutType: JuSLayoutType.height)
     }
-    var juAspectWH: JuLayout {
-        return self.newJuLay(NSLayoutAttribute.width, secondAtt:NSLayoutAttribute.height, layoutType:JuLayoutType.aspectWH)
+    var juAspectWH: JuSLayout {
+        return self.newJuLay(NSLayoutAttribute.width, secondAtt:NSLayoutAttribute.height, layoutType:JuSLayoutType.aspectWH)
     }
 
     

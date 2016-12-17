@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  JuLayout
+//  JuSLayout
 //
 //  Created by Juvid on 2016/9/16.
 //  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.

@@ -1,6 +1,6 @@
 //
-//  JuLayout.swift
-//  JuLayout
+//  JuSLayout.swift
+//  JuSLayout
 //
 //  Created by Juvid on 2016/9/16.
 //  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
@@ -11,7 +11,7 @@ import UIKit
 
 
 
-class JuLayout: NSObject {
+class JuSLayout: NSObject {
 
     var isMinus : Bool = false ///< 只能为
     weak var juView2 : UIView?
@@ -24,24 +24,24 @@ class JuLayout: NSObject {
     var juConstant : CGFloat = 0.0
     var juRelation  = NSLayoutRelation.equal
     var juPrioritys  = UILayoutPriorityRequired
-    var juLayoutType :JuLayoutType?{
+    var jusLayoutType :JuSLayoutType?{
         didSet{
-            if juLayoutType  == JuLayoutType.aspectWH {
+            if jusLayoutType  == JuSLayoutType.aspectWH {
                 juView2 = juView1
             }
         }
     }
 
-    func multi(_ mulits:CGFloat) -> JuLayout {
+    func multi(_ mulits:CGFloat) -> JuSLayout {
         juMulti = mulits
         return self;
     }
 
-    func toView(_ toItem:UIView?) -> JuLayout {
+    func toView(_ toItem:UIView?) -> JuSLayout {
         juView2 = toItem
         return self
     }
-    func priority(_ prioritys:Float) -> JuLayout {
+    func priority(_ prioritys:Float) -> JuSLayout {
         juPrioritys = prioritys
         return self
     }
@@ -87,7 +87,7 @@ class JuLayout: NSObject {
         let layoutConstraint = NSLayoutConstraint.init(item: juView1, attribute: juAttr1!, relatedBy:juRelation, toItem: toItem, attribute: juAttr2!, multiplier:juMulti, constant: juConstant)
         layoutConstraint.priority = juPrioritys
         ju_View.addConstraint(layoutConstraint);
-        layoutConstraint.juLayType=juLayoutType;
+        layoutConstraint.juLayType=jusLayoutType;
         
         juView1.juCompareSameCons(layoutConstraint)
         if juView1.ju_Constraints == nil {
