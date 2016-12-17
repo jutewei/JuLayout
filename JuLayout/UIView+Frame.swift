@@ -2,8 +2,8 @@
 //  UIView+Frame.swift
 //  JuLayout
 //
-//  Created by Juvid on 2016/12/16.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Created by Juvid on 2016/9/16.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 import UIKit

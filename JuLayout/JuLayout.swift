@@ -2,8 +2,8 @@
 //  JuLayout.swift
 //  JuLayout
 //
-//  Created by Juvid on 2016/12/16.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Created by Juvid on 2016/9/16.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 import UIKit
@@ -13,7 +13,7 @@ import UIKit
 
 class JuLayout: NSObject {
 
-    var isMinus :Bool = false ///< 只能为
+    var isMinus : Bool = false ///< 只能为
     var juView2 : UIView?
     var juView1 : UIView!
     var juMulti : CGFloat = 1.0
@@ -21,7 +21,7 @@ class JuLayout: NSObject {
     var juAttr1 : NSLayoutAttribute?
     var juAttr2 : NSLayoutAttribute?
 
-    var juConstant : CGFloat = 1.0
+    var juConstant : CGFloat = 0.0
     var juRelation  = NSLayoutRelation.equal
     var juPrioritys  = UILayoutPriorityRequired
     var juLayoutType :JuLayoutType?{
@@ -67,10 +67,10 @@ class JuLayout: NSObject {
         juView1.translatesAutoresizingMaskIntoConstraints = false
         var toItem = juView2
         var ju_View :UIView! = juView1.superview
-        let constant = juConstant
+//        let constant = juConstant
         if (juAttr1 == NSLayoutAttribute.width || juAttr1 == NSLayoutAttribute.height ) {
             if toItem == nil {
-                if constant == 0 {
+                if juConstant == 0 {
                     toItem = juView1.superview
                 }else{
                     ju_View = juView1
@@ -85,7 +85,7 @@ class JuLayout: NSObject {
             }
         }
 
-        let layoutConstraint = NSLayoutConstraint.init(item: juView1, attribute: juAttr1!, relatedBy:juRelation, toItem: toItem, attribute: juAttr2!, multiplier:juMulti, constant: constant)
+        let layoutConstraint = NSLayoutConstraint.init(item: juView1, attribute: juAttr1!, relatedBy:juRelation, toItem: toItem, attribute: juAttr2!, multiplier:juMulti, constant: juConstant)
         layoutConstraint.priority = juPrioritys
         ju_View.addConstraint(layoutConstraint);
         layoutConstraint.juLayType=juLayoutType;
