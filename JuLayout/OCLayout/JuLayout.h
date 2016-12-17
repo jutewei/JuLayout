@@ -1,6 +1,6 @@
 //
 //  JuLayout.h
-//  testBlock
+//  JuLayout
 //
 //  Created by Juvid on 16/7/17.
 //  Copyright © 2016年 Juvid. All rights reserved.

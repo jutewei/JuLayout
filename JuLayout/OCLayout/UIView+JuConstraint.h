@@ -1,5 +1,5 @@
 //
-//  NSObject+JuConstraint.h
+//  UIView+JuConstraint.h
 //  JuLayout
 //
 //  Created by Juvid on 16/7/19.
@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger,JuLayoutType){
 -(UIView *)ju_PriHigh;///< 750
 -(UIView *)ju_PriLow;///< 250
 -(UIView *)ju_PriLevel;///< 50
--(UIView *(^)(float priority))ju_PryEqual;///< 自定义优先级
+-(UIView *(^)(float priority))ju_PriEqual;///< 自定义优先级
 
 
 -(UILayoutPriority)ju_HorConHugPri;
