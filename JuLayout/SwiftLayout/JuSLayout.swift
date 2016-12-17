@@ -89,11 +89,11 @@ class JuSLayout: NSObject {
         ju_View.addConstraint(layoutConstraint);
         layoutConstraint.juLayType=jusLayoutType;
         
-        juView1.juCompareSameCons(layoutConstraint)
-        if juView1.ju_Constraints == nil {
-            juView1.ju_Constraints = NSMutableArray.init()
+        juView1.jusCompareSameCons(layoutConstraint)
+        if juView1.jus_Constraints == nil {
+            juView1.jus_Constraints = NSMutableArray.init()
         }
-        juView1.ju_Constraints?.add(layoutConstraint)
+        juView1.jus_Constraints?.add(layoutConstraint)
 
     }
 

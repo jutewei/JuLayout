@@ -24,7 +24,7 @@ private var juConstraints: Void?
 private var juPriority : Void?
 private var ju_LayType :Void?
 extension UIView{
-    var ju_Constraints: NSMutableArray? {
+    var jus_Constraints: NSMutableArray? {
         get {
             return objc_getAssociatedObject(self, &juConstraints) as? NSMutableArray
         }
@@ -32,7 +32,7 @@ extension UIView{
             objc_setAssociatedObject(self, &juConstraints, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
-    var ju_Priority : UILayoutPriority?{
+    var jus_Priority : UILayoutPriority?{
         get {
             return objc_getAssociatedObject(self, &juPriority) as? UILayoutPriority
         }
@@ -41,23 +41,23 @@ extension UIView{
         }
     }
 
-    func juCompareSameCons(_ currentCons:NSLayoutConstraint?)  {
-        let layoutCons = self.juConstrain(currentCons?.juLayType, priority: currentCons?.priority)
+    func jusCompareSameCons(_ currentCons:NSLayoutConstraint?)  {
+        let layoutCons = self.jusConstrain(currentCons?.jusLayType, priority: currentCons?.priority)
         if layoutCons != nil {
             if (self.superview?.constraints.contains(layoutCons!)) == true {
                 self.superview?.removeConstraint(layoutCons!)
-                self.ju_Constraints?.remove(layoutCons!)
+                self.jus_Constraints?.remove(layoutCons!)
             }else if(self.constraints.contains(layoutCons!) == true){
                 self.removeConstraint(layoutCons!)
-                self.ju_Constraints?.remove(layoutCons!)
+                self.jus_Constraints?.remove(layoutCons!)
             }
         }
     }
-    func juConstrain(_ juLayType:JuSLayoutType?,priority:UILayoutPriority?) -> NSLayoutConstraint? {
-        if ((ju_Constraints?.count) != nil) {
-            for constraint in ju_Constraints! {
+    func jusConstrain(_ juLayType:JuSLayoutType?,priority:UILayoutPriority?) -> NSLayoutConstraint? {
+        if ((jus_Constraints?.count) != nil) {
+            for constraint in jus_Constraints! {
                 let lastCons = constraint as! NSLayoutConstraint
-                if (lastCons.juLayType==juLayType&&lastCons.priority==priority) {
+                if (lastCons.jusLayType==juLayType&&lastCons.priority==priority) {
                     return lastCons;
                 }
             }
@@ -65,74 +65,74 @@ extension UIView{
 
         return nil
     }
-    func juConstrain(_ juLayType:JuSLayoutType?) -> NSLayoutConstraint? {
-        if ju_Priority == 0.00 {
-            self.ju_Priority = UILayoutPriorityRequired;
+    func jusConstrain(_ juLayType:JuSLayoutType?) -> NSLayoutConstraint? {
+        if jus_Priority == 0.00 {
+            self.jus_Priority = UILayoutPriorityRequired;
         }
-        let layoutCons = self.juConstrain(juLayType, priority:ju_Priority)
-        self.ju_Priority=UILayoutPriorityRequired;
+        let layoutCons = self.jusConstrain(juLayType, priority:jus_Priority)
+        self.jus_Priority=UILayoutPriorityRequired;
         return layoutCons
 
     }
 
-    var ju_Lead :NSLayoutConstraint?{
-        return self.juConstrain(JuSLayoutType.lead)
+    var jus_Lead :NSLayoutConstraint?{
+        return self.jusConstrain(JuSLayoutType.lead)
     }
-    var ju_Trail :NSLayoutConstraint?{
-        return self.juConstrain(JuSLayoutType.trail)
+    var jus_Trail :NSLayoutConstraint?{
+        return self.jusConstrain(JuSLayoutType.trail)
     }
-    var ju_Top :NSLayoutConstraint?{
-        return self.juConstrain(JuSLayoutType.top)
+    var jus_Top :NSLayoutConstraint?{
+        return self.jusConstrain(JuSLayoutType.top)
     }
-    var ju_Bottom :NSLayoutConstraint?{
-        return self.juConstrain(JuSLayoutType.bottom)
+    var jus_Bottom :NSLayoutConstraint?{
+        return self.jusConstrain(JuSLayoutType.bottom)
     }
-    var ju_CenterX :NSLayoutConstraint?{
-        return self.juConstrain(JuSLayoutType.centerX)
+    var jus_CenterX :NSLayoutConstraint?{
+        return self.jusConstrain(JuSLayoutType.centerX)
     }
-    var ju_CenterY :NSLayoutConstraint?{
-        return self.juConstrain(JuSLayoutType.centerY)
+    var jus_CenterY :NSLayoutConstraint?{
+        return self.jusConstrain(JuSLayoutType.centerY)
     }
-    var ju_Width :NSLayoutConstraint?{
-        return self.juConstrain(JuSLayoutType.width)
+    var jus_Width :NSLayoutConstraint?{
+        return self.jusConstrain(JuSLayoutType.width)
     }
-    var ju_Height :NSLayoutConstraint?{
-        return self.juConstrain(JuSLayoutType.height)
+    var jus_Height :NSLayoutConstraint?{
+        return self.jusConstrain(JuSLayoutType.height)
     }
-    var ju_AspectWH :NSLayoutConstraint?{
-        return self.juConstrain(JuSLayoutType.aspectWH)
+    var jus_AspectWH :NSLayoutConstraint?{
+        return self.jusConstrain(JuSLayoutType.aspectWH)
     }
     
     /// 查找优先级（基本不用）
-    var ju_PriHigh : UIView{
-        self.ju_Priority=UILayoutPriorityDefaultHigh;
+    var jus_PriHigh : UIView{
+        self.jus_Priority=UILayoutPriorityDefaultHigh;
         return self;
     }
-    var ju_PriLow : UIView{
-        self.ju_Priority=UILayoutPriorityDefaultLow;
+    var jus_PriLow : UIView{
+        self.jus_Priority=UILayoutPriorityDefaultLow;
         return self;
     }
-    var ju_PriLevel : UIView{
-        self.ju_Priority=UILayoutPriorityFittingSizeLevel;
+    var jus_PriLevel : UIView{
+        self.jus_Priority=UILayoutPriorityFittingSizeLevel;
         return self;
     }
-    func ju_PriEqual(_ priority:Float) -> UIView {
-        self.ju_Priority=priority;
+    func jus_PriEqual(_ priority:Float) -> UIView {
+        self.jus_Priority=priority;
         return self;
     }
 
     
     /// 查找内容优先级
-    var ju_HorConHugPri :UILayoutPriority?{
+    var jus_HorConHugPri :UILayoutPriority?{
         return self.contentHuggingPriority(for: UILayoutConstraintAxis.horizontal)
     }
-    var ju_VerConHugPri :UILayoutPriority?{
+    var jus_VerConHugPri :UILayoutPriority?{
         return self.contentHuggingPriority(for: UILayoutConstraintAxis.vertical)
     }
-    var ju_VerConComResPri :UILayoutPriority?{
+    var jus_VerConComResPri :UILayoutPriority?{
         return self.contentCompressionResistancePriority(for: UILayoutConstraintAxis.vertical)
     }
-    var ju_HorConComResPri :UILayoutPriority?{
+    var jus_HorConComResPri :UILayoutPriority?{
         return self.contentCompressionResistancePriority(for: UILayoutConstraintAxis.horizontal)
     }
 //    var ju_Constraints :NSMutableArray?
@@ -142,7 +142,7 @@ extension UIView{
 
 
 extension NSLayoutConstraint{
-    var juLayType: JuSLayoutType? {
+    var jusLayType: JuSLayoutType? {
         get {
             return objc_getAssociatedObject(self, &ju_LayType) as? JuSLayoutType
         }
