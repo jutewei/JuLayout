@@ -36,21 +36,21 @@
 /**
  *  约束者的左边相对于约束对象右边（space）
  */
--(JuLayout *)juLSpace;
+-(JuLayout *)juLeftSpace;
 
 /**
  *  约束者的右边相对于约束对象左边（space）
  */
--(JuLayout *)juRSpace;
+-(JuLayout *)juRighSpace;
 
 /**
  *  约束者的顶端边相对于约束对象底端（space）
  */
--(JuLayout *)juTSpace;
+-(JuLayout *)juTopSpace;
 /**
  *  约束者的底端边相对于约束对象顶端（space）
  */
--(JuLayout *)juBSpace;
+-(JuLayout *)juBomSpace;
 
 /**
  *  底端文本对齐

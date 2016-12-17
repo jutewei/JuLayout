@@ -155,7 +155,7 @@ extension UIView{
         }
 
         if view != nil {
-            self.jusTSpace.toView(view).equal(juFrame.top);
+            self.jusTopSpace.toView(view).equal(juFrame.top);
         }else{
             self.jusTop.toView(view).equal(juFrame.top);
         }
