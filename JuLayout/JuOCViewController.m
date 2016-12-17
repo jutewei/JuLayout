@@ -7,7 +7,7 @@
 //
 
 #import "JuOCViewController.h"
-#import "UIView+JuLayGroup.h"
+#import "UIView+JuLayout.h"
 @interface JuOCViewController ()
 
 @end
