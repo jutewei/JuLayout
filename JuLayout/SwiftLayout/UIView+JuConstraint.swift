@@ -1,13 +1,13 @@
 //
 //  UIView+JuConstraint.swift
-//  JuSLayout
+//  JusLayout
 //
 //  Created by Juvid on 2016/9/16.
 //  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 import UIKit
-public enum JuSLayoutType : Int {
+public enum JuLayoutAttribute : Int {
     case lead       = 0 ///< 左约束
     case trail      = 1 ///< 右约束
     case centerX    = 2///< x中间约束
@@ -53,7 +53,7 @@ extension UIView{
             }
         }
     }
-    func jusConstrain(_ juLayType:JuSLayoutType?,priority:UILayoutPriority?) -> NSLayoutConstraint? {
+    func jusConstrain(_ juLayType:JuLayoutAttribute?,priority:UILayoutPriority?) -> NSLayoutConstraint? {
         if ((jus_Constraints?.count) != nil) {
             for constraint in jus_Constraints! {
                 let lastCons = constraint as! NSLayoutConstraint
@@ -65,7 +65,7 @@ extension UIView{
 
         return nil
     }
-    func jusConstrain(_ juLayType:JuSLayoutType?) -> NSLayoutConstraint? {
+    func jusConstrain(_ juLayType:JuLayoutAttribute?) -> NSLayoutConstraint? {
         if jus_Priority == 0.00 {
             self.jus_Priority = UILayoutPriorityRequired;
         }
@@ -76,31 +76,31 @@ extension UIView{
     }
 
     var jus_Lead :NSLayoutConstraint?{
-        return self.jusConstrain(JuSLayoutType.lead)
+        return self.jusConstrain(JuLayoutAttribute.lead)
     }
     var jus_Trail :NSLayoutConstraint?{
-        return self.jusConstrain(JuSLayoutType.trail)
+        return self.jusConstrain(JuLayoutAttribute.trail)
     }
     var jus_Top :NSLayoutConstraint?{
-        return self.jusConstrain(JuSLayoutType.top)
+        return self.jusConstrain(JuLayoutAttribute.top)
     }
     var jus_Bottom :NSLayoutConstraint?{
-        return self.jusConstrain(JuSLayoutType.bottom)
+        return self.jusConstrain(JuLayoutAttribute.bottom)
     }
     var jus_CenterX :NSLayoutConstraint?{
-        return self.jusConstrain(JuSLayoutType.centerX)
+        return self.jusConstrain(JuLayoutAttribute.centerX)
     }
     var jus_CenterY :NSLayoutConstraint?{
-        return self.jusConstrain(JuSLayoutType.centerY)
+        return self.jusConstrain(JuLayoutAttribute.centerY)
     }
     var jus_Width :NSLayoutConstraint?{
-        return self.jusConstrain(JuSLayoutType.width)
+        return self.jusConstrain(JuLayoutAttribute.width)
     }
     var jus_Height :NSLayoutConstraint?{
-        return self.jusConstrain(JuSLayoutType.height)
+        return self.jusConstrain(JuLayoutAttribute.height)
     }
     var jus_AspectWH :NSLayoutConstraint?{
-        return self.jusConstrain(JuSLayoutType.aspectWH)
+        return self.jusConstrain(JuLayoutAttribute.aspectWH)
     }
     
     /// 查找优先级（基本不用）
@@ -142,9 +142,9 @@ extension UIView{
 
 
 extension NSLayoutConstraint{
-    var jusLayType: JuSLayoutType? {
+    var jusLayType: JuLayoutAttribute? {
         get {
-            return objc_getAssociatedObject(self, &ju_LayType) as? JuSLayoutType
+            return objc_getAssociatedObject(self, &ju_LayType) as? JuLayoutAttribute
         }
         set(newValue) {
             objc_setAssociatedObject(self, &ju_LayType, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
