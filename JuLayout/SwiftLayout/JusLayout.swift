@@ -46,6 +46,15 @@ class JusLayout: NSObject {
         juRelation = NSLayoutRelation.equal;
         self.juAddConstraint(constion)
     }
+    
+    /// 闭包的写法类似OC JuLayout
+   /* var equal: (CGFloat) -> Void  {
+        return { constion in
+            self.juRelation = NSLayoutRelation.equal;
+            self.juAddConstraint(constion)
+        }
+    }*/
+    
     func greaterEqual(_ constion:CGFloat) {
         juRelation = NSLayoutRelation.greaterThanOrEqual;
         self.juAddConstraint(constion)
