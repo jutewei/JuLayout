@@ -38,6 +38,14 @@ class JusLayout: NSObject {
         juView2 = toItem
         return self
     }
+    /// 闭包的写法类似OC JuLayout 和 func toView实现一样的效果
+    /*var toView : (UIView) -> JusLayout{
+        return {toItem in
+            self.juView2 = toItem
+            return self
+        }
+    }*/
+    
     func priority(_ prioritys:Float) -> JusLayout {
         juPrioritys = prioritys
         return self
