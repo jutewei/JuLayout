@@ -2,14 +2,21 @@
 
 例：
 UIView *vie=[[UIView alloc]init];
+
 [self.view addSubview:vie];
+
 vie.juFrame(CGRectMake(10, 10, 100, 100));
 或
+
 vie.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
 或
+
 vie.juLead.equal(10);
+
 vie.juTrail.equal(10);
+
 vie.juWidth.equal(100);
+
 vie.juHeight.equal(100);
 
 1、单一约束设置
