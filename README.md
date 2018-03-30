@@ -1,4 +1,4 @@
-比masonry还简单的autolayout约束封装，让约束像写frame一样方便    
+比masonry还简洁的autolayout约束封装，让约束像写frame一样方便，调用非常简单。
 
 /**
  *  左边约束
