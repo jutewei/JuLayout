@@ -76,7 +76,7 @@ class JusLayout: NSObject {
         if juView1.superview == nil {
             return
         }
-        juConstant=constions*(isMinus ? -1 : 1)
+        juConstant=constions
         juView1.translatesAutoresizingMaskIntoConstraints = false
         var toItem = juView2
         var ju_View :UIView! = juView1.superview
@@ -97,8 +97,12 @@ class JusLayout: NSObject {
                 toItem = juView1.superview
             }
         }
+        let firstView:UIView! = isMinus ? toItem:juView1
+        let secondView:UIView? = isMinus ? juView1:toItem
+        let firstAtt = isMinus ? juAttr2:juAttr1
+        let secondAtt = isMinus ? juAttr1:juAttr2
 
-        let layoutConstraint = NSLayoutConstraint.init(item: juView1, attribute: juAttr1!, relatedBy:juRelation, toItem: toItem, attribute: juAttr2!, multiplier:juMulti, constant: juConstant)
+        let layoutConstraint = NSLayoutConstraint.init(item: firstView, attribute: firstAtt!, relatedBy:juRelation, toItem: secondView, attribute: secondAtt!, multiplier:juMulti, constant: juConstant)
         layoutConstraint.priority = juPrioritys
         ju_View.addConstraint(layoutConstraint);
         layoutConstraint.jusLayType=juLayAttribute;

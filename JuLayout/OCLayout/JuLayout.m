@@ -47,7 +47,12 @@
             toItem=_juView1.superview;
         }
     }
-    NSLayoutConstraint *layoutConstraint=[NSLayoutConstraint constraintWithItem:_juView1 attribute:_juAttr1 relatedBy:_juRelation toItem:toItem attribute:_juAttr2 multiplier:_juMulti constant:constant];
+    UIView *firstView=_isMinus?toItem:_juView1;
+    UIView *secondView=_isMinus?_juView1:toItem;
+    NSLayoutAttribute firstAtt=_isMinus?_juAttr2:_juAttr1;
+    NSLayoutAttribute secondAtt=_isMinus?_juAttr1:_juAttr2;
+
+    NSLayoutConstraint *layoutConstraint=[NSLayoutConstraint constraintWithItem:firstView attribute:firstAtt relatedBy:_juRelation toItem:secondView attribute:secondAtt multiplier:_juMulti constant:constant];
     layoutConstraint.priority=_prioritys;
     layoutConstraint.juLayType=_juLayoutType;
     
@@ -63,7 +68,7 @@
 /***************************************************************/
 
 -(void)setJuConstant:(CGFloat)juConstant{
-    _juConstant=juConstant*(_isMinus?-1:1);
+    _juConstant=juConstant;
 }
 -(void)setJuLayoutType:(JuLayoutType)juLayoutType{
     _juLayoutType=juLayoutType;
