@@ -35,7 +35,7 @@
     lab3.text = @"第三个约束第三个约束";
     lab3.backgroundColor = [UIColor greenColor];
     [self.view addSubview:lab3];
-    lab3.juLeftSpace.toView(lab1).equal(10);
+//    lab3.juLeftSpace.toView(lab1).equal(10);
     lab3.juTrail.greatEqual(10);
     lab3.juCenterY.toView(lab1).equal(0);
 

@@ -44,6 +44,16 @@
     }
     return nil;
 }
+//方法未使用
+/*-(NSLayoutConstraint *)juConstrain:(JuLayoutType)juLayType withPry:(UILayoutPriority )priority relatedBy:(NSLayoutRelation)relation{
+    for (NSLayoutConstraint *lastCons in self.ju_Constraints) {
+        if (lastCons.juLayType==juLayType&&lastCons.priority==priority&&relation==lastCons.relation) {
+            return lastCons;
+        }
+    }
+    return nil;
+}*/
+
 -(NSLayoutConstraint *)juConstrain:(JuLayoutType)juLayType{
     if (self.ju_Priority==0.00) self.ju_Priority=UILayoutPriorityRequired;
     NSLayoutConstraint *layoutCons=[self juConstrain:juLayType withPry:self.ju_Priority];
