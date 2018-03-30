@@ -1,5 +1,7 @@
 比masonry还简洁的autolayout约束封装，让约束像写frame一样方便，调用非常简单。
 
+1、单一约束设置
+
 /**
  *  左边约束
  */
@@ -75,6 +77,8 @@
 -(JuLayout *)juAspectWH;
 
 
+
+2、组合约束设置
 **
  *  XY坐标等于另一个view
  */
