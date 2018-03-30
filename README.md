@@ -1,5 +1,17 @@
 比masonry还简洁的autolayout约束封装，让约束像写frame一样方便，调用非常简单。
 
+例：
+UIView *vie=[[UIView alloc]init];
+[self.view addSubview:vie];
+vie.juFrame(CGRectMake(10, 10, 100, 100));
+或
+vie.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
+或
+vie.juLead.equal(10);
+vie.juTrail.equal(10);
+vie.juWidth.equal(100);
+vie.juHeight.equal(100);
+
 1、单一约束设置
 
 /**  左边约束*/
@@ -116,3 +128,5 @@
  
 -(void(^)(JuLayRect juFrame))juAlignY;
 -(void(^)(JuLayRect juFrame,UIView *view))juAlignYTo;
+
+
