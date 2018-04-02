@@ -87,7 +87,7 @@ vie.juHeight.equal(100);
 
 
 
-2、组合约束设置
+2、日常常用的组合约束
 
 **  XY坐标等于另一个view*/
  
@@ -128,14 +128,5 @@ vie.juHeight.equal(100);
 -(void(^)(JuLayEdgeWidth juEdgeW))juEdgeW;
 -(void(^)(JuLayEdgeWidth juEdgeW,UIView *view))juEdgeWTo;
 
-/** X轴对齐:X轴（>0坐边,<0右边，=0中间），Y（上边）宽度，高度*/
- 
--(void(^)(JuLayRect juFrame))juAlignX;
--(void(^)(JuLayRect juFrame,UIView *view))juAlignXTo;
-
-/** Y轴对齐:Y轴（>0坐边,<0右边，=0中间），X（左边边）宽度，高度 */
- 
--(void(^)(JuLayRect juFrame))juAlignY;
--(void(^)(JuLayRect juFrame,UIView *view))juAlignYTo;
 
 
