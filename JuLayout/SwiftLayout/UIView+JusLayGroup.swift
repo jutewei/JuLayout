@@ -78,6 +78,22 @@ extension UIView{
             self.jusCenterY.equal(0);
         }
     }
+    func jusSafeOrigin(_ origin:CGPoint) {
+        if(origin.x>0) {
+            self.jusLead.safe.equal(origin.x);
+        }else if(origin.x<0){
+            self.jusTrail.safe.equal(-origin.x);
+        }else{
+            self.jusCenterX.equal(0);
+        }
+        if(origin.y>0) {
+            self.jusTop.safe.equal(origin.y);
+        }else if(origin.y<0){
+            self.jusBottom.safe.equal(-origin.y);
+        }else{
+            self.jusCenterY.equal(0);
+        }
+    }
     func jusSize(_ size:CGSize) {
         self.jusWidth.equal(size.width);
         self.jusHeight.equal(size.height);
@@ -87,8 +103,18 @@ extension UIView{
         self.jusOrigin(frame.origin);
         self.jusSize(frame.size);
     }
+    func jusSafeFrame(_frame:CGRect) {
+        self.jusSafeOrigin(frame.origin);
+        self.jusSize(frame.size);
+    }
     func jusEdge(_ edge:UIEdgeInsets)  {
         self.jusEdgeTo(edge,self.superview!);
+    }
+    func jusSafeEdge(_ edge:UIEdgeInsets)  {
+        self.jusLead.safe.equal(edge.left);
+        self.jusTrail.safe.equal(edge.right);
+        self.jusTop.safe.equal(edge.top);
+        self.jusBottom.safe.equal(edge.bottom);
     }
 
     func jusEdgeTo(_ edge:UIEdgeInsets,_ view:UIView)  {

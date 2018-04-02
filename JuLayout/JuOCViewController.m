@@ -48,7 +48,6 @@
     vie.juCenterX.equal(0);
     vie.juSize(CGSizeMake(200, 100));
     vie.juBottom.safe.equal(8);
-
 //    juTest = "12345"
 //    NSLog("%@", self.juTest)
 

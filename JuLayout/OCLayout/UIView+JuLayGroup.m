@@ -46,6 +46,24 @@
         }
     };
 }
+-(void(^)(CGPoint origin))juSafeOrigin{
+    return ^(CGPoint origin){
+        if(origin.x>0) {
+            self.juLead.safe.equal(origin.x);
+        }else if(origin.x<0){
+            self.juTrail.safe.equal(-origin.x);
+        }else{
+            self.juCenterX.equal(0);
+        }
+        if(origin.y>0) {
+            self.juTop.safe.equal(origin.y);
+        }else if(origin.y<0){
+            self.juBottom.safe.equal(-origin.y);
+        }else{
+            self.juCenterY.equal(0);
+        }
+    };
+}
 -(void(^)(CGSize size))juSize{
     return ^(CGSize size){
         self.juWidth.equal(size.width);
@@ -58,9 +76,23 @@
         self.juSize(frame.size);
     };
 }
+-(void(^)(CGRect frame))juSafeFrame{
+    return ^(CGRect frame){
+        self.juSafeOrigin(frame.origin);
+        self.juSize(frame.size);
+    };
+}
 -(void(^)(UIEdgeInsets edge))juEdge{
     return ^(UIEdgeInsets edge){
         self.juEdgeTo(edge,nil);
+    };
+}
+-(void(^)(UIEdgeInsets edge))juSafeEdge{
+    return ^(UIEdgeInsets edge){
+        self.juLead.safe.equal(edge.left);
+        self.juTrail.safe.equal(edge.right);
+        self.juTop.safe.equal(edge.top);
+        self.juBottom.safe.equal(edge.bottom);
     };
 }
 -(void(^)(UIEdgeInsets edge,UIView *view))juEdgeTo{
@@ -76,6 +108,25 @@
     return ^(JuLayEdgeHeight juEdgeH){
         self.juEdgeHTo(juEdgeH,nil);
     };
+}
+
+-(void(^)(JuLayEdgeHeight juEdgeH))juSafeEdgeH{
+    return ^(JuLayEdgeHeight juEdgeH){
+        self.juLead.safe.equal(juEdgeH.lead);
+        self.juTrail.safe.equal(juEdgeH.trail);
+        if(juEdgeH.top>0) {
+            self.juTop.safe.equal(juEdgeH.top);
+        }else if(juEdgeH.top==0){
+            self.juCenterY.equal(juEdgeH.top);
+        }else{
+            self.juBottom.safe.equal(-juEdgeH.top);
+        }
+        if(juEdgeH.height>0) {
+            self.juHeight.equal(juEdgeH.height);
+        }
+
+    };
+
 }
 
 -(void(^)(JuLayEdgeHeight juEdgeH,UIView *view))juEdgeHTo{
@@ -102,6 +153,24 @@
     };
 
 }
+-(void(^)(JuLayEdgeWidth juEdgeW))juSafeEdgeW{
+    return ^(JuLayEdgeWidth juEdgeW){
+        self.juTop.safe.equal(juEdgeW.top);
+        self.juBottom.safe.equal(juEdgeW.bottom);
+
+        if(juEdgeW.lead>0) {
+            self.juLead.safe.equal(juEdgeW.lead);
+        }else if(juEdgeW.lead==0){
+            self.juCenterX.equal(juEdgeW.lead);
+        }else{
+            self.juTrail.safe.equal(-juEdgeW.lead);
+        }
+        if(juEdgeW.width>0) {
+            self.juWidth.equal(juEdgeW.width);
+        }
+    };
+
+}
 -(void(^)(JuLayEdgeWidth juEdgeW,UIView *view))juEdgeWTo{
     return ^(JuLayEdgeWidth juEdgeW,UIView *view){
         self.juTop.toView(view).equal(juEdgeW.top);
@@ -124,6 +193,27 @@
 -(void(^)(JuLayRect juFrame))juAlignX{
     return ^(JuLayRect juFrame){
         self.juAlignXTo(juFrame,nil);
+    };
+
+}
+-(void(^)(JuLayRect juFrame))juSafeAlignX{
+    return ^(JuLayRect juFrame){
+        if(juFrame.lead>0) {
+            self.juLead.safe.equal(juFrame.lead);
+        }else if(juFrame.lead==0){
+            self.juCenterX.equal(juFrame.lead);
+        }else{
+            self.juTrail.safe.equal(-juFrame.lead);
+        }
+        self.juTop.safe.equal(juFrame.top);
+
+        if(juFrame.width>0) {
+            self.juWidth.equal(juFrame.width);
+        }
+        if(juFrame.height>0) {
+            self.juHeight.equal(juFrame.height);
+        }
+
     };
 
 }
@@ -156,6 +246,24 @@
 -(void(^)(JuLayRect juFrame))juAlignY{
     return ^(JuLayRect juFrame){
         self.juAlignYTo(juFrame,nil);
+    };
+}
+-(void(^)(JuLayRect juFrame))juSafeAlignYTo{
+    return ^(JuLayRect juFrame){
+        if(juFrame.top>0) {
+            self.juTop.safe.equal(juFrame.top);
+        }else if(juFrame.top==0){
+            self.juCenterY.equal(juFrame.lead);
+        }else{
+            self.juBottom.safe.equal(-juFrame.lead);
+        }
+        self.juLead.safe.equal(juFrame.lead);
+        if(juFrame.width>0) {
+            self.juWidth.equal(juFrame.width);
+        }
+        if(juFrame.height>0) {
+            self.juHeight.equal(juFrame.height);
+        }
     };
 }
 -(void(^)(JuLayRect juFrame,UIView *view))juAlignYTo{

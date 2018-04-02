@@ -57,7 +57,7 @@ UIKIT_STATIC_INLINE JuLayRect JuRectMake(CGFloat lead, CGFloat top, CGFloat widt
  *  XY约束:X（>0左边,<0右边，=0中间）,Y（>0顶端,<0底端，=0中间）
  */
 -(void(^)(CGPoint origin))juOrigin;
-
+-(void(^)(CGPoint origin))juSafeOrigin;
 /**
  *  宽度高度
  */
@@ -67,34 +67,39 @@ UIKIT_STATIC_INLINE JuLayRect JuRectMake(CGFloat lead, CGFloat top, CGFloat widt
  *  frame约束（xy等同juOrigin）
  */
 -(void(^)(CGRect frame))juFrame;
-
+-(void(^)(CGRect frame))juSafeFrame;
 /**
  *  四边约束
  */
 -(void(^)(UIEdgeInsets edge))juEdge;
+-(void(^)(UIEdgeInsets edge))juSafeEdge;
 -(void(^)(UIEdgeInsets edge,UIView *view))juEdgeTo;
 
 /**
  *  左,右 ,Y方向（>0顶端,<0底端，=0中间）,高度约束
  */
 -(void(^)(JuLayEdgeHeight juEdgeH))juEdgeH;
+-(void(^)(JuLayEdgeHeight juEdgeH))juSafeEdgeH;
 -(void(^)(JuLayEdgeHeight juEdgeH,UIView *view))juEdgeHTo;
 
 /**
  *  上,下, X方向（>0坐边,<0右边，=0中间）,高度约束
  */
 -(void(^)(JuLayEdgeWidth juEdgeW))juEdgeW;
+-(void(^)(JuLayEdgeWidth juEdgeW))juSafeEdgeW;
 -(void(^)(JuLayEdgeWidth juEdgeW,UIView *view))juEdgeWTo;
 
 /**
  *  X轴对齐:X轴（>0坐边,<0右边，=0中间），Y（上边）宽度，高度
  */
 -(void(^)(JuLayRect juFrame))juAlignX;
+-(void(^)(JuLayRect juFrame))juSafeAlignX;
 -(void(^)(JuLayRect juFrame,UIView *view))juAlignXTo;
 
 /**
  *  Y轴对齐:Y轴（>0坐边,<0右边，=0中间），X（左边边）宽度，高度
  */
 -(void(^)(JuLayRect juFrame))juAlignY;
+-(void(^)(JuLayRect juFrame))juSafeAlignY;
 -(void(^)(JuLayRect juFrame,UIView *view))juAlignYTo;
 @end

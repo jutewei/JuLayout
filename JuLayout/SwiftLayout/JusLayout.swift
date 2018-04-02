@@ -108,6 +108,7 @@ class JusLayout: NSObject {
                 toItem = juView1.superview?.safeAreaLayoutGuide
             }
         }
+        
         let firstView:Any! = isMinus ? toItem:juView1
         let secondView:Any? = isMinus ? juView1:toItem
         let firstAtt = isMinus ? juAttr2:juAttr1
