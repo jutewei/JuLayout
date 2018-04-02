@@ -35,12 +35,9 @@
     lab3.text = @"第三个约束第三个约束";
     lab3.backgroundColor = [UIColor greenColor];
     [self.view addSubview:lab3];
-//    lab3.juLeftSpace.toView(lab1).equal(10);
+    lab3.juLeftSpace.toView(lab1).equal(10);
     lab3.juTrail.greatEqual(10);
     lab3.juCenterY.toView(lab1).equal(0);
-
-    lab3.juFrame(CGRectMake(10, 10, 100, 100));
-    lab3.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
 
     UIView *vie=[[UIView alloc]init];
     vie.backgroundColor=[UIColor redColor];
@@ -48,6 +45,7 @@
     vie.juCenterX.equal(0);
     vie.juSize(CGSizeMake(200, 100));
     vie.juBottom.safe.equal(8);
+  
 //    juTest = "12345"
 //    NSLog("%@", self.juTest)
 

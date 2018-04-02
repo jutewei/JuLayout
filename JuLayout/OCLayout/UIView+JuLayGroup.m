@@ -190,7 +190,7 @@
     };
     
 }
-
+/*
 -(void(^)(JuLayRect juFrame))juAlignX{
     return ^(JuLayRect juFrame){
         self.juAlignXTo(juFrame,nil);
@@ -254,9 +254,9 @@
         if(juFrame.top>0) {
             self.juTop.safe.equal(juFrame.top);
         }else if(juFrame.top==0){
-            self.juCenterY.equal(juFrame.lead);
+            self.juCenterY.equal(juFrame.top);
         }else{
-            self.juBottom.safe.equal(-juFrame.lead);
+            self.juBottom.safe.equal(-juFrame.top);
         }
         self.juLead.safe.equal(juFrame.lead);
         if(juFrame.width>0) {
@@ -272,9 +272,9 @@
         if(juFrame.top>0) {
             self.juTop.toView(view).equal(juFrame.top);
         }else if(juFrame.top==0){
-            self.juCenterY.toView(view).equal(juFrame.lead);
+            self.juCenterY.toView(view).equal(juFrame.top);
         }else{
-            self.juBottom.toView(view).equal(-juFrame.lead);
+            self.juBottom.toView(view).equal(-juFrame.top);
         }
         
         if(view) {
@@ -291,5 +291,5 @@
         }
         
     };
-}
+}*/
 @end

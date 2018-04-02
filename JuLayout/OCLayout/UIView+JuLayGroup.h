@@ -92,14 +92,14 @@ UIKIT_STATIC_INLINE JuLayRect JuRectMake(CGFloat lead, CGFloat top, CGFloat widt
 /**
  *  X轴对齐:X轴（>0坐边,<0右边，=0中间），Y（上边）宽度，高度
  */
--(void(^)(JuLayRect juFrame))juAlignX;
+/*-(void(^)(JuLayRect juFrame))juAlignX;
 -(void(^)(JuLayRect juFrame))juSafeAlignX;
 -(void(^)(JuLayRect juFrame,UIView *view))juAlignXTo;
-
+*/
 /**
  *  Y轴对齐:Y轴（>0坐边,<0右边，=0中间），X（左边边）宽度，高度
  */
--(void(^)(JuLayRect juFrame))juAlignY;
+/*-(void(^)(JuLayRect juFrame))juAlignY;
 -(void(^)(JuLayRect juFrame))juSafeAlignY;
--(void(^)(JuLayRect juFrame,UIView *view))juAlignYTo;
+-(void(^)(JuLayRect juFrame,UIView *view))juAlignYTo;*/
 @end

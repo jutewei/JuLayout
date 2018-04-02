@@ -165,7 +165,7 @@ extension UIView{
             self.jusWidth.toView(view).equal(juEdgeW.width);
         }
     }
-
+    /*
     func jusAlignX(_ juFrame:JuLayRect)  {
         if self.superview != nil {
             self.jusAlignXTo(juFrame, self.superview!)
@@ -193,4 +193,6 @@ extension UIView{
             self.jusHeight.toView(view).equal(juFrame.height);
         }
     }
+
+     */
 }
