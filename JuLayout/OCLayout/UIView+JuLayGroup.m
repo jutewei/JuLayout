@@ -9,6 +9,7 @@
 #import "UIView+JuLayGroup.h"
 #import "UIView+JuLayout.h"
 @implementation UIView(JuLayGroup)
+
 -(void(^)(UIView *view))juOriginEqual{
     return ^(UIView *view){
         self.juLead.toView(view).equal(0);
@@ -248,7 +249,7 @@
         self.juAlignYTo(juFrame,nil);
     };
 }
--(void(^)(JuLayRect juFrame))juSafeAlignYTo{
+-(void(^)(JuLayRect juFrame))juSafeAlignY{
     return ^(JuLayRect juFrame){
         if(juFrame.top>0) {
             self.juTop.safe.equal(juFrame.top);
