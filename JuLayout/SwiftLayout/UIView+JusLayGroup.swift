@@ -33,6 +33,7 @@ public struct JuLayEdgeWidth {
         self.width = width
     }
 }
+/*
 public struct JuLayRect {
     public var lead: CGFloat
     public var top: CGFloat
@@ -44,7 +45,7 @@ public struct JuLayRect {
         self.top = top
         self.width = width
     }
-}
+}*/
 extension UIView{
 
     func jusOriginEqual(_ view:UIView) {

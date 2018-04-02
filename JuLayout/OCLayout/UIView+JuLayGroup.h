@@ -24,13 +24,13 @@ UIKIT_STATIC_INLINE JuLayEdgeWidth JuEdgeWMake(CGFloat top, CGFloat bottom, CGFl
     return jutblw;
 }
 ///< X,Y,宽度，高度
-typedef struct JuLayRect {
+/*typedef struct JuLayRect {
     CGFloat lead, top, width, height;
 } JuLayRect;
 UIKIT_STATIC_INLINE JuLayRect JuRectMake(CGFloat lead, CGFloat top, CGFloat width, CGFloat height) {
     JuLayRect jultwh = {lead, top, width, height};
     return jultwh;
-}
+}*/
 
 @interface UIView(JuLayGroup)
 
