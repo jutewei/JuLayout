@@ -35,39 +35,28 @@ UIKIT_STATIC_INLINE JuLayRect JuRectMake(CGFloat lead, CGFloat top, CGFloat widt
 @interface UIView(JuLayGroup)
 
 /*
- *本类所以方法为辅助作用，只对同一个view相对约束
+ *本类所以方法为辅助作用，只对同一个view相对约束 标有safe的为安全区域的约束
  */
-
-/**
- *  XY坐标等于另一个view
- */
--(void(^)(UIView *view))juOriginEqual;
-
-/**
- *  宽度高度坐标等于另一个view
- */
--(void(^)(UIView *view))juSizeEqual;
-
-/**
- *  整个约束等于另一个View（一般是等于父view）
- */
--(void(^)(UIView *view))juFrameEqual;
 
 /**
  *  XY约束:X（>0左边,<0右边，=0中间）,Y（>0顶端,<0底端，=0中间）
  */
 -(void(^)(CGPoint origin))juOrigin;
--(void(^)(CGPoint origin))juSafeOrigin;
+-(void(^)(CGPoint origin))juSafeOrigin;///<在juOrigin基础上增加安全区域约束
+-(void(^)(UIView *view))juOriginEqual;///< 约束针对另一个View的约束（不指定view默认为supview）
+
 /**
  *  宽度高度
  */
 -(void(^)(CGSize size))juSize;
-
+-(void(^)(UIView *view))juSizeEqual;///< 宽度高度坐标等于另一个view
 /**
  *  frame约束（xy等同juOrigin）
  */
 -(void(^)(CGRect frame))juFrame;
 -(void(^)(CGRect frame))juSafeFrame;
+-(void(^)(UIView *view))juFrameEqual;
+
 /**
  *  四边约束
  */

@@ -48,21 +48,6 @@ public struct JuLayRect {
 }*/
 extension UIView{
 
-    func jusOriginEqual(_ view:UIView) {
-        self.jusLead.toView(view).equal(0);
-        self.jusTrail.toView(view).equal(0);
-    }
-
-
-    func jusSizeEqual(_ view:UIView) {
-        self.jusWidth.toView(view).equal(0);
-        self.jusHeight.toView(view).equal(0);
-    }
-
-    func jusFrameEqual(_ view:UIView) {
-        self.jusOriginEqual(view);
-        self.jusSizeEqual(view);
-    }
     func jusOrigin(_ origin:CGPoint) {
         if(origin.x>0) {
             self.jusLead.equal(origin.x);
@@ -95,9 +80,18 @@ extension UIView{
             self.jusCenterY.equal(0);
         }
     }
+    func jusOriginEqual(_ view:UIView) {
+        self.jusLead.toView(view).equal(0);
+        self.jusTrail.toView(view).equal(0);
+    }
+
     func jusSize(_ size:CGSize) {
         self.jusWidth.equal(size.width);
         self.jusHeight.equal(size.height);
+    }
+    func jusSizeEqual(_ view:UIView) {
+        self.jusWidth.toView(view).equal(0);
+        self.jusHeight.toView(view).equal(0);
     }
 
     func jusFrame(_frame:CGRect) {
@@ -108,6 +102,11 @@ extension UIView{
         self.jusSafeOrigin(frame.origin);
         self.jusSize(frame.size);
     }
+    func jusFrameEqual(_ view:UIView) {
+        self.jusOriginEqual(view);
+        self.jusSizeEqual(view);
+    }
+
     func jusEdge(_ edge:UIEdgeInsets)  {
         self.jusEdgeTo(edge,self.superview!);
     }
@@ -117,7 +116,6 @@ extension UIView{
         self.jusTop.safe.equal(edge.top);
         self.jusBottom.safe.equal(edge.bottom);
     }
-
     func jusEdgeTo(_ edge:UIEdgeInsets,_ view:UIView)  {
         self.jusLead.toView(view).equal(edge.left);
         self.jusTrail.toView(view).equal(edge.right);
@@ -150,7 +148,6 @@ extension UIView{
             self.jusEdgeWTo(juEdgeW,self.superview!);
         }
     }
-
     func jusEdgeWTo(_ juEdgeW:JuLayEdgeWidth,_ view:UIView)  {
         self.jusTop.toView(view).equal(juEdgeW.top);
         self.jusBottom.toView(view).equal(juEdgeW.bottom);

@@ -1,4 +1,4 @@
-比masonry还简洁的autolayout约束封装，让约束像写frame一样方便，调用非常简单。
+比masonry还简洁的autolayout约束封装，让约束像写frame一样方便，调用非常简单。新版本中添加安全区域的约束，只需约束是加.safe即可，安全区域约束只有上下左右可添加
 
 例：
 UIView *vie=[[UIView alloc]init];
