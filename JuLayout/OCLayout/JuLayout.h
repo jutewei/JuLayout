@@ -12,10 +12,10 @@
 
 @interface JuLayout : NSObject
 
-@property BOOL isMinus;///< 只能为
+@property BOOL isMinus;///< 是否是负数
 
 @property (nonatomic,weak)UIView *juView2;
-@property (nonatomic,weak)UIView *juView1;
+@property (nonatomic,weak)UIView *juView1;///< 当前添加约束的视图
 
 @property (nonatomic) CGFloat juMulti;
 @property (nonatomic) NSLayoutAttribute juAttr1;
@@ -24,6 +24,7 @@
 @property (readonly)  NSLayoutRelation juRelation;
 @property UILayoutPriority prioritys;
 @property (nonatomic) JuLayoutType juLayoutType;
+@property (nonatomic) BOOL isSafe;
 /**
  *  倍数
  */
@@ -39,6 +40,10 @@
  */
 -(JuLayout *(^)(CGFloat  prioritys))priority;
 
+/**
+ *  安全区域
+ */
+-(JuLayout *)safe;
 /**最终设置约束*/
 /**
  *  等于

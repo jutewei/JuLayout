@@ -39,8 +39,16 @@
     lab3.juTrail.greatEqual(10);
     lab3.juCenterY.toView(lab1).equal(0);
 
-    
-    
+    lab3.juFrame(CGRectMake(10, 10, 100, 100));
+    lab3.juEdge(UIEdgeInsetsMake(0, 0, 0, 0));
+
+    UIView *vie=[[UIView alloc]init];
+    vie.backgroundColor=[UIColor redColor];
+    [self.view addSubview:vie];
+    vie.juCenterX.equal(0);
+    vie.juSize(CGSizeMake(200, 100));
+    vie.juBottom.safe.equal(8);
+
 //    juTest = "12345"
 //    NSLog("%@", self.juTest)
 

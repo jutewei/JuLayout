@@ -26,17 +26,27 @@ class ViewController: UIViewController {
         self.view.addSubview(lab2)
         lab2.jusLead.toView(lab1).equal(0)
         lab2.jusTopSpace.toView(lab1).equal(10)
-        
+
         let lab3 = UILabel.init()
         lab3.text = "第三个约束"
         lab3.backgroundColor = UIColor.green
         self.view.addSubview(lab3)
         lab3.jusRighSpace.toView(lab1).equal(10)
         lab3.jusCenterY.toView(lab1).equal(0)
-       
+
+        let vie = UIView.init()
+        vie.backgroundColor = UIColor.red
+        self.view.addSubview(vie)
+        vie.jusCenterX.equal(0);
+        vie.jusSize(CGSize.init(width: 200, height: 100));
+        vie.jusBottom.safe.equal(8);
+
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+            NSLog("%@",self.view.constraints);
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

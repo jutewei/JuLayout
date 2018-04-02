@@ -28,7 +28,7 @@
 -(NSLayoutConstraint *)juAddConstraint{
      if (!_juView1.superview) return nil;
     _juView1.translatesAutoresizingMaskIntoConstraints=NO;
-    UIView *toItem=_juView2;
+    id toItem=_juView2;
     UIView *ju_View=_juView1.superview;
     CGFloat constant=_juConstant;
     if (self.juAttr1==NSLayoutAttributeWidth||_juAttr1==NSLayoutAttributeHeight) {
@@ -46,6 +46,11 @@
         if (!toItem) {
             toItem=_juView1.superview;
         }
+    }
+    if(_isSafe){
+        if (@available(iOS 11.0, *)) {
+            toItem=_juView1.superview.safeAreaLayoutGuide;
+        } 
     }
     UIView *firstView=_isMinus?toItem:_juView1;
     UIView *secondView=_isMinus?_juView1:toItem;
@@ -96,7 +101,13 @@
         return self;///< block返回值
     };
 }
-
+/**
+ *  安全区域
+ */
+-(JuLayout *)safe{
+    _isSafe=YES;
+    return self;
+}
 /**======================最终生成约束=============================**/
 
 -(NSLayoutConstraint *(^)(CGFloat constion))equal{

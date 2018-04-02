@@ -10,7 +10,8 @@ import UIKit
 
 class JusLayout: NSObject {
 
-    var isMinus : Bool = false ///< 只能为
+    var isMinus : Bool = false ///< 是否相反数
+    var isSafe : Bool = false ///< 是否使用安全适配
     weak var juView2 : UIView?
     weak var juView1 : UIView!
     var juMulti : CGFloat = 1.0
@@ -31,6 +32,10 @@ class JusLayout: NSObject {
 
     func multi(_ mulits:CGFloat) -> JusLayout {
         juMulti = mulits
+        return self;
+    }
+    var safe: JusLayout {
+        isSafe = true
         return self;
     }
 
@@ -78,27 +83,33 @@ class JusLayout: NSObject {
         }
         juConstant=constions
         juView1.translatesAutoresizingMaskIntoConstraints = false
-        var toItem = juView2
+        var toView = juView2
         var ju_View :UIView! = juView1.superview
 //        let constant = juConstant
         if (juAttr1 == NSLayoutAttribute.width || juAttr1 == NSLayoutAttribute.height ) {
-            if toItem == nil {
+            if toView == nil {
                 if juConstant == 0 {
-                    toItem = juView1.superview
+                    toView = juView1.superview
                 }else{
                     ju_View = juView1
                 }
             }
-            else if (toItem?.isEqual(juView1) == true){
+            else if (toView?.isEqual(juView1) == true){
                 ju_View = juView1
             }
         }else{
-            if toItem == nil {
-                toItem = juView1.superview
+            if toView == nil {
+                toView = juView1.superview
             }
         }
-        let firstView:UIView! = isMinus ? toItem:juView1
-        let secondView:UIView? = isMinus ? juView1:toItem
+        var toItem :Any! = toView
+        if(isSafe){
+            if #available(iOS 11.0, *) {
+                toItem = juView1.superview?.safeAreaLayoutGuide
+            }
+        }
+        let firstView:Any! = isMinus ? toItem:juView1
+        let secondView:Any? = isMinus ? juView1:toItem
         let firstAtt = isMinus ? juAttr2:juAttr1
         let secondAtt = isMinus ? juAttr1:juAttr2
 
