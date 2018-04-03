@@ -43,8 +43,8 @@
     vie.backgroundColor=[UIColor redColor];
     [self.view addSubview:vie];
     vie.juCenterX.equal(0);
-    vie.juSize(CGSizeMake(200, 100));
-    vie.juBottom.safe.equal(10);
+    vie.juSize(CGSizeMake(0, 100));
+    vie.juBottom.safe.equal(0);
   
 //    juTest = "12345"
 //    NSLog("%@", self.juTest)

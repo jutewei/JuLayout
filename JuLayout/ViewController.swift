@@ -38,8 +38,8 @@ class ViewController: UIViewController {
         vie.backgroundColor = UIColor.red
         self.view.addSubview(vie)
         vie.jusCenterX.equal(0);
-        vie.jusSize(CGSize.init(width: 200, height: 100));
-        vie.jusBottom.safe.equal(40);
+        vie.jusSize(CGSize.init(width: 0, height: 100));
+        vie.jusBottom.safe.equal(0);
 
         // Do any additional setup after loading the view, typically from a nib.
     }
