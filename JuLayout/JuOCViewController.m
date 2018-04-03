@@ -44,7 +44,7 @@
     [self.view addSubview:vie];
     vie.juCenterX.equal(0);
     vie.juSize(CGSizeMake(200, 100));
-    vie.juBottom.safe.equal(8);
+    vie.juBottom.safe.equal(10);
   
 //    juTest = "12345"
 //    NSLog("%@", self.juTest)

@@ -115,12 +115,12 @@
     return ^(JuLayEdgeHeight juEdgeH){
         self.juLead.safe.equal(juEdgeH.lead);
         self.juTrail.safe.equal(juEdgeH.trail);
-        if(juEdgeH.top>0) {
-            self.juTop.safe.equal(juEdgeH.top);
-        }else if(juEdgeH.top==0){
-            self.juCenterY.equal(juEdgeH.top);
+        if(juEdgeH.y>0) {
+            self.juTop.safe.equal(juEdgeH.y);
+        }else if(juEdgeH.y==0){
+            self.juCenterY.equal(juEdgeH.y);
         }else{
-            self.juBottom.safe.equal(-juEdgeH.top);
+            self.juBottom.safe.equal(-juEdgeH.y);
         }
         if(juEdgeH.height>0) {
             self.juHeight.equal(juEdgeH.height);
@@ -134,12 +134,12 @@
     return ^(JuLayEdgeHeight juEdgeH,UIView *view){
         self.juLead.toView(view).equal(juEdgeH.lead);
         self.juTrail.toView(view).equal(juEdgeH.trail);
-        if(juEdgeH.top>0) {
-             self.juTop.toView(view).equal(juEdgeH.top);
-        }else if(juEdgeH.top==0){
-             self.juCenterY.toView(view).equal(juEdgeH.top);
+        if(juEdgeH.y>0) {
+             self.juTop.toView(view).equal(juEdgeH.y);
+        }else if(juEdgeH.y==0){
+             self.juCenterY.toView(view).equal(juEdgeH.y);
         }else{
-             self.juBottom.toView(view).equal(-juEdgeH.top);
+             self.juBottom.toView(view).equal(-juEdgeH.y);
         }
         if(juEdgeH.height>0) {
              self.juHeight.toView(view).equal(juEdgeH.height);
@@ -159,12 +159,12 @@
         self.juTop.safe.equal(juEdgeW.top);
         self.juBottom.safe.equal(juEdgeW.bottom);
 
-        if(juEdgeW.lead>0) {
-            self.juLead.safe.equal(juEdgeW.lead);
-        }else if(juEdgeW.lead==0){
-            self.juCenterX.equal(juEdgeW.lead);
+        if(juEdgeW.x>0) {
+            self.juLead.safe.equal(juEdgeW.x);
+        }else if(juEdgeW.x==0){
+            self.juCenterX.equal(juEdgeW.x);
         }else{
-            self.juTrail.safe.equal(-juEdgeW.lead);
+            self.juTrail.safe.equal(-juEdgeW.x);
         }
         if(juEdgeW.width>0) {
             self.juWidth.equal(juEdgeW.width);
@@ -177,12 +177,12 @@
         self.juTop.toView(view).equal(juEdgeW.top);
         self.juBottom.toView(view).equal(juEdgeW.bottom);
         
-        if(juEdgeW.lead>0) {
-             self.juLead.toView(view).equal(juEdgeW.lead);
-        }else if(juEdgeW.lead==0){
-             self.juCenterX.toView(view).equal(juEdgeW.lead);
+        if(juEdgeW.x>0) {
+             self.juLead.toView(view).equal(juEdgeW.x);
+        }else if(juEdgeW.x==0){
+             self.juCenterX.toView(view).equal(juEdgeW.x);
         }else{
-             self.juTrail.toView(view).equal(-juEdgeW.lead);
+             self.juTrail.toView(view).equal(-juEdgeW.x);
         }
         if(juEdgeW.width>0) {
              self.juWidth.toView(view).equal(juEdgeW.width);

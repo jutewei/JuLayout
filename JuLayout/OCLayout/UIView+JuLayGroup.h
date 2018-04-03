@@ -9,19 +9,19 @@
 #import <UIKit/UIKit.h>
 ///< 左右上高度
 typedef struct JuLayEdgeHeight {
-    CGFloat lead, trail, top, height;
+    CGFloat lead, trail, y, height;
 } JuLayEdgeHeight;
-UIKIT_STATIC_INLINE JuLayEdgeHeight JuEdgeHMake(CGFloat lead, CGFloat trail, CGFloat top, CGFloat height) {
-    JuLayEdgeHeight julrth = {lead, trail, top, height};
-    return julrth;
+UIKIT_STATIC_INLINE JuLayEdgeHeight JuEdgeHMake(CGFloat lead, CGFloat trail, CGFloat y, CGFloat height) {
+    JuLayEdgeHeight edgeH = {lead, trail, y, height};
+    return edgeH;
 }
 ///< 上下左宽度
 typedef struct JuLayEdgeWidth {
-    CGFloat top, bottom, lead, width;
+    CGFloat top, bottom, x, width;
 } JuLayEdgeWidth;
-UIKIT_STATIC_INLINE JuLayEdgeWidth JuEdgeWMake(CGFloat top, CGFloat bottom, CGFloat lead, CGFloat width) {
-    JuLayEdgeWidth jutblw = {top, bottom, lead, width};
-    return jutblw;
+UIKIT_STATIC_INLINE JuLayEdgeWidth JuEdgeWMake(CGFloat top, CGFloat bottom, CGFloat x, CGFloat width) {
+    JuLayEdgeWidth edgeW = {top, bottom, x, width};
+    return edgeW;
 }
 ///< X,Y,宽度，高度
 /*typedef struct JuLayRect {

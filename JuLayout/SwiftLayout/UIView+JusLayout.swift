@@ -9,7 +9,7 @@
 import UIKit
 extension UIView{
     private  func newJuLayMinus(_ firstAtt:NSLayoutAttribute, layoutType:JuLayoutAttribute) -> JusLayout {
-        return self.newJuLay(firstAtt, secondAtt: firstAtt, layoutType: layoutType)
+        return self.newJuLayMinus(firstAtt, secondAtt: firstAtt, layoutType: layoutType)
     }
     private  func newJuLayMinus(_ firstAtt:NSLayoutAttribute,secondAtt:NSLayoutAttribute, layoutType:JuLayoutAttribute) -> JusLayout {
         let layout = self.newJuLay(firstAtt, secondAtt: secondAtt, layoutType: layoutType)

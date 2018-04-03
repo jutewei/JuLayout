@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         lab3.text = "第三个约束"
         lab3.backgroundColor = UIColor.green
         self.view.addSubview(lab3)
-        lab3.jusRighSpace.toView(lab1).equal(10)
+        lab3.jusTrail.equal(10)
         lab3.jusCenterY.toView(lab1).equal(0)
 
         let vie = UIView.init()
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         self.view.addSubview(vie)
         vie.jusCenterX.equal(0);
         vie.jusSize(CGSize.init(width: 200, height: 100));
-        vie.jusBottom.safe.equal(8);
+        vie.jusBottom.safe.equal(40);
 
         // Do any additional setup after loading the view, typically from a nib.
     }
