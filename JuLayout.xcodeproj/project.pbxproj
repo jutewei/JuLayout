@@ -22,6 +22,7 @@
 		EB169EDA1E0390FE00687FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB169ED81E0390FE00687FE3 /* Main.storyboard */; };
 		EB169EDC1E0390FE00687FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB169EDB1E0390FE00687FE3 /* Assets.xcassets */; };
 		EB169EDF1E0390FE00687FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB169EDD1E0390FE00687FE3 /* LaunchScreen.storyboard */; };
+		EB9BD0F422F0342600D80865 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9BD0F322F0342600D80865 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		EB169EDB1E0390FE00687FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB169EDE1E0390FE00687FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB169EE01E0390FE00687FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9BD0F222F0342600D80865 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		EB9BD0F322F0342600D80865 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				DC0DB5931E05399B00BA2996 /* UIView+JuLayGroup.m */,
 				DC0DB5941E05399B00BA2996 /* UIView+JuLayout.h */,
 				DC0DB5951E05399B00BA2996 /* UIView+JuLayout.m */,
+				EB9BD0F222F0342600D80865 /* UIView+Frame.h */,
+				EB9BD0F322F0342600D80865 /* UIView+Frame.m */,
 			);
 			path = OCLayout;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -202,6 +208,7 @@
 				DC0DB57D1E051E4B00BA2996 /* JuOCViewController.m in Sources */,
 				DC0DB56A1E051A6000BA2996 /* UIView+JusFrame.swift in Sources */,
 				EB169ED71E0390FE00687FE3 /* ViewController.swift in Sources */,
+				EB9BD0F422F0342600D80865 /* UIView+Frame.m in Sources */,
 				DC0DB5691E051A6000BA2996 /* JusLayout.swift in Sources */,
 				DC0DB5981E05399B00BA2996 /* UIView+JuLayGroup.m in Sources */,
 				DC0DB56C1E051A6000BA2996 /* UIView+JusLayGroup.swift in Sources */,
@@ -334,12 +341,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3Y5SHRC9L9;
 				INFOPLIST_FILE = JuLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.JuLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "JuLayout/OCLayout/JuLayout-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -350,11 +358,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3Y5SHRC9L9;
 				INFOPLIST_FILE = JuLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wbitech.JuLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "JuLayout/OCLayout/JuLayout-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

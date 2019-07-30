@@ -1,18 +1,17 @@
 //
 //  UIView+Layout.h
-//  JuLayout
+//  testBlock
 //
 //  Created by Juvid on 16/7/17.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "JuLayout.h"
 #import "UIView+JuLayGroup.h"
-@interface UIView (JuLayout)
-//@property (nonatomic,strong)NSLayoutConstraint *layOr
+#import "JuLayout.h"
+#import "UIView+Frame.h"
 
-//-(NSLayoutConstraint *)juAddConstraint:(JuLayout *)juLayout;
+@interface UIView (JuLayout)
 
 /**
  *  左边约束
@@ -37,12 +36,12 @@
 /**
  *  约束者的左边相对于约束对象右边（space）
  */
--(JuLayout *)juLeftSpace;
+-(JuLayout *)juLeaSpace;
 
 /**
  *  约束者的右边相对于约束对象左边（space）
  */
--(JuLayout *)juRighSpace;
+-(JuLayout *)juTraSpace;
 
 /**
  *  约束者的顶端边相对于约束对象底端（space）
@@ -51,7 +50,7 @@
 /**
  *  约束者的底端边相对于约束对象顶端（space）
  */
--(JuLayout *)juBomSpace;
+-(JuLayout *)juBtmSpace;
 
 /**
  *  底端文本对齐
@@ -61,7 +60,7 @@
 /**
  *  顶端文本对齐
  */
--(JuLayout *)juFirstLine;
+-(JuLayout *)juFirLine;
 
 /**
  *  X轴对齐
@@ -89,11 +88,4 @@
 -(JuLayout *)juAspectWH;
 
 
-/**
- 内容优先级
- */
--(void(^)(UILayoutPriority priority))juHorConHugPri;
--(void(^)(UILayoutPriority priority))juVerConHugPri;
--(void(^)(UILayoutPriority priority))juVerConComResPri;
--(void(^)(UILayoutPriority priority))juHorConComResPri;
 @end

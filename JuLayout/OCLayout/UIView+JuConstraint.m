@@ -1,9 +1,9 @@
 //
-//  UIView+JuConstraint.m
+//  NSObject+JuConstraint.m
 //  JuConsout
 //
 //  Created by Juvid on 16/7/19.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import "UIView+JuConstraint.h"
@@ -44,16 +44,6 @@
     }
     return nil;
 }
-//方法未使用
-/*-(NSLayoutConstraint *)juConstrain:(JuLayoutType)juLayType withPry:(UILayoutPriority )priority relatedBy:(NSLayoutRelation)relation{
-    for (NSLayoutConstraint *lastCons in self.ju_Constraints) {
-        if (lastCons.juLayType==juLayType&&lastCons.priority==priority&&relation==lastCons.relation) {
-            return lastCons;
-        }
-    }
-    return nil;
-}*/
-
 -(NSLayoutConstraint *)juConstrain:(JuLayoutType)juLayType{
     if (self.ju_Priority==0.00) self.ju_Priority=UILayoutPriorityRequired;
     NSLayoutConstraint *layoutCons=[self juConstrain:juLayType withPry:self.ju_Priority];
@@ -91,36 +81,33 @@
     return  [self juConstrain:JuLayoutAspectWH];
 }
 
--(UIView *)ju_PriHigh{
+-(void)setJu_Trail:(CGFloat)value{
+    NSLayoutConstraint *layout=[self juConstrain:JuLayoutTrail];
+    layout.constant=-value;
+}
+
+-(void)setJu_Bottom:(CGFloat)value{
+    NSLayoutConstraint *layout=[self juConstrain:JuLayoutBottom];
+    layout.constant=-value;
+}
+
+-(UIView *)ju_PryHigh{
     self.ju_Priority=UILayoutPriorityDefaultHigh;
    return self;
 }
--(UIView *)ju_PriLow{
+-(UIView *)ju_PryLow{
     self.ju_Priority=UILayoutPriorityDefaultLow;
    return self;
 }
--(UIView *)ju_PriLevel{
+-(UIView *)ju_PryLevel{
     self.ju_Priority=UILayoutPriorityFittingSizeLevel;
     return self;
 }
--(UIView *(^)(float priority))ju_PriEqual{
+-(UIView *(^)(float priority))ju_PryEqual{
     return ^UIView *(float priority){
         self.ju_Priority=priority;
        return self;
     };
-}
-
--(UILayoutPriority)ju_HorConHugPri{
-    return [self contentHuggingPriorityForAxis:UILayoutConstraintAxisHorizontal];
-}
--(UILayoutPriority)ju_VerConHugPri{
-    return [self contentHuggingPriorityForAxis:UILayoutConstraintAxisVertical];
-}
--(UILayoutPriority)ju_VerConComResPri{
-    return [self contentCompressionResistancePriorityForAxis:UILayoutConstraintAxisVertical];
-}
--(UILayoutPriority)ju_HorConComResPri{
-    return [self contentCompressionResistancePriorityForAxis:UILayoutConstraintAxisHorizontal];
 }
 @end
 

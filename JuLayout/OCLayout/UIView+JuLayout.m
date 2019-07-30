@@ -1,14 +1,50 @@
 //
 //  UIView+Layout.m
-//  JuLayout
+//  testBlock
 //
 //  Created by Juvid on 16/7/17.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import "UIView+JuLayout.h"
 //#import "JuLayout.h"
 @implementation UIView (JuLayout)
+/*
+ -(NSLayoutConstraint *)juAddConstraint:(JuLayout *)juLayout{
+ self.translatesAutoresizingMaskIntoConstraints=NO;
+ if (!self.superview) return nil;
+ UIView *toItem=juLayout.juView2;
+ UIView *addConsView=self.superview;
+ CGFloat constant=juLayout.juConstant;
+ if (juLayout.juAttr1==NSLayoutAttributeWidth||juLayout.juAttr1==NSLayoutAttributeHeight) {
+ if (!toItem) {
+ if (constant==0) {///< 等于0时约束等于父view
+ toItem=self.superview;
+ }else{///< 自己加约束
+ addConsView=self;
+ }
+ }
+ else if([toItem isEqual:self]){///< 长宽比例时
+ addConsView=self;
+ }
+ }else{
+ if (!toItem) {
+ toItem=self.superview;
+ }
+ }
+ NSLayoutConstraint *layoutConstraint=[NSLayoutConstraint constraintWithItem:self attribute:juLayout.juAttr1 relatedBy:juLayout.juRelation toItem:toItem attribute:juLayout.juAttr2 multiplier:juLayout.juMulti constant:constant];
+ layoutConstraint.priority=juLayout.prioritys;
+ layoutConstraint.juLayType=juLayout.juLayoutType;
+
+ [self juCompareSameCons:layoutConstraint];
+
+ if (!self.ju_Constraints) self.ju_Constraints=[NSMutableArray array];
+ [self.ju_Constraints addObject:layoutConstraint];
+
+ [addConsView addConstraint:layoutConstraint];
+ return layoutConstraint;
+ }*/
+
 
 -(JuLayout *)newJuLayMinus:(NSLayoutAttribute)firstAtt withType:(JuLayoutType)layoutType{
     return [self newJuLayMinus:firstAtt secondAtt:firstAtt withType:layoutType];
@@ -41,24 +77,24 @@
 -(JuLayout *)juBottom{
     return [self newJuLayMinus:NSLayoutAttributeBottom withType:JuLayoutBottom];
 }
--(JuLayout *)juLeftSpace{
+-(JuLayout *)juLeaSpace{
     return [self newJuLay:NSLayoutAttributeLeading secondAtt:NSLayoutAttributeTrailing withType:JuLayoutLead];
 }
--(JuLayout *)juRighSpace{
+-(JuLayout *)juTraSpace{
     return [self newJuLayMinus:NSLayoutAttributeTrailing secondAtt:NSLayoutAttributeLeading withType:JuLayoutTrail];
 }
 
 -(JuLayout *)juTopSpace{
     return [self newJuLay:NSLayoutAttributeTop secondAtt:NSLayoutAttributeBottom withType:JuLayoutTop];
 }
--(JuLayout *)juBomSpace{
+-(JuLayout *)juBtmSpace{
     return [self newJuLayMinus:NSLayoutAttributeBottom secondAtt:NSLayoutAttributeTop withType:JuLayoutBottom];
 }
 -(JuLayout *)juLastLine{
     return [self newJuLay:NSLayoutAttributeLastBaseline withType:JuLayoutBottom];
 }
 
--(JuLayout *)juFirstLine{
+-(JuLayout *)juFirLine{
     return  [self newJuLay:NSLayoutAttributeFirstBaseline withType:JuLayoutTop];
 }
 -(JuLayout *)juCenterX{
@@ -78,27 +114,5 @@
     return [self newJuLay:NSLayoutAttributeWidth secondAtt:NSLayoutAttributeHeight withType:JuLayoutAspectWH];
 }
 
-/**
- 内容优先级
- */
--(void(^)(UILayoutPriority priority))juHorConHugPri{
-    return ^(UILayoutPriority priority){
-        [self setContentHuggingPriority:priority forAxis:UILayoutConstraintAxisHorizontal];
-    };
-}
--(void(^)(UILayoutPriority priority))juVerConHugPri{
-    return ^(UILayoutPriority priority){
-         [self setContentHuggingPriority:priority forAxis:UILayoutConstraintAxisVertical];
-    };
-}
--(void(^)(UILayoutPriority priority))juVerConComResPri{
-    return ^(UILayoutPriority priority){
-        [self setContentCompressionResistancePriority:priority forAxis:UILayoutConstraintAxisVertical];
-    };
-}
--(void(^)(UILayoutPriority priority))juHorConComResPri{
-    return ^(UILayoutPriority priority){
-         [self setContentCompressionResistancePriority:priority forAxis:UILayoutConstraintAxisHorizontal];
-    };
-}
+
 @end

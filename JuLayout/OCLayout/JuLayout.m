@@ -1,9 +1,9 @@
 //
 //  JuLayout.m
-//  JuLayout
+//  testBlock
 //
 //  Created by Juvid on 16/7/17.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import "JuLayout.h"
@@ -22,6 +22,8 @@
  *  @author Juvid, 16-07-18 09:07:29
  *
  *  添加约束
+ *
+ *  @param juLayout 约束属性（对象）
  *
  *  @return 约束
  */
@@ -50,14 +52,14 @@
     if(_isSafe){
         if (@available(iOS 11.0, *)) {
             toItem=_juView1.superview.safeAreaLayoutGuide;
-        } 
+        }
     }
     UIView *firstView=_isMinus?toItem:_juView1;
     UIView *secondView=_isMinus?_juView1:toItem;
     NSLayoutAttribute firstAtt=_isMinus?_juAttr2:_juAttr1;
     NSLayoutAttribute secondAtt=_isMinus?_juAttr1:_juAttr2;
-
     NSLayoutConstraint *layoutConstraint=[NSLayoutConstraint constraintWithItem:firstView attribute:firstAtt relatedBy:_juRelation toItem:secondView attribute:secondAtt multiplier:_juMulti constant:constant];
+//    NSLayoutConstraint *layoutConstraint=[NSLayoutConstraint constraintWithItem:_juView1 attribute:_juAttr1 relatedBy:_juRelation toItem:toItem attribute:_juAttr2 multiplier:_juMulti constant:constant];
     layoutConstraint.priority=_prioritys;
     layoutConstraint.juLayType=_juLayoutType;
     
@@ -73,7 +75,8 @@
 /***************************************************************/
 
 -(void)setJuConstant:(CGFloat)juConstant{
-    _juConstant=juConstant;
+//    _juConstant=juConstant*(_isMinus?-1:1);
+      _juConstant=juConstant;
 }
 -(void)setJuLayoutType:(JuLayoutType)juLayoutType{
     _juLayoutType=juLayoutType;
@@ -117,7 +120,7 @@
         return  [self juAddConstraint];
     };
 }
--(NSLayoutConstraint *(^)(CGFloat constion))greatEqual{
+-(NSLayoutConstraint *(^)(CGFloat constion))greaterEqual{
     return ^NSLayoutConstraint* (CGFloat constion){
          _juRelation=NSLayoutRelationGreaterThanOrEqual;
         self.juConstant=constion;

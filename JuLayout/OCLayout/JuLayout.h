@@ -1,9 +1,9 @@
 //
 //  JuLayout.h
-//  JuLayout
+//  testBlock
 //
 //  Created by Juvid on 16/7/17.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,10 +12,10 @@
 
 @interface JuLayout : NSObject
 
-@property BOOL isMinus;///< 是否是负数
+@property BOOL isMinus;///< 只能为
 
 @property (nonatomic,weak)UIView *juView2;
-@property (nonatomic,weak)UIView *juView1;///< 当前添加约束的视图
+@property (nonatomic,weak)UIView *juView1;
 
 @property (nonatomic) CGFloat juMulti;
 @property (nonatomic) NSLayoutAttribute juAttr1;
@@ -54,7 +54,7 @@
 /**
  *  大于
  */
--(NSLayoutConstraint *(^)(CGFloat constion))greatEqual;
+-(NSLayoutConstraint *(^)(CGFloat constion))greaterEqual;
 
 /**
  *  小于

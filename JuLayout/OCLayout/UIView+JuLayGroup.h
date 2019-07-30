@@ -3,60 +3,64 @@
 //  JuLayout
 //
 //  Created by Juvid on 16/7/17.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+
 ///< 左右上高度
 typedef struct JuLayEdgeHeight {
     CGFloat lead, trail, y, height;
 } JuLayEdgeHeight;
 UIKIT_STATIC_INLINE JuLayEdgeHeight JuEdgeHMake(CGFloat lead, CGFloat trail, CGFloat y, CGFloat height) {
-    JuLayEdgeHeight edgeH = {lead, trail, y, height};
-    return edgeH;
+    JuLayEdgeHeight julrth = {lead, trail, y, height};
+    return julrth;
 }
 ///< 上下左宽度
 typedef struct JuLayEdgeWidth {
     CGFloat top, bottom, x, width;
 } JuLayEdgeWidth;
 UIKIT_STATIC_INLINE JuLayEdgeWidth JuEdgeWMake(CGFloat top, CGFloat bottom, CGFloat x, CGFloat width) {
-    JuLayEdgeWidth edgeW = {top, bottom, x, width};
-    return edgeW;
+    JuLayEdgeWidth jutblw = {top, bottom, x, width};
+    return jutblw;
 }
-///< X,Y,宽度，高度
-/*typedef struct JuLayRect {
-    CGFloat lead, top, width, height;
-} JuLayRect;
-UIKIT_STATIC_INLINE JuLayRect JuRectMake(CGFloat lead, CGFloat top, CGFloat width, CGFloat height) {
-    JuLayRect jultwh = {lead, top, width, height};
-    return jultwh;
-}*/
+
 
 @interface UIView(JuLayGroup)
 
 /*
- *本类所以方法为辅助作用，只对同一个view相对约束 标有safe的为安全区域的约束
+ *本类所以方法为辅助作用，只对同一个view相对约束
  */
 
 /**
  *  XY约束:X（>0左边,<0右边，=0中间）,Y（>0顶端,<0底端，=0中间）
  */
 -(void(^)(CGPoint origin))juOrigin;
--(void(^)(CGPoint origin))juSafeOrigin;///<在juOrigin基础上增加安全区域约束
--(void(^)(UIView *view))juOriginEqual;///< 约束针对另一个View的约束（不指定view默认为supview）
+/**
+ *  XY坐标等于另一个view
+ */
+-(void(^)(UIView *view))juOriginEqual;
+
+-(void(^)(CGPoint origin))juSafeOrigin;
 
 /**
  *  宽度高度
  */
 -(void(^)(CGSize size))juSize;
--(void(^)(UIView *view))juSizeEqual;///< 宽度高度坐标等于另一个view
+/**
+ *  宽度高度坐标等于另一个view
+ */
+-(void(^)(UIView *view))juSizeEqual;
+
 /**
  *  frame约束（xy等同juOrigin）
  */
 -(void(^)(CGRect frame))juFrame;
 -(void(^)(CGRect frame))juSafeFrame;
+/**
+ *  整个约束等于另一个View（一般是等于父view）
+ */
 -(void(^)(UIView *view))juFrameEqual;
-
 /**
  *  四边约束
  */
@@ -78,17 +82,5 @@ UIKIT_STATIC_INLINE JuLayRect JuRectMake(CGFloat lead, CGFloat top, CGFloat widt
 -(void(^)(JuLayEdgeWidth juEdgeW))juSafeEdgeW;
 -(void(^)(JuLayEdgeWidth juEdgeW,UIView *view))juEdgeWTo;
 
-/**
- *  X轴对齐:X轴（>0坐边,<0右边，=0中间），Y（上边）宽度，高度
- */
-/*-(void(^)(JuLayRect juFrame))juAlignX;
--(void(^)(JuLayRect juFrame))juSafeAlignX;
--(void(^)(JuLayRect juFrame,UIView *view))juAlignXTo;
-*/
-/**
- *  Y轴对齐:Y轴（>0坐边,<0右边，=0中间），X（左边边）宽度，高度
- */
-/*-(void(^)(JuLayRect juFrame))juAlignY;
--(void(^)(JuLayRect juFrame))juSafeAlignY;
--(void(^)(JuLayRect juFrame,UIView *view))juAlignYTo;*/
+
 @end

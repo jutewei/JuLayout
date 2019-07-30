@@ -16,12 +16,12 @@ class JusLayout: NSObject {
     weak var juView1 : UIView!
     var juMulti : CGFloat = 1.0
 
-    var juAttr1 : NSLayoutAttribute?
-    var juAttr2 : NSLayoutAttribute?
+    var juAttr1 : NSLayoutConstraint.Attribute?
+    var juAttr2 : NSLayoutConstraint.Attribute?
 
     var juConstant : CGFloat = 0.0
-    var juRelation  = NSLayoutRelation.equal
-    var juPrioritys  = UILayoutPriorityRequired
+    var juRelation  = NSLayoutConstraint.Relation.equal
+    var juPrioritys  = UILayoutPriority.required
     var juLayAttribute :JuLayoutAttribute?{
         didSet{
             if juLayAttribute  == JuLayoutAttribute.aspectWH {
@@ -52,11 +52,11 @@ class JusLayout: NSObject {
     }*/
     
     func priority(_ prioritys:Float) -> JusLayout {
-        juPrioritys = prioritys
+        juPrioritys = UILayoutPriority(rawValue: prioritys)
         return self
     }
     func equal(_ constion:CGFloat)  {
-        juRelation = NSLayoutRelation.equal;
+        juRelation = NSLayoutConstraint.Relation.equal;
         self.juAddConstraint(constion)
     }
     
@@ -69,11 +69,11 @@ class JusLayout: NSObject {
     }*/
     
     func greaterEqual(_ constion:CGFloat) {
-        juRelation = NSLayoutRelation.greaterThanOrEqual;
+        juRelation = NSLayoutConstraint.Relation.greaterThanOrEqual;
         self.juAddConstraint(constion)
     }
     func lessEqual(_ constion:CGFloat)  {
-         juRelation = NSLayoutRelation.lessThanOrEqual;
+        juRelation = NSLayoutConstraint.Relation.lessThanOrEqual;
          self.juAddConstraint(constion)
     }
    
@@ -86,7 +86,7 @@ class JusLayout: NSObject {
         var toView = juView2
         var ju_View :UIView! = juView1.superview
 //        let constant = juConstant
-        if (juAttr1 == NSLayoutAttribute.width || juAttr1 == NSLayoutAttribute.height ) {
+        if (juAttr1 == NSLayoutConstraint.Attribute.width || juAttr1 == NSLayoutConstraint.Attribute.height ) {
             if toView == nil {
                 if juConstant == 0 {
                     toView = juView1.superview

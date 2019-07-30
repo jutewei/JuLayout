@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let juPrioritys = UILayoutPriority.RawExponent
+
         let lab1 = UILabel.init()
         lab1.backgroundColor = UIColor.red
         lab1.text = "第一个约束居中"

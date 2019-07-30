@@ -66,11 +66,11 @@ extension UIView{
         return nil
     }
     func jusConstrain(_ juLayType:JuLayoutAttribute?) -> NSLayoutConstraint? {
-        if jus_Priority == 0.00 {
-            self.jus_Priority = UILayoutPriorityRequired;
+        if jus_Priority?.rawValue  == 0.00 {
+            self.jus_Priority = UILayoutPriority.required;
         }
         let layoutCons = self.jusConstrain(juLayType, priority:jus_Priority)
-        self.jus_Priority=UILayoutPriorityRequired;
+        self.jus_Priority=UILayoutPriority.required;
         return layoutCons
 
     }
@@ -105,35 +105,35 @@ extension UIView{
     
     /// 查找优先级（基本不用）
     var jus_PriHigh : UIView{
-        self.jus_Priority=UILayoutPriorityDefaultHigh;
+        self.jus_Priority=UILayoutPriority.defaultHigh;
         return self;
     }
     var jus_PriLow : UIView{
-        self.jus_Priority=UILayoutPriorityDefaultLow;
+        self.jus_Priority=UILayoutPriority.defaultLow;
         return self;
     }
     var jus_PriLevel : UIView{
-        self.jus_Priority=UILayoutPriorityFittingSizeLevel;
+        self.jus_Priority=UILayoutPriority.fittingSizeLevel;
         return self;
     }
     func jus_PriEqual(_ priority:Float) -> UIView {
-        self.jus_Priority=priority;
+        self.jus_Priority=UILayoutPriority(rawValue: priority);
         return self;
     }
 
     
     /// 查找内容优先级
     var jus_HorConHugPri :UILayoutPriority?{
-        return self.contentHuggingPriority(for: UILayoutConstraintAxis.horizontal)
+        return self.contentHuggingPriority(for: NSLayoutConstraint.Axis.horizontal)
     }
     var jus_VerConHugPri :UILayoutPriority?{
-        return self.contentHuggingPriority(for: UILayoutConstraintAxis.vertical)
+        return self.contentHuggingPriority(for: NSLayoutConstraint.Axis.vertical)
     }
     var jus_VerConComResPri :UILayoutPriority?{
-        return self.contentCompressionResistancePriority(for: UILayoutConstraintAxis.vertical)
+        return self.contentCompressionResistancePriority(for: NSLayoutConstraint.Axis.vertical)
     }
     var jus_HorConComResPri :UILayoutPriority?{
-        return self.contentCompressionResistancePriority(for: UILayoutConstraintAxis.horizontal)
+        return self.contentCompressionResistancePriority(for: NSLayoutConstraint.Axis.horizontal)
     }
 //    var ju_Constraints :NSMutableArray?
 

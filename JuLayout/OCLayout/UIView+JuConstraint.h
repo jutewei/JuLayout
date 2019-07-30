@@ -1,9 +1,9 @@
 //
-//  UIView+JuConstraint.h
+//  NSObject+JuConstraint.h
 //  JuLayout
 //
 //  Created by Juvid on 16/7/19.
-//  Copyright © 2016年 Juvid. All rights reserved.
+//  Copyright © 2016年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -45,18 +45,17 @@ typedef NS_ENUM(NSInteger,JuLayoutType){
 
 
 /**
- 查找相关优先级
+ 兼容老版本
+ 用相反数
  */
--(UIView *)ju_PriHigh;///< 750
--(UIView *)ju_PriLow;///< 250
--(UIView *)ju_PriLevel;///< 50
--(UIView *(^)(float priority))ju_PriEqual;///< 自定义优先级
+-(void)setJu_Trail:(CGFloat)value;
+-(void)setJu_Bottom:(CGFloat)value;
 
+-(UIView *)ju_PryHigh;///< 750
+-(UIView *)ju_PryLow;///< 250
+-(UIView *)ju_PryLevel;///< 50
+-(UIView *(^)(float priority))ju_PryEqual;///< 自定义优先级
 
--(UILayoutPriority)ju_HorConHugPri;
--(UILayoutPriority)ju_VerConHugPri;
--(UILayoutPriority)ju_VerConComResPri;
--(UILayoutPriority)ju_HorConComResPri;
 @end
 
 @interface NSLayoutConstraint (JuConstraint)
