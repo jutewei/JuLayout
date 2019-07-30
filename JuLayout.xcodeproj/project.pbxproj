@@ -79,7 +79,6 @@
 		DC0DB58C1E05399B00BA2996 /* OCLayout */ = {
 			isa = PBXGroup;
 			children = (
-				DC0DB58D1E05399B00BA2996 /* JuLayout-Bridging-Header.h */,
 				DC0DB58E1E05399B00BA2996 /* JuLayout.h */,
 				DC0DB58F1E05399B00BA2996 /* JuLayout.m */,
 				DC0DB5901E05399B00BA2996 /* UIView+JuConstraint.h */,
@@ -119,6 +118,7 @@
 				EB169ED61E0390FE00687FE3 /* ViewController.swift */,
 				DC0DB57B1E051E4B00BA2996 /* JuOCViewController.h */,
 				DC0DB57C1E051E4B00BA2996 /* JuOCViewController.m */,
+				DC0DB58D1E05399B00BA2996 /* JuLayout-Bridging-Header.h */,
 				EB169ED81E0390FE00687FE3 /* Main.storyboard */,
 				EB169EDB1E0390FE00687FE3 /* Assets.xcassets */,
 				EB169EDD1E0390FE00687FE3 /* LaunchScreen.storyboard */,
