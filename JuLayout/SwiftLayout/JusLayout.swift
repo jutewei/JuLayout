@@ -114,7 +114,7 @@ class JusLayout: NSObject {
         let firstAtt = isMinus ? juAttr2:juAttr1
         let secondAtt = isMinus ? juAttr1:juAttr2
 
-        let layoutConstraint = NSLayoutConstraint.init(item: firstView, attribute: firstAtt!, relatedBy:juRelation, toItem: secondView, attribute: secondAtt!, multiplier:juMulti, constant: juConstant)
+        let layoutConstraint = NSLayoutConstraint.init(item: firstView ?? UIView.init(), attribute: firstAtt!, relatedBy:juRelation, toItem: secondView, attribute: secondAtt!, multiplier:juMulti, constant: juConstant)
         layoutConstraint.priority = juPrioritys
         ju_View.addConstraint(layoutConstraint);
         layoutConstraint.jusLayType=juLayAttribute;

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name    = 'JuLayout'
-  s.version = '1.1'
+  s.version = '1.2'
   s.summary = 'JuLayout'
   s.homepage    = 'https://github.com/jutewei/JuLayout'
   s.license = 'MIT'
