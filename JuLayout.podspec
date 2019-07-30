@@ -10,8 +10,6 @@ Pod::Spec.new do |s|
   s.swift_version = '5'
   s.source  = {:git => 'https://github.com/jutewei/JuLayout.git', :tag => s.version}
   s.source_files  =  "JuLayout/OCLayout/*.{h,m}"
-  s.source_files  =  "JuLayout/SwiftLayout/*.{swift}"
   s.requires_arc = true
-  s.frameworks  = 'UIKit', 'AVFoundation',
-
+  s.frameworks  = 'UIKit', 'AVFoundation'
 end
