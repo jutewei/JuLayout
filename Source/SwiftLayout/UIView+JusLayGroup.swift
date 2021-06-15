@@ -94,11 +94,11 @@ extension UIView{
         self.jusHeight.toView(view).equal(0);
     }
 
-    func jusFrame(_frame:CGRect) {
+    func jusFrame(_ frame:CGRect) {
         self.jusOrigin(frame.origin);
         self.jusSize(frame.size);
     }
-    func jusSafeFrame(_frame:CGRect) {
+    func jusSafeFrame(_ frame:CGRect) {
         self.jusSafeOrigin(frame.origin);
         self.jusSize(frame.size);
     }

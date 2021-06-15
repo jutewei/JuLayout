@@ -1,0 +1,22 @@
+PODS:
+  - JuLayout (1.0):
+    - JuLayout/Core (= 1.0)
+  - JuLayout/Core (1.0):
+    - JuLayout/Core/JuLayout (= 1.0)
+    - JuLayout/Core/JusLayout (= 1.0)
+  - JuLayout/Core/JuLayout (1.0)
+  - JuLayout/Core/JusLayout (1.0)
+
+DEPENDENCIES:
+  - JuLayout (from `./`)
+
+EXTERNAL SOURCES:
+  JuLayout:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  JuLayout: b11d77b174c37df9015b563753b9b6a9f5fcf440
+
+PODFILE CHECKSUM: 2499db5cf71e259e88ffbe95f8d50597ca8df152
+
+COCOAPODS: 1.10.1
