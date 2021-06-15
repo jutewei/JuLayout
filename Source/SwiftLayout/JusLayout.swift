@@ -30,7 +30,7 @@ public class JusLayout: NSObject {
         }
     }
 
-    public func multi(_ mulits:CGFloat) -> JusLayout {
+    public  func multi(_ mulits:CGFloat) -> JusLayout {
         juMulti = mulits
         return self;
     }
@@ -72,7 +72,7 @@ public class JusLayout: NSObject {
         juRelation = NSLayoutConstraint.Relation.greaterThanOrEqual;
         self.juAddConstraint(constion)
     }
-    public func lessEqual(_ constion:CGFloat)  {
+    public  func lessEqual(_ constion:CGFloat)  {
         juRelation = NSLayoutConstraint.Relation.lessThanOrEqual;
          self.juAddConstraint(constion)
     }
