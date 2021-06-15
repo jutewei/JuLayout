@@ -7,7 +7,7 @@ platform :ios, '10.0'
 inhibit_all_warnings!
 
 target 'JuLayout' do
-    pod 'JuLayout', :path => './'
+    pod 'JuLayout', :path => './', :subspecs => ['LayoutObjC']
 end
 
 

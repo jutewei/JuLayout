@@ -1,22 +1,18 @@
 PODS:
-  - JuLayout (1.0):
-    - JuLayout/Core (= 1.0)
-  - JuLayout/Core (1.0):
-    - JuLayout/Core/JuLayout (= 1.0)
-    - JuLayout/Core/JusLayout (= 1.0)
-  - JuLayout/Core/JuLayout (1.0)
-  - JuLayout/Core/JusLayout (1.0)
+  - JuLayout/LayoutObjC (1.0):
+    - JuLayout/LayoutSwift
+  - JuLayout/LayoutSwift (1.0)
 
 DEPENDENCIES:
-  - JuLayout (from `./`)
+  - JuLayout/LayoutObjC (from `./`)
 
 EXTERNAL SOURCES:
   JuLayout:
     :path: "./"
 
 SPEC CHECKSUMS:
-  JuLayout: b11d77b174c37df9015b563753b9b6a9f5fcf440
+  JuLayout: 4072b608158f80ece641346b9a92fd3dba28b692
 
-PODFILE CHECKSUM: 2499db5cf71e259e88ffbe95f8d50597ca8df152
+PODFILE CHECKSUM: 620cc3026e0b066cc328d328432a547b9fa2280a
 
 COCOAPODS: 1.10.1

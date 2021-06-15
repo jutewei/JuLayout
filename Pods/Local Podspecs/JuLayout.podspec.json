@@ -21,17 +21,17 @@
   "requires_arc": true,
   "subspecs": [
     {
-      "name": "Core",
-      "subspecs": [
-        {
-          "name": "JuLayout",
-          "source_files": "Source/OCLayout/*.{h,m}"
-        },
-        {
-          "name": "JusLayout",
-          "source_files": "Source/SwiftLayout/*.swift"
-        }
-      ]
+      "name": "LayoutSwift",
+      "source_files": "Source/SwiftLayout/*.swift"
+    },
+    {
+      "name": "LayoutObjC",
+      "source_files": "Source/OCLayout/*.{h,m}",
+      "dependencies": {
+        "JuLayout/LayoutSwift": [
+
+        ]
+      }
     }
   ],
   "swift_version": "5"

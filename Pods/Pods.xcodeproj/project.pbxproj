@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		109ADAF7FB356E285D8DFA2068427EFC /* UIView+JusConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767E68B987983236426B2486AC74E5FA /* UIView+JusConstraint.swift */; };
-		39408827642B66A8796ABE457D4D0257 /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003E60648B7C9A44AD95B177C280BB4 /* UIView+JuLayout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3D76BA897F9CBFECFD4D8331693770DA /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 8736FD3B291DC8526E6B5D3A4C4095B2 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4AD6F1B5B9B90217DD2FE401A6980AA6 /* UIView+JuLayGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B85108F6B7D42B051AD62068809C8C2 /* UIView+JuLayGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6124B00D1189B12F5F9D3B3D0F146BF0 /* UIView+JuConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C8E0EEC5218CB052F4CA86FE37D24D36 /* UIView+JuConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8EB488686A0B6974355378F49A163037 /* UIView+JusFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856141EB339ECDF76C7DC1EF86475EF2 /* UIView+JusFrame.swift */; };
-		940A168145A7D0BCF803FBFDF8A75B59 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E4D9BEAB835B992E7E1EFD6A02E335 /* UIView+Frame.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		ADDC5DF60AD1CB197EBDBACBC0148012 /* UIView+JuLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B903D8608E99DC07AECD97E5A933B4A /* UIView+JuLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AE2669ED49FDBF7AFE5AED58BFCDAEE0 /* JuLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0585BB7D40537FF25F878CFB950DB363 /* JuLayout-dummy.m */; };
-		B615648AC5C4D33EBD4BD80B29CB0DE4 /* UIView+JuConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 529B0DB649009CA23DB2D5BCB257BC45 /* UIView+JuConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C7DFAC7F0A8CDDBD4ABF8FF3C209BB6F /* JuLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 150FA7018E8E58BF115EC33DCCB9E395 /* JuLayout-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CCEE9C1AA01D1FC1025701747B3CF2D3 /* UIView+JusLayGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB7398213F604F15F8F6FC71F38CE2 /* UIView+JusLayGroup.swift */; };
+		109ADAF7FB356E285D8DFA2068427EFC /* UIView+JusConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF4DBAA94FD89807C1F89C5BE16833 /* UIView+JusConstraint.swift */; };
+		39408827642B66A8796ABE457D4D0257 /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A217BCA569DF79B96C64997C0E3760 /* UIView+JuLayout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3D76BA897F9CBFECFD4D8331693770DA /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1A29572E553852272ED65345FD68C8 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4AD6F1B5B9B90217DD2FE401A6980AA6 /* UIView+JuLayGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = AC6F9D3BD2E9924DC203397A7BBB7898 /* UIView+JuLayGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6124B00D1189B12F5F9D3B3D0F146BF0 /* UIView+JuConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6B60F4E6AC84C5AE5EB867261BCB2B /* UIView+JuConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8EB488686A0B6974355378F49A163037 /* UIView+JusFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3F128D7A22AFA5CBBDC1B3AC6C53A /* UIView+JusFrame.swift */; };
+		940A168145A7D0BCF803FBFDF8A75B59 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F88E9E5CE95FEE7DB9DBECB1B96FD4 /* UIView+Frame.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		ADDC5DF60AD1CB197EBDBACBC0148012 /* UIView+JuLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 287CB06375337593EF34844860C09ED1 /* UIView+JuLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AE2669ED49FDBF7AFE5AED58BFCDAEE0 /* JuLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1BDD6A345A6D408397BE2CB1F0A917 /* JuLayout-dummy.m */; };
+		B615648AC5C4D33EBD4BD80B29CB0DE4 /* UIView+JuConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A958529FE9E5088044EB4C28676777D /* UIView+JuConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C7DFAC7F0A8CDDBD4ABF8FF3C209BB6F /* JuLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DC95B25579F839364470553C368E705 /* JuLayout-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CCEE9C1AA01D1FC1025701747B3CF2D3 /* UIView+JusLayGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B27962703C945FAA5DD64C812E503 /* UIView+JusLayGroup.swift */; };
 		D4274F8FB462141DC1B09DC61E0678F8 /* Pods-JuLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6447388C88AB240482EBF5F4359BE29D /* Pods-JuLayout-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D60B8879B9F3673CA57D429300999197 /* UIView+JuLayGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 840500ED091D9413D756ED9627EB20FA /* UIView+JuLayGroup.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D6BF4F9B27056CC088075EFE88E8A011 /* JuLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1464C594A2019AF825A7DF379CC738C5 /* JuLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D9846549B1E7AC873EF5D92426A4DC5E /* JusLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B4EAEE9A9A24E79C69865B50CC8713 /* JusLayout.swift */; };
+		D60B8879B9F3673CA57D429300999197 /* UIView+JuLayGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A8063CCCFDE72BC5B85FC2E0D2CB6437 /* UIView+JuLayGroup.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D6BF4F9B27056CC088075EFE88E8A011 /* JuLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC4B9DF6D875E7E91757CA493200A99 /* JuLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D9846549B1E7AC873EF5D92426A4DC5E /* JusLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18BF0B3699F4C649D952AD85F922D53 /* JusLayout.swift */; };
 		DFF188ABEAF564C1F37A5BD95A1DBEA7 /* Pods-JuLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA3407A6302FFBAC9C9EAA0C7E18099 /* Pods-JuLayout-dummy.m */; };
-		E86E0CFD8B4C249EE96B06BAE1CB3C9B /* UIView+JusLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3652CA44D41A156F78258DFF984EE /* UIView+JusLayout.swift */; };
-		F93F4EF8C0C5E7AE9B44A8EB5EEF8411 /* JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F0E464F8B52303F9098B5BCD96028 /* JuLayout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E86E0CFD8B4C249EE96B06BAE1CB3C9B /* UIView+JusLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73E42E0998FDC0D0FD5915B9F644A5F /* UIView+JusLayout.swift */; };
+		F93F4EF8C0C5E7AE9B44A8EB5EEF8411 /* JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2A7F1BA7D78E63DC3BF583C973088 /* JuLayout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		21EA33258F3A4CE462D5A5897BAB9E03 /* PBXContainerItemProxy */ = {
+		2C87A5F28970D885ACF34F72CCF26B4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -39,39 +39,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0585BB7D40537FF25F878CFB950DB363 /* JuLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JuLayout-dummy.m"; sourceTree = "<group>"; };
-		0B85108F6B7D42B051AD62068809C8C2 /* UIView+JuLayGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JuLayGroup.h"; path = "Source/OCLayout/UIView+JuLayGroup.h"; sourceTree = "<group>"; };
-		1464C594A2019AF825A7DF379CC738C5 /* JuLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JuLayout.h; path = Source/OCLayout/JuLayout.h; sourceTree = "<group>"; };
-		150FA7018E8E58BF115EC33DCCB9E395 /* JuLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JuLayout-umbrella.h"; sourceTree = "<group>"; };
-		1A7CDFDC59445E6748214D69A7D550D0 /* JuLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JuLayout.modulemap; sourceTree = "<group>"; };
-		2F0F71904E9087239DF5D1D8D9976DD1 /* JuLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JuLayout-prefix.pch"; sourceTree = "<group>"; };
-		41A3652CA44D41A156F78258DFF984EE /* UIView+JusLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusLayout.swift"; path = "Source/SwiftLayout/UIView+JusLayout.swift"; sourceTree = "<group>"; };
+		287CB06375337593EF34844860C09ED1 /* UIView+JuLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JuLayout.h"; path = "Source/OCLayout/UIView+JuLayout.h"; sourceTree = "<group>"; };
+		3BE787FD06FF7AD6DCEB8A61219E6106 /* JuLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuLayout.debug.xcconfig; sourceTree = "<group>"; };
 		4EA3407A6302FFBAC9C9EAA0C7E18099 /* Pods-JuLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JuLayout-dummy.m"; sourceTree = "<group>"; };
-		529B0DB649009CA23DB2D5BCB257BC45 /* UIView+JuConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JuConstraint.m"; path = "Source/OCLayout/UIView+JuConstraint.m"; sourceTree = "<group>"; };
+		4FF3F128D7A22AFA5CBBDC1B3AC6C53A /* UIView+JusFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusFrame.swift"; path = "Source/SwiftLayout/UIView+JusFrame.swift"; sourceTree = "<group>"; };
+		519EF15F429D1238BE487C3D53BA2B8D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		57D1CDBCC38170337B9BF9210DB6102C /* Pods-JuLayout-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JuLayout-acknowledgements.markdown"; sourceTree = "<group>"; };
 		59BF5F921BE7D228ECD87DC254875F3B /* libJuLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJuLayout.a; path = libJuLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B903D8608E99DC07AECD97E5A933B4A /* UIView+JuLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JuLayout.h"; path = "Source/OCLayout/UIView+JuLayout.h"; sourceTree = "<group>"; };
-		6003E60648B7C9A44AD95B177C280BB4 /* UIView+JuLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JuLayout.m"; path = "Source/OCLayout/UIView+JuLayout.m"; sourceTree = "<group>"; };
+		5B617B122E7CA4C063C7232A9582D337 /* JuLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JuLayout.modulemap; sourceTree = "<group>"; };
 		6447388C88AB240482EBF5F4359BE29D /* Pods-JuLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JuLayout-umbrella.h"; sourceTree = "<group>"; };
-		6D8A095092BB41FCBC8B84D338FC67A6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		73B4EAEE9A9A24E79C69865B50CC8713 /* JusLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JusLayout.swift; path = Source/SwiftLayout/JusLayout.swift; sourceTree = "<group>"; };
+		6DC95B25579F839364470553C368E705 /* JuLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JuLayout-umbrella.h"; sourceTree = "<group>"; };
+		6EC4B9DF6D875E7E91757CA493200A99 /* JuLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JuLayout.h; path = Source/OCLayout/JuLayout.h; sourceTree = "<group>"; };
 		74A9D671C771B9CF2B0474C593A36FE1 /* Pods-JuLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JuLayout.modulemap"; sourceTree = "<group>"; };
-		767E68B987983236426B2486AC74E5FA /* UIView+JusConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusConstraint.swift"; path = "Source/SwiftLayout/UIView+JusConstraint.swift"; sourceTree = "<group>"; };
-		7ECB7398213F604F15F8F6FC71F38CE2 /* UIView+JusLayGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusLayGroup.swift"; path = "Source/SwiftLayout/UIView+JusLayGroup.swift"; sourceTree = "<group>"; };
+		7BAF4DBAA94FD89807C1F89C5BE16833 /* UIView+JusConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusConstraint.swift"; path = "Source/SwiftLayout/UIView+JusConstraint.swift"; sourceTree = "<group>"; };
+		7F6B60F4E6AC84C5AE5EB867261BCB2B /* UIView+JuConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JuConstraint.h"; path = "Source/OCLayout/UIView+JuConstraint.h"; sourceTree = "<group>"; };
 		82D1552788333C7961AF29D69A24B28F /* Pods-JuLayout-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JuLayout-acknowledgements.plist"; sourceTree = "<group>"; };
-		840500ED091D9413D756ED9627EB20FA /* UIView+JuLayGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JuLayGroup.m"; path = "Source/OCLayout/UIView+JuLayGroup.m"; sourceTree = "<group>"; };
-		856141EB339ECDF76C7DC1EF86475EF2 /* UIView+JusFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusFrame.swift"; path = "Source/SwiftLayout/UIView+JusFrame.swift"; sourceTree = "<group>"; };
-		8736FD3B291DC8526E6B5D3A4C4095B2 /* UIView+Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "Source/OCLayout/UIView+Frame.h"; sourceTree = "<group>"; };
+		84A217BCA569DF79B96C64997C0E3760 /* UIView+JuLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JuLayout.m"; path = "Source/OCLayout/UIView+JuLayout.m"; sourceTree = "<group>"; };
+		8A958529FE9E5088044EB4C28676777D /* UIView+JuConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JuConstraint.m"; path = "Source/OCLayout/UIView+JuConstraint.m"; sourceTree = "<group>"; };
 		8F6F8FE5FA493D09383D74929FAF6FB9 /* libPods-JuLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JuLayout.a"; path = "libPods-JuLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E065E2B1897C221341C63A42891D44 /* Pods-JuLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JuLayout.release.xcconfig"; sourceTree = "<group>"; };
-		9D2F0E464F8B52303F9098B5BCD96028 /* JuLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JuLayout.m; path = Source/OCLayout/JuLayout.m; sourceTree = "<group>"; };
+		9A1A29572E553852272ED65345FD68C8 /* UIView+Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "Source/OCLayout/UIView+Frame.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B75FF4F5D62D58AAB8DE08E4105A8CB8 /* JuLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuLayout.debug.xcconfig; sourceTree = "<group>"; };
+		A6CDD560009D1BAE5CD4180713C53361 /* JuLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JuLayout-prefix.pch"; sourceTree = "<group>"; };
+		A73E42E0998FDC0D0FD5915B9F644A5F /* UIView+JusLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusLayout.swift"; path = "Source/SwiftLayout/UIView+JusLayout.swift"; sourceTree = "<group>"; };
+		A8063CCCFDE72BC5B85FC2E0D2CB6437 /* UIView+JuLayGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JuLayGroup.m"; path = "Source/OCLayout/UIView+JuLayGroup.m"; sourceTree = "<group>"; };
+		A93B27962703C945FAA5DD64C812E503 /* UIView+JusLayGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusLayGroup.swift"; path = "Source/SwiftLayout/UIView+JusLayGroup.swift"; sourceTree = "<group>"; };
+		AC6F9D3BD2E9924DC203397A7BBB7898 /* UIView+JuLayGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JuLayGroup.h"; path = "Source/OCLayout/UIView+JuLayGroup.h"; sourceTree = "<group>"; };
+		BE1BDD6A345A6D408397BE2CB1F0A917 /* JuLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JuLayout-dummy.m"; sourceTree = "<group>"; };
+		C1A2A7F1BA7D78E63DC3BF583C973088 /* JuLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JuLayout.m; path = Source/OCLayout/JuLayout.m; sourceTree = "<group>"; };
 		C5D1984A622EB520638C8A2440BEA393 /* Pods-JuLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JuLayout.debug.xcconfig"; sourceTree = "<group>"; };
-		C8E0EEC5218CB052F4CA86FE37D24D36 /* UIView+JuConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JuConstraint.h"; path = "Source/OCLayout/UIView+JuConstraint.h"; sourceTree = "<group>"; };
-		D12AAF9FCCE165765F0B9F449870201A /* JuLayout.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JuLayout.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D26B38021DB2947FDDDE3AAB8A63C18F /* JuLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuLayout.release.xcconfig; sourceTree = "<group>"; };
-		D6E4D9BEAB835B992E7E1EFD6A02E335 /* UIView+Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "Source/OCLayout/UIView+Frame.m"; sourceTree = "<group>"; };
+		C7E28803E4431CEBB9FDF27DD6732619 /* JuLayout.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JuLayout.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C8A4F589A504C7009E37CB7E88CD5E15 /* JuLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuLayout.release.xcconfig; sourceTree = "<group>"; };
+		D18BF0B3699F4C649D952AD85F922D53 /* JusLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JusLayout.swift; path = Source/SwiftLayout/JusLayout.swift; sourceTree = "<group>"; };
+		E7F88E9E5CE95FEE7DB9DBECB1B96FD4 /* UIView+Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "Source/OCLayout/UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,61 +101,67 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A5C1E7A834DA45EE22288EAE6EAB1F3 /* JuLayout */ = {
+		4C91E690B9F7BE4F79A1AFB9CA22796E /* LayoutSwift */ = {
 			isa = PBXGroup;
 			children = (
-				1464C594A2019AF825A7DF379CC738C5 /* JuLayout.h */,
-				9D2F0E464F8B52303F9098B5BCD96028 /* JuLayout.m */,
-				8736FD3B291DC8526E6B5D3A4C4095B2 /* UIView+Frame.h */,
-				D6E4D9BEAB835B992E7E1EFD6A02E335 /* UIView+Frame.m */,
-				C8E0EEC5218CB052F4CA86FE37D24D36 /* UIView+JuConstraint.h */,
-				529B0DB649009CA23DB2D5BCB257BC45 /* UIView+JuConstraint.m */,
-				0B85108F6B7D42B051AD62068809C8C2 /* UIView+JuLayGroup.h */,
-				840500ED091D9413D756ED9627EB20FA /* UIView+JuLayGroup.m */,
-				5B903D8608E99DC07AECD97E5A933B4A /* UIView+JuLayout.h */,
-				6003E60648B7C9A44AD95B177C280BB4 /* UIView+JuLayout.m */,
+				D18BF0B3699F4C649D952AD85F922D53 /* JusLayout.swift */,
+				7BAF4DBAA94FD89807C1F89C5BE16833 /* UIView+JusConstraint.swift */,
+				4FF3F128D7A22AFA5CBBDC1B3AC6C53A /* UIView+JusFrame.swift */,
+				A93B27962703C945FAA5DD64C812E503 /* UIView+JusLayGroup.swift */,
+				A73E42E0998FDC0D0FD5915B9F644A5F /* UIView+JusLayout.swift */,
 			);
-			name = JuLayout;
+			name = LayoutSwift;
 			sourceTree = "<group>";
 		};
-		77F1535FE0C757DBA0F9AB0CE8FA509E /* Core */ = {
+		6FEB5823A65B640A0AD8FFA15DC6437C /* LayoutObjC */ = {
 			isa = PBXGroup;
 			children = (
-				4A5C1E7A834DA45EE22288EAE6EAB1F3 /* JuLayout */,
-				A972FDBDF2A4ADBF3AFFFA852760B685 /* JusLayout */,
+				6EC4B9DF6D875E7E91757CA493200A99 /* JuLayout.h */,
+				C1A2A7F1BA7D78E63DC3BF583C973088 /* JuLayout.m */,
+				9A1A29572E553852272ED65345FD68C8 /* UIView+Frame.h */,
+				E7F88E9E5CE95FEE7DB9DBECB1B96FD4 /* UIView+Frame.m */,
+				7F6B60F4E6AC84C5AE5EB867261BCB2B /* UIView+JuConstraint.h */,
+				8A958529FE9E5088044EB4C28676777D /* UIView+JuConstraint.m */,
+				AC6F9D3BD2E9924DC203397A7BBB7898 /* UIView+JuLayGroup.h */,
+				A8063CCCFDE72BC5B85FC2E0D2CB6437 /* UIView+JuLayGroup.m */,
+				287CB06375337593EF34844860C09ED1 /* UIView+JuLayout.h */,
+				84A217BCA569DF79B96C64997C0E3760 /* UIView+JuLayout.m */,
 			);
-			name = Core;
+			name = LayoutObjC;
 			sourceTree = "<group>";
 		};
-		824441DB74F63538950A99A6FFEAD075 /* Development Pods */ = {
+		7D2C4C2E2A8C41A7CF568F644E1757A1 /* JuLayout */ = {
 			isa = PBXGroup;
 			children = (
-				B384CC3A09F72AB3A509F71539626F48 /* JuLayout */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		A972FDBDF2A4ADBF3AFFFA852760B685 /* JusLayout */ = {
-			isa = PBXGroup;
-			children = (
-				73B4EAEE9A9A24E79C69865B50CC8713 /* JusLayout.swift */,
-				767E68B987983236426B2486AC74E5FA /* UIView+JusConstraint.swift */,
-				856141EB339ECDF76C7DC1EF86475EF2 /* UIView+JusFrame.swift */,
-				7ECB7398213F604F15F8F6FC71F38CE2 /* UIView+JusLayGroup.swift */,
-				41A3652CA44D41A156F78258DFF984EE /* UIView+JusLayout.swift */,
-			);
-			name = JusLayout;
-			sourceTree = "<group>";
-		};
-		B384CC3A09F72AB3A509F71539626F48 /* JuLayout */ = {
-			isa = PBXGroup;
-			children = (
-				77F1535FE0C757DBA0F9AB0CE8FA509E /* Core */,
-				CA9DE722D4FDD9E3FCC751D44548CFEA /* Pod */,
-				F72B01321FB40D28B40C8D89E9586014 /* Support Files */,
+				6FEB5823A65B640A0AD8FFA15DC6437C /* LayoutObjC */,
+				4C91E690B9F7BE4F79A1AFB9CA22796E /* LayoutSwift */,
+				C55EA101F4E89AADC2E951D0981F5E6E /* Pod */,
+				AC74B238B3E360EBFA3977000CC50140 /* Support Files */,
 			);
 			name = JuLayout;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		AC74B238B3E360EBFA3977000CC50140 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B617B122E7CA4C063C7232A9582D337 /* JuLayout.modulemap */,
+				BE1BDD6A345A6D408397BE2CB1F0A917 /* JuLayout-dummy.m */,
+				A6CDD560009D1BAE5CD4180713C53361 /* JuLayout-prefix.pch */,
+				6DC95B25579F839364470553C368E705 /* JuLayout-umbrella.h */,
+				3BE787FD06FF7AD6DCEB8A61219E6106 /* JuLayout.debug.xcconfig */,
+				C8A4F589A504C7009E37CB7E88CD5E15 /* JuLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/JuLayout";
+			sourceTree = "<group>";
+		};
+		B5505A78EF04C25FBFAF75C0F50E3102 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D2C4C2E2A8C41A7CF568F644E1757A1 /* JuLayout */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		BEECF83ABCD52F1431EF4B2ABCD6812C /* Pods-JuLayout */ = {
@@ -173,11 +179,11 @@
 			path = "Target Support Files/Pods-JuLayout";
 			sourceTree = "<group>";
 		};
-		CA9DE722D4FDD9E3FCC751D44548CFEA /* Pod */ = {
+		C55EA101F4E89AADC2E951D0981F5E6E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				D12AAF9FCCE165765F0B9F449870201A /* JuLayout.podspec */,
-				6D8A095092BB41FCBC8B84D338FC67A6 /* README.md */,
+				C7E28803E4431CEBB9FDF27DD6732619 /* JuLayout.podspec */,
+				519EF15F429D1238BE487C3D53BA2B8D /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -186,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				824441DB74F63538950A99A6FFEAD075 /* Development Pods */,
+				B5505A78EF04C25FBFAF75C0F50E3102 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				262C6E86A64622557DFCF1466063B708 /* Products */,
 				F327093CB4B46227380A667BF3EE818B /* Targets Support Files */,
@@ -206,20 +212,6 @@
 				BEECF83ABCD52F1431EF4B2ABCD6812C /* Pods-JuLayout */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F72B01321FB40D28B40C8D89E9586014 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1A7CDFDC59445E6748214D69A7D550D0 /* JuLayout.modulemap */,
-				0585BB7D40537FF25F878CFB950DB363 /* JuLayout-dummy.m */,
-				2F0F71904E9087239DF5D1D8D9976DD1 /* JuLayout-prefix.pch */,
-				150FA7018E8E58BF115EC33DCCB9E395 /* JuLayout-umbrella.h */,
-				B75FF4F5D62D58AAB8DE08E4105A8CB8 /* JuLayout.debug.xcconfig */,
-				D26B38021DB2947FDDDE3AAB8A63C18F /* JuLayout.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Pods/Target Support Files/JuLayout";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +270,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E44E8668A5AFD6F0A4FEBF7BCBD975A0 /* PBXTargetDependency */,
+				39D32C907468B35D5515ABEA5979294C /* PBXTargetDependency */,
 			);
 			name = "Pods-JuLayout";
 			productName = "Pods-JuLayout";
@@ -370,11 +362,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E44E8668A5AFD6F0A4FEBF7BCBD975A0 /* PBXTargetDependency */ = {
+		39D32C907468B35D5515ABEA5979294C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JuLayout;
 			target = 72110691CB601C21F7884D92B9F1D28E /* JuLayout */;
-			targetProxy = 21EA33258F3A4CE462D5A5897BAB9E03 /* PBXContainerItemProxy */;
+			targetProxy = 2C87A5F28970D885ACF34F72CCF26B4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -404,7 +396,7 @@
 		};
 		68237D57DB42707CE2E996D82DF82D24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D26B38021DB2947FDDDE3AAB8A63C18F /* JuLayout.release.xcconfig */;
+			baseConfigurationReference = C8A4F589A504C7009E37CB7E88CD5E15 /* JuLayout.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -579,7 +571,7 @@
 		};
 		EC573A4E9A6CC2E7F91771C07A74889F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B75FF4F5D62D58AAB8DE08E4105A8CB8 /* JuLayout.debug.xcconfig */;
+			baseConfigurationReference = 3BE787FD06FF7AD6DCEB8A61219E6106 /* JuLayout.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
