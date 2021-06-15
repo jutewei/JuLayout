@@ -23,8 +23,8 @@ public enum JuLayoutAttribute : Int {
 private var juConstraints: Void?
 private var juPriority : Void?
 private var ju_LayType :Void?
-extension UIView{
-    var jus_Constraints: NSMutableArray? {
+public extension UIView{
+    public  var jus_Constraints: NSMutableArray? {
         get {
             return objc_getAssociatedObject(self, &juConstraints) as? NSMutableArray
         }
@@ -32,7 +32,7 @@ extension UIView{
             objc_setAssociatedObject(self, &juConstraints, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
-    var jus_Priority : UILayoutPriority?{
+    public  var jus_Priority : UILayoutPriority?{
         get {
             return objc_getAssociatedObject(self, &juPriority) as? UILayoutPriority
         }
@@ -41,7 +41,7 @@ extension UIView{
         }
     }
 
-    func jusCompareSameCons(_ currentCons:NSLayoutConstraint?)  {
+    public func jusCompareSameCons(_ currentCons:NSLayoutConstraint?)  {
         let layoutCons = self.jusConstrain(currentCons?.jusLayType, priority: currentCons?.priority)
         if layoutCons != nil {
             if (self.superview?.constraints.contains(layoutCons!)) == true {
@@ -53,7 +53,7 @@ extension UIView{
             }
         }
     }
-    func jusConstrain(_ juLayType:JuLayoutAttribute?,priority:UILayoutPriority?) -> NSLayoutConstraint? {
+    public func jusConstrain(_ juLayType:JuLayoutAttribute?,priority:UILayoutPriority?) -> NSLayoutConstraint? {
         if ((jus_Constraints?.count) != nil) {
             for constraint in jus_Constraints! {
                 let lastCons = constraint as! NSLayoutConstraint
@@ -65,7 +65,7 @@ extension UIView{
 
         return nil
     }
-    func jusConstrain(_ juLayType:JuLayoutAttribute?) -> NSLayoutConstraint? {
+    public func jusConstrain(_ juLayType:JuLayoutAttribute?) -> NSLayoutConstraint? {
         if jus_Priority?.rawValue  == 0.00 {
             self.jus_Priority = UILayoutPriority.required;
         }
@@ -75,64 +75,64 @@ extension UIView{
 
     }
 
-    var jus_Lead :NSLayoutConstraint?{
+    public var jus_Lead :NSLayoutConstraint?{
         return self.jusConstrain(JuLayoutAttribute.lead)
     }
-    var jus_Trail :NSLayoutConstraint?{
+    public var jus_Trail :NSLayoutConstraint?{
         return self.jusConstrain(JuLayoutAttribute.trail)
     }
-    var jus_Top :NSLayoutConstraint?{
+    public var jus_Top :NSLayoutConstraint?{
         return self.jusConstrain(JuLayoutAttribute.top)
     }
-    var jus_Bottom :NSLayoutConstraint?{
+    public var jus_Bottom :NSLayoutConstraint?{
         return self.jusConstrain(JuLayoutAttribute.bottom)
     }
-    var jus_CenterX :NSLayoutConstraint?{
+    public var jus_CenterX :NSLayoutConstraint?{
         return self.jusConstrain(JuLayoutAttribute.centerX)
     }
-    var jus_CenterY :NSLayoutConstraint?{
+    public var jus_CenterY :NSLayoutConstraint?{
         return self.jusConstrain(JuLayoutAttribute.centerY)
     }
-    var jus_Width :NSLayoutConstraint?{
+    public var jus_Width :NSLayoutConstraint?{
         return self.jusConstrain(JuLayoutAttribute.width)
     }
-    var jus_Height :NSLayoutConstraint?{
+    public var jus_Height :NSLayoutConstraint?{
         return self.jusConstrain(JuLayoutAttribute.height)
     }
-    var jus_AspectWH :NSLayoutConstraint?{
+    public var jus_AspectWH :NSLayoutConstraint?{
         return self.jusConstrain(JuLayoutAttribute.aspectWH)
     }
     
     /// 查找优先级（基本不用）
-    var jus_PriHigh : UIView{
+    public var jus_PriHigh : UIView{
         self.jus_Priority=UILayoutPriority.defaultHigh;
         return self;
     }
-    var jus_PriLow : UIView{
+    public var jus_PriLow : UIView{
         self.jus_Priority=UILayoutPriority.defaultLow;
         return self;
     }
-    var jus_PriLevel : UIView{
+    public var jus_PriLevel : UIView{
         self.jus_Priority=UILayoutPriority.fittingSizeLevel;
         return self;
     }
-    func jus_PriEqual(_ priority:Float) -> UIView {
+    public func jus_PriEqual(_ priority:Float) -> UIView {
         self.jus_Priority=UILayoutPriority(rawValue: priority);
         return self;
     }
 
     
     /// 查找内容优先级
-    var jus_HorConHugPri :UILayoutPriority?{
+    public var jus_HorConHugPri :UILayoutPriority?{
         return self.contentHuggingPriority(for: NSLayoutConstraint.Axis.horizontal)
     }
-    var jus_VerConHugPri :UILayoutPriority?{
+    public var jus_VerConHugPri :UILayoutPriority?{
         return self.contentHuggingPriority(for: NSLayoutConstraint.Axis.vertical)
     }
-    var jus_VerConComResPri :UILayoutPriority?{
+    public var jus_VerConComResPri :UILayoutPriority?{
         return self.contentCompressionResistancePriority(for: NSLayoutConstraint.Axis.vertical)
     }
-    var jus_HorConComResPri :UILayoutPriority?{
+    public var jus_HorConComResPri :UILayoutPriority?{
         return self.contentCompressionResistancePriority(for: NSLayoutConstraint.Axis.horizontal)
     }
 //    var ju_Constraints :NSMutableArray?
@@ -141,8 +141,8 @@ extension UIView{
 }
 
 
-extension NSLayoutConstraint{
-    var jusLayType: JuLayoutAttribute? {
+public extension NSLayoutConstraint{
+    public  var jusLayType: JuLayoutAttribute? {
         get {
             return objc_getAssociatedObject(self, &ju_LayType) as? JuLayoutAttribute
         }

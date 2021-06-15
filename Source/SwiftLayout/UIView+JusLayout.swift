@@ -7,7 +7,7 @@
 //
 
 import UIKit
-extension UIView{
+public extension UIView{
     private  func newJuLayMinus(_ firstAtt:NSLayoutConstraint.Attribute, layoutType:JuLayoutAttribute) -> JusLayout {
         return self.newJuLayMinus(firstAtt, secondAtt: firstAtt, layoutType: layoutType)
     }
@@ -30,64 +30,64 @@ extension UIView{
         
     }
 
-    var jusLead: JusLayout {
+    public var jusLead: JusLayout {
         return self.newJuLay(NSLayoutConstraint.Attribute.leading, layoutType: JuLayoutAttribute.lead)
     }
-    var jusTrail: JusLayout {
+    public var jusTrail: JusLayout {
         return self.newJuLayMinus(NSLayoutConstraint.Attribute.trailing, layoutType: JuLayoutAttribute.trail)
     }
-    var jusTop: JusLayout {
+    public var jusTop: JusLayout {
         return self.newJuLay(NSLayoutConstraint.Attribute.top, layoutType: JuLayoutAttribute.top)
     }
-    var jusBottom: JusLayout {
+    public var jusBottom: JusLayout {
         return self.newJuLayMinus(NSLayoutConstraint.Attribute.bottom, layoutType: JuLayoutAttribute.bottom)
     }
-    var jusLetfSpace: JusLayout {
+    public var jusLetfSpace: JusLayout {
         return self.newJuLay(NSLayoutConstraint.Attribute.leading,secondAtt: NSLayoutConstraint.Attribute.trailing, layoutType:JuLayoutAttribute.lead)
     }
-    var jusRighSpace: JusLayout {
+    public var jusRighSpace: JusLayout {
         return self.newJuLayMinus(NSLayoutConstraint.Attribute.trailing,secondAtt: NSLayoutConstraint.Attribute.leading, layoutType:JuLayoutAttribute.trail)
     }
-    var jusTopSpace: JusLayout {
+    public var jusTopSpace: JusLayout {
         return self.newJuLay(NSLayoutConstraint.Attribute.top,secondAtt: NSLayoutConstraint.Attribute.bottom, layoutType:JuLayoutAttribute.top)
     }
-    var jusBomSpace: JusLayout {
+    public var jusBomSpace: JusLayout {
         return self.newJuLayMinus(NSLayoutConstraint.Attribute.bottom,secondAtt: NSLayoutConstraint.Attribute.top, layoutType:JuLayoutAttribute.bottom)
     }
-    var jusLastLine: JusLayout {
+    public var jusLastLine: JusLayout {
         return self.newJuLay(NSLayoutConstraint.Attribute.lastBaseline, layoutType: JuLayoutAttribute.bottom)
     }
-    var jusFirstLine: JusLayout {
+    public var jusFirstLine: JusLayout {
         return self.newJuLay(NSLayoutConstraint.Attribute.firstBaseline, layoutType: JuLayoutAttribute.top)
     }
-    var jusCenterX: JusLayout {
+    public var jusCenterX: JusLayout {
         return self.newJuLay(NSLayoutConstraint.Attribute.centerX, layoutType: JuLayoutAttribute.centerX)
     }
-    var jusCenterY: JusLayout {
+    public var jusCenterY: JusLayout {
         return self.newJuLay(NSLayoutConstraint.Attribute.centerY, layoutType: JuLayoutAttribute.centerY)
     }
-    var jusWidth: JusLayout {
+    public var jusWidth: JusLayout {
         return self.newJuLay(NSLayoutConstraint.Attribute.width, layoutType: JuLayoutAttribute.width)
     }
-    var jusHeight: JusLayout {
+    public var jusHeight: JusLayout {
         return self.newJuLay(NSLayoutConstraint.Attribute.height, layoutType: JuLayoutAttribute.height)
     }
-    var jusAspectWH: JusLayout {
+    public var jusAspectWH: JusLayout {
         return self.newJuLay(NSLayoutConstraint.Attribute.width, secondAtt:NSLayoutConstraint.Attribute.height, layoutType:JuLayoutAttribute.aspectWH)
     }
 
     
     /// 设置内容优先级
-    func jusHorConHugPri(_ priority: UILayoutPriority) {
+    public func jusHorConHugPri(_ priority: UILayoutPriority) {
         self.setContentHuggingPriority(priority, for: NSLayoutConstraint.Axis.horizontal)
     }
-    func jusVerConHugPri(_ priority: UILayoutPriority) {
+    public func jusVerConHugPri(_ priority: UILayoutPriority) {
         self.setContentHuggingPriority(priority, for: NSLayoutConstraint.Axis.vertical)
     }
-    func jusVerConComResPri(_ priority: UILayoutPriority) {
+    public func jusVerConComResPri(_ priority: UILayoutPriority) {
         self.setContentCompressionResistancePriority(priority, for: NSLayoutConstraint.Axis.vertical)
     }
-    func jusHorConComResPri(_ priority: UILayoutPriority) {
+    public func jusHorConComResPri(_ priority: UILayoutPriority) {
         self.setContentCompressionResistancePriority(priority, for: NSLayoutConstraint.Axis.horizontal)
     }
 //    func juLead() -> UIView {

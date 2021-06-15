@@ -46,9 +46,9 @@ public struct JuLayRect {
         self.width = width
     }
 }*/
-extension UIView{
+public extension UIView{
 
-    func jusOrigin(_ origin:CGPoint) {
+    public  func jusOrigin(_ origin:CGPoint) {
         if(origin.x>0) {
             self.jusLead.equal(origin.x);
         }else if(origin.x<0){
@@ -64,7 +64,7 @@ extension UIView{
             self.jusCenterY.equal(0);
         }
     }
-    func jusSafeOrigin(_ origin:CGPoint) {
+    public func jusSafeOrigin(_ origin:CGPoint) {
         if(origin.x>0) {
             self.jusLead.safe.equal(origin.x);
         }else if(origin.x<0){
@@ -80,55 +80,55 @@ extension UIView{
             self.jusCenterY.equal(0);
         }
     }
-    func jusOriginEqual(_ view:UIView) {
+    public func jusOriginEqual(_ view:UIView) {
         self.jusLead.toView(view).equal(0);
         self.jusTrail.toView(view).equal(0);
     }
 
-    func jusSize(_ size:CGSize) {
+    public func jusSize(_ size:CGSize) {
         self.jusWidth.equal(size.width);
         self.jusHeight.equal(size.height);
     }
-    func jusSizeEqual(_ view:UIView) {
+    public func jusSizeEqual(_ view:UIView) {
         self.jusWidth.toView(view).equal(0);
         self.jusHeight.toView(view).equal(0);
     }
 
-    func jusFrame(_ frame:CGRect) {
+    public func jusFrame(_ frame:CGRect) {
         self.jusOrigin(frame.origin);
         self.jusSize(frame.size);
     }
-    func jusSafeFrame(_ frame:CGRect) {
+    public func jusSafeFrame(_ frame:CGRect) {
         self.jusSafeOrigin(frame.origin);
         self.jusSize(frame.size);
     }
-    func jusFrameEqual(_ view:UIView) {
+    public func jusFrameEqual(_ view:UIView) {
         self.jusOriginEqual(view);
         self.jusSizeEqual(view);
     }
 
-    func jusEdge(_ edge:UIEdgeInsets)  {
+    public func jusEdge(_ edge:UIEdgeInsets)  {
         self.jusEdgeTo(edge,self.superview!);
     }
-    func jusSafeEdge(_ edge:UIEdgeInsets)  {
+    public func jusSafeEdge(_ edge:UIEdgeInsets)  {
         self.jusLead.safe.equal(edge.left);
         self.jusTrail.safe.equal(edge.right);
         self.jusTop.safe.equal(edge.top);
         self.jusBottom.safe.equal(edge.bottom);
     }
-    func jusEdgeTo(_ edge:UIEdgeInsets,_ view:UIView)  {
+    public func jusEdgeTo(_ edge:UIEdgeInsets,_ view:UIView)  {
         self.jusLead.toView(view).equal(edge.left);
         self.jusTrail.toView(view).equal(edge.right);
         self.jusTop.toView(view).equal(edge.top);
         self.jusBottom.toView(view).equal(edge.bottom);
     }
 
-    func jusEdgeH(_ juEdgeH:JuLayEdgeHeight)  {
+    public func jusEdgeH(_ juEdgeH:JuLayEdgeHeight)  {
         if self.superview != nil {
             self.jusEdgeHTo(juEdgeH,self.superview!)
         }
     }
-    func jusEdgeHTo(_ juEdgeH:JuLayEdgeHeight,_ view:UIView) {
+    public func jusEdgeHTo(_ juEdgeH:JuLayEdgeHeight,_ view:UIView) {
         self.jusLead.toView(view).equal(juEdgeH.lead);
         self.jusTrail.toView(view).equal(juEdgeH.trail);
         if(juEdgeH.y>0) {
@@ -143,12 +143,12 @@ extension UIView{
         }
     }
 
-    func juEdgeW(_ juEdgeW:JuLayEdgeWidth)  {
+    public func juEdgeW(_ juEdgeW:JuLayEdgeWidth)  {
         if self.superview != nil {
             self.jusEdgeWTo(juEdgeW,self.superview!);
         }
     }
-    func jusEdgeWTo(_ juEdgeW:JuLayEdgeWidth,_ view:UIView)  {
+    public func jusEdgeWTo(_ juEdgeW:JuLayEdgeWidth,_ view:UIView)  {
         self.jusTop.toView(view).equal(juEdgeW.top);
         self.jusBottom.toView(view).equal(juEdgeW.bottom);
 

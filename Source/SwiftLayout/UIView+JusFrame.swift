@@ -7,8 +7,8 @@
 //
 
 import UIKit
-extension UIView{
-    var originX :CGFloat?{
+public extension UIView{
+    public var originX :CGFloat?{
         get{
             return self.frame.origin.x
         }
@@ -18,7 +18,7 @@ extension UIView{
             self.frame = frame;
         }
     }
-    var originY :CGFloat?{
+    public var originY :CGFloat?{
         get{
             return self.frame.origin.y
         }
@@ -28,7 +28,7 @@ extension UIView{
             self.frame = frame;
         }
     }
-    var sizeW :CGFloat?{
+    public var sizeW :CGFloat?{
         get{
             return self.frame.size.width
         }
@@ -38,7 +38,7 @@ extension UIView{
             self.frame = frame;
         }
     }
-    var sizeH :CGFloat?{
+    public  var sizeH :CGFloat?{
         get{
             return self.frame.size.height
         }
@@ -48,7 +48,7 @@ extension UIView{
             self.frame = frame;
         }
     }
-    func removeAllSubviews() {
+    public func removeAllSubviews() {
         while (self.subviews.count > 0) {
             let subView = self.subviews.first
             subView?.removeFromSuperview()

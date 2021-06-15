@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JusLayout: NSObject {
+public class JusLayout: NSObject {
 
     var isMinus : Bool = false ///< 是否相反数
     var isSafe : Bool = false ///< 是否使用安全适配
@@ -30,16 +30,16 @@ class JusLayout: NSObject {
         }
     }
 
-    func multi(_ mulits:CGFloat) -> JusLayout {
+    public func multi(_ mulits:CGFloat) -> JusLayout {
         juMulti = mulits
         return self;
     }
-    var safe: JusLayout {
+    public var safe: JusLayout {
         isSafe = true
         return self;
     }
 
-    func toView(_ toItem:UIView?) -> JusLayout {
+    public func toView(_ toItem:UIView?) -> JusLayout {
         juView2 = toItem
         return self
     }
@@ -51,11 +51,11 @@ class JusLayout: NSObject {
         }
     }*/
     
-    func priority(_ prioritys:Float) -> JusLayout {
+    public func priority(_ prioritys:Float) -> JusLayout {
         juPrioritys = UILayoutPriority(rawValue: prioritys)
         return self
     }
-    func equal(_ constion:CGFloat)  {
+    public func equal(_ constion:CGFloat)  {
         juRelation = NSLayoutConstraint.Relation.equal;
         self.juAddConstraint(constion)
     }
@@ -68,16 +68,16 @@ class JusLayout: NSObject {
         }
     }*/
     
-    func greaterEqual(_ constion:CGFloat) {
+    public func greaterEqual(_ constion:CGFloat) {
         juRelation = NSLayoutConstraint.Relation.greaterThanOrEqual;
         self.juAddConstraint(constion)
     }
-    func lessEqual(_ constion:CGFloat)  {
+    public func lessEqual(_ constion:CGFloat)  {
         juRelation = NSLayoutConstraint.Relation.lessThanOrEqual;
          self.juAddConstraint(constion)
     }
    
-    func juAddConstraint(_ constions:CGFloat)  {
+    public func juAddConstraint(_ constions:CGFloat)  {
         if juView1.superview == nil {
             return
         }
