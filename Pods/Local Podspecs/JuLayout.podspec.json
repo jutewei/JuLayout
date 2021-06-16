@@ -26,12 +26,7 @@
     },
     {
       "name": "LayoutObjC",
-      "source_files": "Source/OCLayout/*.{h,m}",
-      "dependencies": {
-        "JuLayout/LayoutSwift": [
-
-        ]
-      }
+      "source_files": "Source/OCLayout/*.{h,m}"
     }
   ],
   "swift_version": "5"

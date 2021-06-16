@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		038A0052F6DC4FD617C4356B /* libPods-JuLayoutDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DB293E7E607A0CAE00FA84 /* libPods-JuLayoutDemo.a */; };
 		EB2CC2432678AAC300693176 /* JuOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DB57C1E051E4B00BA2996 /* JuOCViewController.m */; };
 		EB2CC2442678AAC300693176 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169ED61E0390FE00687FE3 /* ViewController.swift */; };
 		EB2CC2452678AAC300693176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB169ED41E0390FE00687FE3 /* AppDelegate.swift */; };
-		EB2CC2472678AAC300693176 /* libPods-JuLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 598ABD3A3D528BC019563A47 /* libPods-JuLayout.a */; };
 		EB2CC2492678AAC300693176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB169EDD1E0390FE00687FE3 /* LaunchScreen.storyboard */; };
 		EB2CC24A2678AAC300693176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB169EDB1E0390FE00687FE3 /* Assets.xcassets */; };
 		EB2CC24B2678AAC300693176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB169ED81E0390FE00687FE3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25DB293E7E607A0CAE00FA84 /* libPods-JuLayoutDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JuLayoutDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CAC1E56D9FC94B7E0A3FC1 /* Pods-JuLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuLayout.debug.xcconfig"; path = "Target Support Files/Pods-JuLayout/Pods-JuLayout.debug.xcconfig"; sourceTree = "<group>"; };
-		598ABD3A3D528BC019563A47 /* libPods-JuLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JuLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C44164BA3F33DD0B0CE3B92 /* Pods-JuLayoutDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuLayoutDemo.debug.xcconfig"; path = "Target Support Files/Pods-JuLayoutDemo/Pods-JuLayoutDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DA2E76FA894B1E1D823E2CC7 /* Pods-JuLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuLayout.release.xcconfig"; path = "Target Support Files/Pods-JuLayout/Pods-JuLayout.release.xcconfig"; sourceTree = "<group>"; };
 		DC0DB57B1E051E4B00BA2996 /* JuOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuOCViewController.h; sourceTree = "<group>"; };
 		DC0DB57C1E051E4B00BA2996 /* JuOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuOCViewController.m; sourceTree = "<group>"; };
 		DC0DB58D1E05399B00BA2996 /* JuLayout-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JuLayout-Bridging-Header.h"; sourceTree = "<group>"; };
+		E042DD40805CE12EADCD6E8F /* Pods-JuLayoutDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuLayoutDemo.release.xcconfig"; path = "Target Support Files/Pods-JuLayoutDemo/Pods-JuLayoutDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EB169ED41E0390FE00687FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB169ED61E0390FE00687FE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB169ED91E0390FE00687FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB2CC2472678AAC300693176 /* libPods-JuLayout.a in Frameworks */,
+				038A0052F6DC4FD617C4356B /* libPods-JuLayoutDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +52,8 @@
 			children = (
 				41CAC1E56D9FC94B7E0A3FC1 /* Pods-JuLayout.debug.xcconfig */,
 				DA2E76FA894B1E1D823E2CC7 /* Pods-JuLayout.release.xcconfig */,
+				9C44164BA3F33DD0B0CE3B92 /* Pods-JuLayoutDemo.debug.xcconfig */,
+				E042DD40805CE12EADCD6E8F /* Pods-JuLayoutDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -57,7 +61,7 @@
 		C6AAD1E14F60558E5206AACA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				598ABD3A3D528BC019563A47 /* libPods-JuLayout.a */,
+				25DB293E7E607A0CAE00FA84 /* libPods-JuLayoutDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,7 +185,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JuLayout-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-JuLayoutDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -336,7 +340,7 @@
 		};
 		EB2CC24D2678AAC300693176 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41CAC1E56D9FC94B7E0A3FC1 /* Pods-JuLayout.debug.xcconfig */;
+			baseConfigurationReference = 9C44164BA3F33DD0B0CE3B92 /* Pods-JuLayoutDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -354,7 +358,7 @@
 		};
 		EB2CC24E2678AAC300693176 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA2E76FA894B1E1D823E2CC7 /* Pods-JuLayout.release.xcconfig */;
+			baseConfigurationReference = E042DD40805CE12EADCD6E8F /* Pods-JuLayoutDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

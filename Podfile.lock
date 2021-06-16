@@ -1,7 +1,5 @@
 PODS:
-  - JuLayout/LayoutObjC (1.0):
-    - JuLayout/LayoutSwift
-  - JuLayout/LayoutSwift (1.0)
+  - JuLayout/LayoutObjC (1.0)
 
 DEPENDENCIES:
   - JuLayout/LayoutObjC (from `./`)
@@ -11,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  JuLayout: 4072b608158f80ece641346b9a92fd3dba28b692
+  JuLayout: d481e19acfcbcfd9a3b471392ad985020795dd91
 
-PODFILE CHECKSUM: 620cc3026e0b066cc328d328432a547b9fa2280a
+PODFILE CHECKSUM: 4b77352fa33deedfb034f31b729951d03585ca55
 
 COCOAPODS: 1.10.1
