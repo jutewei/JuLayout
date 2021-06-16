@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
  
  s.subspec 'LayoutObjC' do |ss|
     ss.source_files = 'Source/OCLayout/*.{h,m}'
-    ss.dependency  'JuLayout/LayoutSwift'
+    #ss.dependency  'JuLayout/LayoutSwift'
     end
  
 end
