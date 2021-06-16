@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C162A0076457C1409FDB4390916914 /* UIView+JusLayGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28A32CD6DB795D3D71681A1ABCE88B /* UIView+JusLayGroup.swift */; };
+		18AAAC155040C4D5F6B62760C6595CDB /* UIView+JusConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522647AD191D21358AE39F9B1798EC1 /* UIView+JusConstraint.swift */; };
+		2BFD717FA20C9250CAD5DC1AAF8FE11E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D952BB432CE9862CA88E0B205989E81F /* UIView+Frame.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		304C696FEEB9092CA4EFF8FD8495C382 /* JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5526BCCA04FAFCEABA4BC4D2620C40E /* JuLayout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3B8DA282B00912917B483BC76E998B50 /* UIView+JusFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB90F2FB3C12DDD0F49A91A04DB7C /* UIView+JusFrame.swift */; };
+		3F1D648D139E9EDE009524E811B2460B /* UIView+JuLayGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 42575E7A25B3A3BD233ADAF7B7CBA85D /* UIView+JuLayGroup.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5AEDEDEC8121CD20335E3018F655EB84 /* UIView+JuLayGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 683377C7E679E419F0D6556D9EF742C4 /* UIView+JuLayGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		615A75CFD94CFDD59F6A3E384739D5F2 /* JuLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBCC8ED152104AB2C45615BC97E29375 /* JuLayout-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7B078DBA02ACCB341D778753C110B0C2 /* JuLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13927986CD55E84A26D5989CF1F4112F /* JuLayout-dummy.m */; };
+		94B9305FF52628575CB815AE524EF34A /* JusLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB9188D2F4FA7270D3547A8D08C008 /* JusLayout.swift */; };
+		955F778188ADAC0CB434C03307BAB451 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0EF607D3E2877C3AF106565E5DB6C4 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		95E001CB38F7907701F440F0550C8BFA /* JuLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5218353D59713C50AFFB333FEE1A065C /* JuLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AFA2602611CC2210B94FCC780927C488 /* UIView+JuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B4419BC66B1CA05838BFD1CAC708A4 /* UIView+JuLayout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B12C73F37DD8C3938C54B0CAEBFD3B09 /* UIView+JuLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3A1BC21AC883F15B1E4B9C2B13EA75 /* UIView+JuLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA597EDF221972ED6457A15DE0AD2790 /* Pods-JuLayoutDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB06530E3773236BF5E74BF032C6E9A /* Pods-JuLayoutDemo-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE6791F0A193D099B24D3442F5231F34 /* Pods-JuLayoutDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8135F889A0F638CFBCCB9469FEF93E1B /* Pods-JuLayoutDemo-dummy.m */; };
+		D73E675C4F05F85526F4BEC390000D02 /* JuLayoutFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DAA9860C5291061982432B04BFA21EF /* JuLayoutFrame.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8EE8E56676301A5BF60EA05EBE4C7A3 /* UIView+JusLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE683D5AD48179558FA23195958448A1 /* UIView+JusLayout.swift */; };
+		F5F66DFFBCF0B02C08E63ACB9DBB80A4 /* UIView+JuConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C24AB65A68749532BD308250589634C1 /* UIView+JuConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F76C30DDE693A6E3278B124252FB5CF0 /* UIView+JuConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = ACB71100308EE76A05DA3344E7E7C348 /* UIView+JuConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F21B8CCF6E0A04D9444086515AFD81E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72110691CB601C21F7884D92B9F1D28E;
+			remoteInfo = JuLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13927986CD55E84A26D5989CF1F4112F /* JuLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JuLayout-dummy.m"; sourceTree = "<group>"; };
+		15B4419BC66B1CA05838BFD1CAC708A4 /* UIView+JuLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JuLayout.m"; path = "Source/OCLayout/UIView+JuLayout.m"; sourceTree = "<group>"; };
+		20194FEF5DEE29EE6876EFDF67EFEF04 /* Pods-JuLayoutDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JuLayoutDemo.modulemap"; sourceTree = "<group>"; };
+		2522647AD191D21358AE39F9B1798EC1 /* UIView+JusConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusConstraint.swift"; path = "Source/SwiftLayout/UIView+JusConstraint.swift"; sourceTree = "<group>"; };
+		3DB06530E3773236BF5E74BF032C6E9A /* Pods-JuLayoutDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JuLayoutDemo-umbrella.h"; sourceTree = "<group>"; };
+		42575E7A25B3A3BD233ADAF7B7CBA85D /* UIView+JuLayGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JuLayGroup.m"; path = "Source/OCLayout/UIView+JuLayGroup.m"; sourceTree = "<group>"; };
+		4DF96ABAABA69570F7EC6DAACF552867 /* Pods-JuLayoutDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JuLayoutDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4E548C01C6B73399BF143E5621997FF9 /* Pods-JuLayoutDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JuLayoutDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5218353D59713C50AFFB333FEE1A065C /* JuLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JuLayout.h; path = Source/OCLayout/JuLayout.h; sourceTree = "<group>"; };
+		59BF5F921BE7D228ECD87DC254875F3B /* libJuLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJuLayout.a; path = libJuLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		683377C7E679E419F0D6556D9EF742C4 /* UIView+JuLayGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JuLayGroup.h"; path = "Source/OCLayout/UIView+JuLayGroup.h"; sourceTree = "<group>"; };
+		6BA632FFB2DC2DD78558CA847EEEAEA5 /* JuLayout.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JuLayout.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8135F889A0F638CFBCCB9469FEF93E1B /* Pods-JuLayoutDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JuLayoutDemo-dummy.m"; sourceTree = "<group>"; };
+		88B6F413C302411B12938D1B65B503F8 /* JuLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JuLayout-prefix.pch"; sourceTree = "<group>"; };
+		8E0A1656A8D75A36D890091333B0A722 /* Pods-JuLayoutDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JuLayoutDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8E0EF607D3E2877C3AF106565E5DB6C4 /* UIView+Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "Source/OCLayout/UIView+Frame.h"; sourceTree = "<group>"; };
+		9C1AE2AD03C466FAE7E73D1BF5D382EE /* JuLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuLayout.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DAA9860C5291061982432B04BFA21EF /* JuLayoutFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JuLayoutFrame.h; path = Source/OCLayout/JuLayoutFrame.h; sourceTree = "<group>"; };
+		A3CB9188D2F4FA7270D3547A8D08C008 /* JusLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JusLayout.swift; path = Source/SwiftLayout/JusLayout.swift; sourceTree = "<group>"; };
+		AC28A32CD6DB795D3D71681A1ABCE88B /* UIView+JusLayGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusLayGroup.swift"; path = "Source/SwiftLayout/UIView+JusLayGroup.swift"; sourceTree = "<group>"; };
+		ACB71100308EE76A05DA3344E7E7C348 /* UIView+JuConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JuConstraint.h"; path = "Source/OCLayout/UIView+JuConstraint.h"; sourceTree = "<group>"; };
+		B3B2E416D7B782DE6DA38F4EB9A27243 /* Pods-JuLayoutDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JuLayoutDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		B5526BCCA04FAFCEABA4BC4D2620C40E /* JuLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JuLayout.m; path = Source/OCLayout/JuLayout.m; sourceTree = "<group>"; };
+		BE683D5AD48179558FA23195958448A1 /* UIView+JusLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusLayout.swift"; path = "Source/SwiftLayout/UIView+JusLayout.swift"; sourceTree = "<group>"; };
+		C24AB65A68749532BD308250589634C1 /* UIView+JuConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JuConstraint.m"; path = "Source/OCLayout/UIView+JuConstraint.m"; sourceTree = "<group>"; };
+		D28B8B22732D4D82F0A9197B3CD06A6C /* libPods-JuLayoutDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JuLayoutDemo.a"; path = "libPods-JuLayoutDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D952BB432CE9862CA88E0B205989E81F /* UIView+Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "Source/OCLayout/UIView+Frame.m"; sourceTree = "<group>"; };
+		DB838BA1E37AB7C55B6BB9339563942F /* JuLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JuLayout.modulemap; sourceTree = "<group>"; };
+		DC3A1BC21AC883F15B1E4B9C2B13EA75 /* UIView+JuLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JuLayout.h"; path = "Source/OCLayout/UIView+JuLayout.h"; sourceTree = "<group>"; };
+		EBABB90F2FB3C12DDD0F49A91A04DB7C /* UIView+JusFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+JusFrame.swift"; path = "Source/SwiftLayout/UIView+JusFrame.swift"; sourceTree = "<group>"; };
+		FBCC8ED152104AB2C45615BC97E29375 /* JuLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JuLayout-umbrella.h"; sourceTree = "<group>"; };
+		FF186126C16C9C5AF0B96310A8FAF45A /* JuLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuLayout.release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90CA22427B57BF6DF4000809C1556B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4BB8722E565C66918822233BAE793A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D68D709259D073783F856EDB23C0586 /* Pods-JuLayoutDemo */ = {
+			isa = PBXGroup;
+			children = (
+				20194FEF5DEE29EE6876EFDF67EFEF04 /* Pods-JuLayoutDemo.modulemap */,
+				4DF96ABAABA69570F7EC6DAACF552867 /* Pods-JuLayoutDemo-acknowledgements.markdown */,
+				B3B2E416D7B782DE6DA38F4EB9A27243 /* Pods-JuLayoutDemo-acknowledgements.plist */,
+				8135F889A0F638CFBCCB9469FEF93E1B /* Pods-JuLayoutDemo-dummy.m */,
+				3DB06530E3773236BF5E74BF032C6E9A /* Pods-JuLayoutDemo-umbrella.h */,
+				4E548C01C6B73399BF143E5621997FF9 /* Pods-JuLayoutDemo.debug.xcconfig */,
+				8E0A1656A8D75A36D890091333B0A722 /* Pods-JuLayoutDemo.release.xcconfig */,
+			);
+			name = "Pods-JuLayoutDemo";
+			path = "Target Support Files/Pods-JuLayoutDemo";
+			sourceTree = "<group>";
+		};
+		1AA35714A8C548FD385B18F97C1AAAA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59BF5F921BE7D228ECD87DC254875F3B /* libJuLayout.a */,
+				D28B8B22732D4D82F0A9197B3CD06A6C /* libPods-JuLayoutDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3789420591BD28C0738D4DF09F148E7F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB838BA1E37AB7C55B6BB9339563942F /* JuLayout.modulemap */,
+				13927986CD55E84A26D5989CF1F4112F /* JuLayout-dummy.m */,
+				88B6F413C302411B12938D1B65B503F8 /* JuLayout-prefix.pch */,
+				FBCC8ED152104AB2C45615BC97E29375 /* JuLayout-umbrella.h */,
+				9C1AE2AD03C466FAE7E73D1BF5D382EE /* JuLayout.debug.xcconfig */,
+				FF186126C16C9C5AF0B96310A8FAF45A /* JuLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "JuLayoutDemo/Pods/Target Support Files/JuLayout";
+			sourceTree = "<group>";
+		};
+		8ACF3B4B285DB88C8E09C943EEB935E9 /* LayoutSwift */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB9188D2F4FA7270D3547A8D08C008 /* JusLayout.swift */,
+				2522647AD191D21358AE39F9B1798EC1 /* UIView+JusConstraint.swift */,
+				EBABB90F2FB3C12DDD0F49A91A04DB7C /* UIView+JusFrame.swift */,
+				AC28A32CD6DB795D3D71681A1ABCE88B /* UIView+JusLayGroup.swift */,
+				BE683D5AD48179558FA23195958448A1 /* UIView+JusLayout.swift */,
+			);
+			name = LayoutSwift;
+			sourceTree = "<group>";
+		};
+		BA7DD33109E25D3EA43E9C98939876B8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6BA632FFB2DC2DD78558CA847EEEAEA5 /* JuLayout.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CCE3414DF060807E218D8B6BEE6C7ECD /* JuLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F7AC4BA9E08FF793E69F383A4A4A782A /* LayoutObjC */,
+				8ACF3B4B285DB88C8E09C943EEB935E9 /* LayoutSwift */,
+				BA7DD33109E25D3EA43E9C98939876B8 /* Pod */,
+				3789420591BD28C0738D4DF09F148E7F /* Support Files */,
+			);
+			name = JuLayout;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E6334CE953130B286CDAA935CA20E6AD /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				1AA35714A8C548FD385B18F97C1AAAA5 /* Products */,
+				FC28A6FDCD6F2E95BA8CBFAF00B83FA9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6334CE953130B286CDAA935CA20E6AD /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCE3414DF060807E218D8B6BEE6C7ECD /* JuLayout */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F7AC4BA9E08FF793E69F383A4A4A782A /* LayoutObjC */ = {
+			isa = PBXGroup;
+			children = (
+				5218353D59713C50AFFB333FEE1A065C /* JuLayout.h */,
+				B5526BCCA04FAFCEABA4BC4D2620C40E /* JuLayout.m */,
+				9DAA9860C5291061982432B04BFA21EF /* JuLayoutFrame.h */,
+				8E0EF607D3E2877C3AF106565E5DB6C4 /* UIView+Frame.h */,
+				D952BB432CE9862CA88E0B205989E81F /* UIView+Frame.m */,
+				ACB71100308EE76A05DA3344E7E7C348 /* UIView+JuConstraint.h */,
+				C24AB65A68749532BD308250589634C1 /* UIView+JuConstraint.m */,
+				683377C7E679E419F0D6556D9EF742C4 /* UIView+JuLayGroup.h */,
+				42575E7A25B3A3BD233ADAF7B7CBA85D /* UIView+JuLayGroup.m */,
+				DC3A1BC21AC883F15B1E4B9C2B13EA75 /* UIView+JuLayout.h */,
+				15B4419BC66B1CA05838BFD1CAC708A4 /* UIView+JuLayout.m */,
+			);
+			name = LayoutObjC;
+			sourceTree = "<group>";
+		};
+		FC28A6FDCD6F2E95BA8CBFAF00B83FA9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D68D709259D073783F856EDB23C0586 /* Pods-JuLayoutDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1253B5A61D1D08CF7F90CB26431BD3C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				615A75CFD94CFDD59F6A3E384739D5F2 /* JuLayout-umbrella.h in Headers */,
+				95E001CB38F7907701F440F0550C8BFA /* JuLayout.h in Headers */,
+				D73E675C4F05F85526F4BEC390000D02 /* JuLayoutFrame.h in Headers */,
+				955F778188ADAC0CB434C03307BAB451 /* UIView+Frame.h in Headers */,
+				F76C30DDE693A6E3278B124252FB5CF0 /* UIView+JuConstraint.h in Headers */,
+				5AEDEDEC8121CD20335E3018F655EB84 /* UIView+JuLayGroup.h in Headers */,
+				B12C73F37DD8C3938C54B0CAEBFD3B09 /* UIView+JuLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7C2636AF5FE00867D8553F75BCB3003 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA597EDF221972ED6457A15DE0AD2790 /* Pods-JuLayoutDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		72110691CB601C21F7884D92B9F1D28E /* JuLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 940D7F1E91719F198389C711BBF104F6 /* Build configuration list for PBXNativeTarget "JuLayout" */;
+			buildPhases = (
+				1253B5A61D1D08CF7F90CB26431BD3C2 /* Headers */,
+				80C93C5620461573B7A26AFDD1671077 /* Sources */,
+				90CA22427B57BF6DF4000809C1556B9F /* Frameworks */,
+				CED212AEAD33287473272B422618DF5D /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JuLayout;
+			productName = JuLayout;
+			productReference = 59BF5F921BE7D228ECD87DC254875F3B /* libJuLayout.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		829AC9E2B19AE91995B77239899F8833 /* Pods-JuLayoutDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FE748EA3A8632DD67CB5BEEF426236 /* Build configuration list for PBXNativeTarget "Pods-JuLayoutDemo" */;
+			buildPhases = (
+				D7C2636AF5FE00867D8553F75BCB3003 /* Headers */,
+				5BC20E859FE8A06A47A1F3C052B1E4F2 /* Sources */,
+				E4BB8722E565C66918822233BAE793A8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CCFE3114A6EF664BEDAD7E069C36EA9 /* PBXTargetDependency */,
+			);
+			name = "Pods-JuLayoutDemo";
+			productName = "Pods-JuLayoutDemo";
+			productReference = D28B8B22732D4D82F0A9197B3CD06A6C /* libPods-JuLayoutDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1AA35714A8C548FD385B18F97C1AAAA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72110691CB601C21F7884D92B9F1D28E /* JuLayout */,
+				829AC9E2B19AE91995B77239899F8833 /* Pods-JuLayoutDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CED212AEAD33287473272B422618DF5D /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/JuLayout/JuLayout.modulemap",
+				"${PODS_ROOT}/Headers/Public/JuLayout/JuLayout-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/JuLayout-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/JuLayout/JuLayout.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/JuLayout/JuLayout-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BC20E859FE8A06A47A1F3C052B1E4F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6791F0A193D099B24D3442F5231F34 /* Pods-JuLayoutDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C93C5620461573B7A26AFDD1671077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B078DBA02ACCB341D778753C110B0C2 /* JuLayout-dummy.m in Sources */,
+				304C696FEEB9092CA4EFF8FD8495C382 /* JuLayout.m in Sources */,
+				94B9305FF52628575CB815AE524EF34A /* JusLayout.swift in Sources */,
+				2BFD717FA20C9250CAD5DC1AAF8FE11E /* UIView+Frame.m in Sources */,
+				F5F66DFFBCF0B02C08E63ACB9DBB80A4 /* UIView+JuConstraint.m in Sources */,
+				3F1D648D139E9EDE009524E811B2460B /* UIView+JuLayGroup.m in Sources */,
+				AFA2602611CC2210B94FCC780927C488 /* UIView+JuLayout.m in Sources */,
+				18AAAC155040C4D5F6B62760C6595CDB /* UIView+JusConstraint.swift in Sources */,
+				3B8DA282B00912917B483BC76E998B50 /* UIView+JusFrame.swift in Sources */,
+				06C162A0076457C1409FDB4390916914 /* UIView+JusLayGroup.swift in Sources */,
+				E8EE8E56676301A5BF60EA05EBE4C7A3 /* UIView+JusLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CCFE3114A6EF664BEDAD7E069C36EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JuLayout;
+			target = 72110691CB601C21F7884D92B9F1D28E /* JuLayout */;
+			targetProxy = 5F21B8CCF6E0A04D9444086515AFD81E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8247B8D41EE54D022A5F8C1866F285D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF186126C16C9C5AF0B96310A8FAF45A /* JuLayout.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JuLayout/JuLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/JuLayout/JuLayout.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JuLayout;
+				PRODUCT_NAME = JuLayout;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86BC3AAA26F0ED40C05A8C1013165652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E0A1656A8D75A36D890091333B0A722 /* Pods-JuLayoutDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JuLayoutDemo/Pods-JuLayoutDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87DD0CC3357F50C9717DC1E7DE6A176E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1AE2AD03C466FAE7E73D1BF5D382EE /* JuLayout.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JuLayout/JuLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/JuLayout/JuLayout.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JuLayout;
+				PRODUCT_NAME = JuLayout;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5B9D6E992B33DE71DC6A672CE00804C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E548C01C6B73399BF143E5621997FF9 /* Pods-JuLayoutDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JuLayoutDemo/Pods-JuLayoutDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21FE748EA3A8632DD67CB5BEEF426236 /* Build configuration list for PBXNativeTarget "Pods-JuLayoutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5B9D6E992B33DE71DC6A672CE00804C /* Debug */,
+				86BC3AAA26F0ED40C05A8C1013165652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		940D7F1E91719F198389C711BBF104F6 /* Build configuration list for PBXNativeTarget "JuLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DD0CC3357F50C9717DC1E7DE6A176E /* Debug */,
+				8247B8D41EE54D022A5F8C1866F285D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

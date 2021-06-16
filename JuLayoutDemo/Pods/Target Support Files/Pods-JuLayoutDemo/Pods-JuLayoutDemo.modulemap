@@ -1,0 +1,6 @@
+module Pods_JuLayoutDemo {
+  umbrella header "Pods-JuLayoutDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
