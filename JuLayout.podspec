@@ -17,16 +17,13 @@ Pod::Spec.new do |s|
   s.source  = {:git => 'https://github.com/jutewei/JuLayout.git', :tag => s.version}
   s.requires_arc = true
 
-
- 
- 
- s.subspec 'LayoutSwift' do |ss|
+  s.subspec 'LayoutSwift' do |ss|
     ss.source_files = 'Source/SwiftLayout/*.swift'
-    end
+  end
  
- s.subspec 'LayoutObjC' do |ss|
+  s.subspec 'LayoutObjC' do |ss|
     ss.source_files = 'Source/OCLayout/*.{h,m}'
     #ss.dependency  'JuLayout/LayoutSwift'
-    end
+  end
  
 end

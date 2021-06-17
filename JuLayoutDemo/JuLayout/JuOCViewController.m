@@ -7,7 +7,8 @@
 //
 
 #import "JuOCViewController.h"
-#import "UIView+JuLayout.h"
+//#import "UIView+JuLayout.h"
+@import JuLayout;
 @interface JuOCViewController ()
 
 @end
@@ -22,6 +23,7 @@
     [self.view addSubview:lab1];
   
     lab1.juCenterY.equal(0);
+    
     lab1.juCenterX.equal(0);
     //horizontalCompressionResistancePriority
     UILabel * lab2 = [UILabel new];
