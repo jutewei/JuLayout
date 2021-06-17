@@ -1,9 +1,9 @@
 PODS:
-  - JuLayout (1.0):
-    - JuLayout/LayoutObjC (= 1.0)
-    - JuLayout/LayoutSwift (= 1.0)
-  - JuLayout/LayoutObjC (1.0)
-  - JuLayout/LayoutSwift (1.0)
+  - JuLayout (1.3):
+    - JuLayout/LayoutObjC (= 1.3)
+    - JuLayout/LayoutSwift (= 1.3)
+  - JuLayout/LayoutObjC (1.3)
+  - JuLayout/LayoutSwift (1.3)
 
 DEPENDENCIES:
   - JuLayout (from `../`)
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JuLayout: d481e19acfcbcfd9a3b471392ad985020795dd91
+  JuLayout: 82d0fe76c33495a3dbbbed26bfda0f5aabf0e7a9
 
 PODFILE CHECKSUM: 1fec9d11a9ba6691fbfc03894996e2e2ce360163
 
