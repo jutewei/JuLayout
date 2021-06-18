@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger,JuLayoutType){
 -(NSLayoutConstraint *)ju_Height;///< 高度
 -(NSLayoutConstraint *)ju_AspectWH;///< 宽高比
 
-
+-(void)juRemoveAllConstraints;
 /**
  兼容老版本
  用相反数

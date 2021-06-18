@@ -21,6 +21,15 @@
 -(UILayoutPriority)ju_Priority{
      return [objc_getAssociatedObject(self, @selector(ju_Priority)) floatValue];
 }
+
+-(void)juRemoveAllConstraints{
+    if (self.superview) {
+        [self.superview removeConstraints:self.ju_Constraints];
+    }
+    [self removeConstraints:self.ju_Constraints];
+    [self.ju_Constraints removeAllObjects];
+}
+
 #pragma mark 私有方法
 
 -(void)juCompareSameCons:(NSLayoutConstraint *)currentCons{

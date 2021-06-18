@@ -9,40 +9,40 @@
 #import "UIView+Frame.h"
 
 @implementation UIView (Frame)
-- (CGFloat)originX
-{
+- (CGFloat)originX{
     return self.frame.origin.x;
 }
 
-- (CGFloat)originY
-{
+- (CGFloat)originY{
     return self.frame.origin.y;
 }
 
-- (CGFloat)sizeW
-{
+- (CGFloat)sizeW{
     return self.frame.size.width;
 }
 
-- (CGFloat)sizeH
-{
+- (CGFloat)sizeH{
     return self.frame.size.height;
 }
+
 -(void)setOriginX:(CGFloat)originX{
     CGRect frame = self.frame;
     frame.origin.x = originX;
     self.frame = frame;
 }
+
 -(void)setOriginY:(CGFloat)originY{
     CGRect frame = self.frame;
     frame.origin.y = originY;
     self.frame = frame;
 }
+
 -(void)setSizeW:(CGFloat)sizeW{
     CGRect frame = self.frame;
     frame.size.width = sizeW;
     self.frame = frame;
 }
+
 -(void)setSizeH:(CGFloat)sizeH{
     CGRect frame = self.frame;
     frame.size.height = sizeH;
@@ -54,8 +54,5 @@
         UIView *subview=self.subviews.firstObject;
         [subview removeFromSuperview];
     }
-}
--(UIBarButtonItem*)barButtonItem{
-    return [[UIBarButtonItem alloc] initWithCustomView:self];
 }
 @end

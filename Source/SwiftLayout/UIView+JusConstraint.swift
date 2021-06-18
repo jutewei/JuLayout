@@ -23,6 +23,7 @@ public enum JuLayoutAttribute : Int {
 private var juConstraints: Void?
 private var juPriority : Void?
 private var ju_LayType :Void?
+
 public extension UIView{
     var jus_Constraints: NSMutableArray? {
         get {
@@ -74,7 +75,14 @@ public extension UIView{
         return layoutCons
 
     }
-
+    func jusRemoveAllConstraints(){
+        if self.superview != nil {
+            self.superview?.removeConstraints(self.ju_Constraints as! [NSLayoutConstraint])
+        }
+        self.removeConstraints(self.ju_Constraints as! [NSLayoutConstraint])
+        self.ju_Constraints.removeAllObjects();
+    }
+    
     var jus_Lead :NSLayoutConstraint?{
         return self.jusConstrain(JuLayoutAttribute.lead)
     }

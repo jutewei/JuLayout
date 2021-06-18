@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIView+JuLayGroup.h"
 #import "JuLayout.h"
-#import "UIView+Frame.h"
 
 @interface UIView (JuLayout)
 
