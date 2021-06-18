@@ -77,10 +77,10 @@ public extension UIView{
     }
     func jusRemoveAllConstraints(){
         if self.superview != nil {
-            self.superview?.removeConstraints(self.ju_Constraints as! [NSLayoutConstraint])
+            self.superview?.removeConstraints(self.jus_Constraints as! [NSLayoutConstraint])
         }
-        self.removeConstraints(self.ju_Constraints as! [NSLayoutConstraint])
-        self.ju_Constraints.removeAllObjects();
+        self.removeConstraints(self.jus_Constraints as! [NSLayoutConstraint])
+        self.jus_Constraints?.removeAllObjects();
     }
     
     var jus_Lead :NSLayoutConstraint?{
