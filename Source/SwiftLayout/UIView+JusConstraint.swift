@@ -67,7 +67,7 @@ public extension UIView{
         return nil
     }
     func jusConstrain(_ juLayType:JuLayoutAttribute?) -> NSLayoutConstraint? {
-        if jus_Priority?.rawValue  == 0.00 {
+        if jus_Priority == nil || jus_Priority?.rawValue  == 0.00 {
             self.jus_Priority = UILayoutPriority.required;
         }
         let layoutCons = self.jusConstrain(juLayType, priority:jus_Priority)
